@@ -1,12 +1,12 @@
 /*
 	Jamaica 2 GAMEMODE Owned by KorwinPresident & EMTI_
 	
-	Gamemode ten zosta³/byl/jest tworzony przez KorwinPresident & EMTI_ nie usuwac tego napisu
+	Gamemode ten zostaÂ³/byl/jest tworzony przez KorwinPresident & EMTI_ nie usuwac tego podpisu
 
-	BullShit o to co podjebalem a o to co nie macie napisane co i skad wziaÅ‚em:
-		-sscanf2 wziÄ™te z forum sampa stworzone przez Y_Less Updated by:Emmet_
-		-a_mysql - wziÄ™te z forum sampa stworzone przez BlueG Updated by:maddinator (nwm czy dobrze to pisze)
-		-edialog - wziÄ™te z forum sampa created by Emmet_
+	macie napisane co i skad wziaÃ…â€šem:
+		-sscanf2 wziÃ„â„¢te z forum sampa stworzone przez Y_Less Updated by:Emmet_
+		-a_mysql - wziÃ„â„¢te z forum sampa stworzone przez BlueG Updated by:maddinator (nwm czy dobrze to pisze)
+		-edialog - wziÃ„â„¢te z forum sampa created by Emmet_
 		-Pawn.CMD i Pawn.Raknet - wziete z forum sampa created by YourShadow
 		-KorwinIncludes - moj include nikt oprocz mnie nikt go nie ma
 		getBots() - Ibiza.pwn - Tworca Lagowy nie znam oryginalnego tworcy (bylem leniwy by stworzyc od nowa ta funkcje)
@@ -42,15 +42,15 @@
 		2-Derby
 		3-WG
 		4-Sumo
-		5-Chowany Chowaj¹cy
-		6-Chowany Szukaj¹cy
+		5-Chowany ChowajÂ¹cy
+		6-Chowany SzukajÂ¹cy
 		7-Race
 	Achievements Condition Numbers:
 		0-Onede Kills
 		1-Przeczytal Regulamin Serwera
-		2-Solówy
-		3-Zabójstwa
-		4-Œmierci
+		2-SolÃ³wy
+		3-ZabÃ³jstwa
+		4-Å’mierci
 */
 #include <a_samp>
 native IsValidVehicle(vehicleid);
@@ -91,7 +91,7 @@ new Iterator:IHo<MAX_HOSE>;
 #define JP_Z			18.3763
 
 
-//Œmieci
+//Å’mieci
 	//A LOT OF ARRAYS
 		new Float:gSparAr[][] = {
 			//spx1 	spy1 spz1  spx2  spy2  spz2  arx1 ary1 	 arx2	ary2
@@ -270,7 +270,7 @@ new Iterator:IHo<MAX_HOSE>;
 			Arena,
 			MinIn,
 			WGIn,
-			//solówy
+			//solÃ³wy
 			SoBr,
 			SoP,
 			SoA,
@@ -602,19 +602,19 @@ new Iterator:IHo<MAX_HOSE>;
 		    "Stair Trailer","Boxville","Farm Plow","Utility Trailer"
 		};
 		new RandomMsg[13][136] = {
-			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Widzisz cheatera lub gracza ³ami¹cego regulamin? Zg³oœ go komenda /raport !",
-			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Jesteœ nowy na serwerze? Nie znasz komend? SprawdŸ /cmd",
-			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Obecnych administratorów znajdziesz na /admins",
-			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Administracja jest dla graczy, ale sa ludŸmi jak ty, badz wyrozumia³y(a)!",
-			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Za godzinê gry dostaniesz 100 exp'a !",
-			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Oferujemy wam blisko 100 teleportów na serwerze, sprawdŸ /teles !",
-			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Chcesz siê woziæ w³asn¹ bryk¹? SprawdŸ /privcar",
-			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Pamietajcie, ¿e administracja te¿ posiada regulamin, pilnujcie ich ;D !",
+			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Widzisz cheatera lub gracza Â³amiÂ¹cego regulamin? ZgÂ³oÅ“ go komenda /raport !",
+			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} JesteÅ“ nowy na serwerze? Nie znasz komend? SprawdÅ¸ /cmd",
+			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Obecnych administratorÃ³w znajdziesz na /admins",
+			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Administracja jest dla graczy, ale sa ludÅ¸mi jak ty, badz wyrozumiaÂ³y(a)!",
+			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Za godzinÃª gry dostaniesz 100 exp'a !",
+			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Oferujemy wam blisko 100 teleportÃ³w na serwerze, sprawdÅ¸ /teles !",
+			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Chcesz siÃª woziÃ¦ wÂ³asnÂ¹ brykÂ¹? SprawdÅ¸ /privcar",
+			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Pamietajcie, Â¿e administracja teÂ¿ posiada regulamin, pilnujcie ich ;D !",
 			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Nasz gamemod jest w 99,99% autorski! :)",
-			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Raz na dzieñ mo¿esz u¿yæ /dotacja ;D Znajcie ³aske Pana :*",
-			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Mo¿esz wymieniæ 7,000 czaszek na V.I.P!",
+			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Raz na dzieÃ± moÂ¿esz uÂ¿yÃ¦ /dotacja ;D Znajcie Â³aske Pana :*",
+			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} MoÂ¿esz wymieniÃ¦ 7,000 czaszek na V.I.P!",
 			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Zapraszamy was na Discorda Serwera! discord.me/jamaicaserver",
-			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Zaliczanie /osiagniecia daje wiêcej mo¿liwoœci!"
+			"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{26bf63} Zaliczanie /osiagniecia daje wiÃªcej moÂ¿liwoÅ“ci!"
 		};
 		new Float:DBSp[][] = {
 			{471.4289,5259.6694,9.5279,0.7413}, // spawn derby 1
@@ -947,7 +947,7 @@ new WGZ[2];
 		TSecG3++;
 		TSecG4++;
 		if(TSecG4 >= 3600){
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {22AAFF}ZAPISYWANIE SERWERA, MO¯E WYST¥PIÆ LAG");
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {22AAFF}ZAPISYWANIE SERWERA, MOÂ¯E WYSTÂ¥PIÃ† LAG");
 			RspCars();
 			foreach(new i : IHo){
 				if(i == 0){}
@@ -1003,7 +1003,7 @@ new WGZ[2];
 							PDV[i][Plays] = 0;
 							GM[pl][1]--;
 							ReS(i);
-							SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Przegra³eœ na derbach :(");
+							SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}PrzegraÂ³eÅ“ na derbach :(");
 
 						}else{
 							new Float:x,Float:y,Float:z;
@@ -1015,7 +1015,7 @@ new WGZ[2];
 								PDV[i][cID] = -1;
 								GM[pl][1]--;
 								ReS(i);
-								SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Przegra³eœ na derbach :(");
+								SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}PrzegraÂ³eÅ“ na derbach :(");
 							}
 						}
 					}
@@ -1096,7 +1096,7 @@ new WGZ[2];
 							ReS(i);
 							GM[pl][3]--; 
 							if(GM[pl][3] <= 1){OnSmoEnd();}
-							SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Odpad³eœ z sumo :(");
+							SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}OdpadÂ³eÅ“ z sumo :(");
 						}
 						
 					}
@@ -1235,9 +1235,9 @@ new WGZ[2];
 		WGZ[1] = GangZoneCreate(2422.4507,1467.5620,2612.2961,1620.9795);
 		SendRconCommand("language PL | Polish | English");
 		SendRconCommand("gamemodetext | Jamaica Server | V0.4.3");
-		//SendRconCommand("hostname • [PL] •••• Jamaica Server •••• [JS] • @LiveServer.pl");
+		//SendRconCommand("hostname â€¢ [PL] â€¢â€¢â€¢â€¢ Jamaica Server â€¢â€¢â€¢â€¢ [JS] â€¢ @LiveServer.pl");
 		SendRconCommand("hostname Jamaica Server@LiveServer.pl");
-		SendRconCommand("mapname Jamaica™");
+		SendRconCommand("mapname Jamaicaâ„¢");
 		ZjebUmysl = true;
 		mysqlcon();
 		new qu[56];
@@ -1259,7 +1259,7 @@ new WGZ[2];
 		for(new i=0,x=sizeof(RandomSpawns);i<x;i++)
 		{
 			CreateDynamicPickup(1314, 1, RandomSpawns[i][0],RandomSpawns[i][1],RandomSpawns[i][2], -1, -1, -1, 15);
-			CreateDynamic3DTextLabel(""SITE_A"\nSerwer mo¿e byæ bardziej popularny!\nZAPROŒ ZNAJOMYCH!\nStwórzcie w³asny gang i grajcie razem!", 0x008080FF, RandomSpawns[i][0], RandomSpawns[i][1], RandomSpawns[i][2], 15.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, 0, -1, -1, 100.0);
+			CreateDynamic3DTextLabel(""SITE_A"\nSerwer moÂ¿e byÃ¦ bardziej popularny!\nZAPROÅ’ ZNAJOMYCH!\nStwÃ³rzcie wÂ³asny gang i grajcie razem!", 0x008080FF, RandomSpawns[i][0], RandomSpawns[i][1], RandomSpawns[i][2], 15.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 0, 0, -1, -1, 100.0);
 
 		}
 		SetTimer("Glob", 1000, true);
@@ -1370,7 +1370,7 @@ new WGZ[2];
 		for(new i=0,l=sizeof(SVehs);i<l;i++){
 			if(SVehs[i] == vehicleid){
 				PDV[playerid][PrivR] = vehicleid;
-				Dialog_Show(playerid, PrivBD, DIALOG_STYLE_LIST, "Salon - Kup Auto", "{00ff00}Informacje\n{ffffff}Kup\nWeŸ na raty", "Wybierz", "Nie");
+				Dialog_Show(playerid, PrivBD, DIALOG_STYLE_LIST, "Salon - Kup Auto", "{00ff00}Informacje\n{ffffff}Kup\nWeÅ¸ na raty", "Wybierz", "Nie");
 			}
 		}	
 		return 1;}
@@ -1442,7 +1442,7 @@ new WGZ[2];
 			PDV[killerid][SetF] = 2;
 			unwatch(playerid);
 			unwatch(killerid);
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz %s Wygra³(a) solówkê gratulacje",PDV[killerid][Nck]);
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz %s WygraÂ³(a) solÃ³wkÃª gratulacje",PDV[killerid][Nck]);
 			PDV[playerid][SoP] = PDV[killerid][SoP] = -1;
 		}
 		else if(PDV[killerid][Arena] == 1 && PDV[playerid][Arena] == 1){
@@ -1469,11 +1469,11 @@ new WGZ[2];
 				PDV[killerid][SetF] = 2;
 				PDV[killerid][Plays] = 0;
 				GM[wyp] = -1;
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz %s Wygra³(a) Wyspe Przetrwania",PDV[killerid][Nck]);
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz %s WygraÂ³(a) Wyspe Przetrwania",PDV[killerid][Nck]);
 				DPWyp();
 			}
 			PDV[playerid][Plays] = 0;
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Przegra³eœ(aœ) Wyspe Przetrwania :C");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}PrzegraÂ³eÅ“(aÅ“) Wyspe Przetrwania :C");
 			GiRe(killerid,10);
 		}
 		if(GDV[PDV[playerid][IGid]][gWar]){
@@ -1544,7 +1544,7 @@ new WGZ[2];
 					unwatch(playerid);
 					unwatch(PDV[playerid][SoP]);
 					PSku[ite][2] = CreateDynamicPickup(1254, 8, x,y,z, GetPlayerVirtualWorld(playerid), GetPlayerInterior(playerid));
-					SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz %s Wygra³ solówkê, Gratulacje!",PDV[PDV[playerid][SoP]][Nck]);
+					SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz %s WygraÂ³ solÃ³wkÃª, Gratulacje!",PDV[PDV[playerid][SoP]][Nck]);
 					PDV[playerid][SoP] = PDV[PDV[playerid][SoP]][SoP] = -1;
 				}
 				case 3:{
@@ -1593,14 +1593,14 @@ new WGZ[2];
 								PDV[i][SetF] = 2;
 								PDV[i][Plays] = 0;
 								GM[wyp] = -1;
-								SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz %s Wygra³(a) Wyspe Przetrwania!",PDV[i][Nck]);
+								SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz %s WygraÂ³(a) Wyspe Przetrwania!",PDV[i][Nck]);
 								DPWyp();
 								break;
 							}
 						}
 					}
 					else if(GM[pl][0] < 1){
-						SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wyspy przetrwania nikt nie wygra³? CO?");
+						SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wyspy przetrwania nikt nie wygraÂ³? CO?");
 						GM[wyp] = -1;
 						DPWyp();
 					}
@@ -1614,7 +1614,7 @@ new WGZ[2];
 						}
 					}
 					else if(GM[pl][1] < 1){
-						SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wyspy przetrwania nikt nie wygra³?");
+						SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wyspy przetrwania nikt nie wygraÂ³?");
 						DPWyp();
 					}
 				}
@@ -1666,10 +1666,10 @@ new WGZ[2];
 		}
 		return 1;}
 	public OnPlayerText(playerid, text[]){
-		if(!PDV[playerid][LogIn]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Oh nie zaloguj siê najpierw"); return 0;}
-		if(PDV[playerid][ChSp] >= 4) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ffffff}Hej oszczêdzaj swoje rêce z tym pisaniem"); return 0;}
+		if(!PDV[playerid][LogIn]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Oh nie zaloguj siÃª najpierw"); return 0;}
+		if(PDV[playerid][ChSp] >= 4) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ffffff}Hej oszczÃªdzaj swoje rÃªce z tym pisaniem"); return 0;}
 		if(PDV[playerid][CMT] > gettime()) {
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ffffff}Jesteœ zakneblowany wstydŸ siê!");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ffffff}JesteÅ“ zakneblowany wstydÅ¸ siÃª!");
 			foreach(Player,i){
 				if(PDV[i][Wypociny]){
 					SCM(i,-1,"{FF1111}MUTE:{FFFFFF}%s:%s",PDV[playerid][Nck],text);
@@ -1708,7 +1708,7 @@ new WGZ[2];
 			case 5: 
 			{	SCMAS(-1,"|%i| {ffffff}({00ff00}Rcon{ffffff}) {%06x}%s : {ffffff}%s",playerid,GetPlayerColor(playerid) >>> 8,GetPN(playerid),text);}
 			case 6:
-			{	SCMAS(-1,"|%i| {ffffff}({ff0000}Zarz¹d{ffffff}) {%06x}%s : {ffffff}%s",playerid,GetPlayerColor(playerid) >>> 8,GetPN(playerid),text);}
+			{	SCMAS(-1,"|%i| {ffffff}({ff0000}ZarzÂ¹d{ffffff}) {%06x}%s : {ffffff}%s",playerid,GetPlayerColor(playerid) >>> 8,GetPN(playerid),text);}
 		}
 		if(PDV[playerid][APL] <= 1){ PDV[playerid][ChSp]++;}
 		return 0;}
@@ -1718,7 +1718,7 @@ new WGZ[2];
 				new Float:F;
 				GetPlayerHealth(issuerid,F);
 				SetPlayerHealth(issuerid,F-33.4);
-				GameTextForPlayer(issuerid,"Oof, nie wolno tego gracza biæ!",1000,3);
+				GameTextForPlayer(issuerid,"Oof, nie wolno tego gracza biÃ¦!",1000,3);
 			}
 			else {
 				PDV[playerid][Btle] = GetTickCount()+15000;
@@ -1766,7 +1766,7 @@ new WGZ[2];
 			GiRe(playerid,r);
 			new r2 = random(50000)+10000;
 			GiPlMo(playerid,r2);
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz ID:%i Podniós³ walizke i znalaz³(a) w niej %i expa i %i$",playerid,r,r2);
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz ID:%i PodniÃ³sÂ³ walizke i znalazÂ³(a) w niej %i expa i %i$",playerid,r,r2);
 			TextDrawHideForAll(waltxd);
 			DestroyDynamicPickup(GM[wal]);
 			return 1;
@@ -1793,12 +1793,12 @@ new WGZ[2];
 				if(HDV[i][Bin]){
 					new c = IPAH(playerid);
 					if(HDV[c][Oid] == PDV[playerid][iDP]){
-						Dialog_Show(playerid, DomMDO, DIALOG_STYLE_TABLIST, "Dom - {ff0000}Zajêty", "WejdŸ", "OK","Cofaj!");
+						Dialog_Show(playerid, DomMDO, DIALOG_STYLE_TABLIST, "Dom - {ff0000}ZajÃªty", "WejdÅ¸", "OK","Cofaj!");
 					}else {
-						Dialog_Show(playerid, DomMDO, DIALOG_STYLE_TABLIST, "Dom - {ff0000}Zajêty", "WejdŸ\nSpróbuj Obrobiæ\nPuk Puk", "OK","Cofaj!");
+						Dialog_Show(playerid, DomMDO, DIALOG_STYLE_TABLIST, "Dom - {ff0000}ZajÃªty", "WejdÅ¸\nSprÃ³buj ObrobiÃ¦\nPuk Puk", "OK","Cofaj!");
 					}
 				}else{
-					Dialog_Show(playerid, DomMD, DIALOG_STYLE_TABLIST, "Dom - {00ff00}NieZajêty", "Zwiedzaj\nKup","OK","Cofaj!");
+					Dialog_Show(playerid, DomMD, DIALOG_STYLE_TABLIST, "Dom - {00ff00}NieZajÃªty", "Zwiedzaj\nKup","OK","Cofaj!");
 				}
 				return 1;
 			}}
@@ -1864,7 +1864,7 @@ new WGZ[2];
 					TextDrawHideForPlayer(playerid,LogOnS[12]);
 					TextDrawHideForPlayer(playerid,LogOnS[13]);
 					CancelSelectTextDraw(playerid);
-					Dialog_Show(playerid, Register, DIALOG_STYLE_PASSWORD, "Rejestracja", "Zarejestruj siê by mieæ pe³ne mo¿liwoœci korzystania z\nnaszego serwera", "Zarejestruj","Wyjdz");
+					Dialog_Show(playerid, Register, DIALOG_STYLE_PASSWORD, "Rejestracja", "Zarejestruj siÃª by mieÃ¦ peÂ³ne moÂ¿liwoÅ“ci korzystania z\nnaszego serwera", "Zarejestruj","Wyjdz");
 				}
 				else{
 					TextDrawHideForPlayer(playerid,LogOnS[2]);
@@ -1880,7 +1880,7 @@ new WGZ[2];
 					TextDrawHideForPlayer(playerid,LogOnS[12]);
 					TextDrawHideForPlayer(playerid,LogOnS[13]);
 					CancelSelectTextDraw(playerid);
-					Dialog_Show(playerid,LogIn, DIALOG_STYLE_PASSWORD,"Logowanie","Zaloguj siê by potwierdziæ swoj¹ to¿samoœæ","Zaloguj","Wyjdz");
+					Dialog_Show(playerid,LogIn, DIALOG_STYLE_PASSWORD,"Logowanie","Zaloguj siÃª by potwierdziÃ¦ swojÂ¹ toÂ¿samoÅ“Ã¦","Zaloguj","Wyjdz");
 				}
 				return 1;
 			}
@@ -1937,35 +1937,35 @@ new WGZ[2];
 		return 1;}
 	public OnPlayerCommandReceived(playerid,cmd[],params[],flags){
 		if(!PDV[playerid][LogIn]){
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Oh nie zaloguj siê najpierw");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Oh nie zaloguj siÃª najpierw");
 			return 0;
 		}
 		if(PDV[playerid][APL] < 6){
 			if(PDV[playerid][BlCMD]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{ffffff} Zablokowano ci CMD o jakie przykre :C"); return 1;}
-			if(PDV[playerid][Wat] != -1 && strcmp(cmd,"czsolo",true) != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Jestes na solówce mo¿esz u¿ywaæ tylko /czsolo"); return 1;}
+			if(PDV[playerid][Wat] != -1 && strcmp(cmd,"czsolo",true) != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Jestes na solÃ³wce moÂ¿esz uÂ¿ywaÃ¦ tylko /czsolo"); return 1;}
 			if(PDV[playerid][CmU] >= 5) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Woah wstrzymaj konie kowboju z tymi CMD"); return 0;}
 			if((strcmp(cmd,"opusc",true) != 0 && strcmp(cmd,"exit",true) != 0) && PDV[playerid][Arena] >= 1){
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Mozesz u¿yæ tylko cmd /opusc i /exit by wyjœæ");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Mozesz uÂ¿yÃ¦ tylko cmd /opusc i /exit by wyjÅ“Ã¦");
 				return 0;
 			}
 			if((strcmp(cmd,"opusc",true) != 0 && strcmp(cmd,"exit",true) != 0) && PDV[playerid][Plays] == 1 && GM[wyp] == -2){
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Mozesz u¿yæ tylko cmd /opusc i /exit by wyjœæ");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Mozesz uÂ¿yÃ¦ tylko cmd /opusc i /exit by wyjÅ“Ã¦");
 				return 0;
 			}
 			else if((strcmp(cmd,"opusc",true) != 0 && strcmp(cmd,"exit",true) != 0) && PDV[playerid][Plays] == 2 && GM[drby] == -2){
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Mozesz u¿yæ tylko cmd /opusc i /exit by wyjœæ");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Mozesz uÂ¿yÃ¦ tylko cmd /opusc i /exit by wyjÅ“Ã¦");
 				return 0;
 			}
 			else if((strcmp(cmd,"opusc",true) != 0 && strcmp(cmd,"exit",true) != 0) && PDV[playerid][Plays] == 3 && GM[wgs] == -2){
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Mozesz u¿yæ tylko cmd /opusc i /exit by wyjœæ");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Mozesz uÂ¿yÃ¦ tylko cmd /opusc i /exit by wyjÅ“Ã¦");
 				return 0;
 			}
 			if(PDV[playerid][zw] && strcmp(cmd,"jj",true)){
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{ffffff} U¿yj:/jj by wróciæ z afk");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{ffffff} UÂ¿yj:/jj by wrÃ³ciÃ¦ z afk");
 				return 0;
 			}
 			if(PDV[playerid][Dying]){
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{ffffff} Aktualnie umierasz prosimy czekaæ . . . . . . . . ");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{ffffff} Aktualnie umierasz prosimy czekaÃ¦ . . . . . . . . ");
 				return 0;
 			}
 		}
@@ -1990,7 +1990,7 @@ new WGZ[2];
 			}
 			/*for(new i=0,x=sizeof(SVehs);i<x;i++){
 				if(vehicleid == SVehs[i]){
-					Dialog_Show(playerid, PrivBD, DIALOG_STYLE_LIST, "Salon - Kup Auto", "{00ff00}Informacje\n{ffffff}Kup\nWeŸ na raty", "Wybierz", "Nie");
+					Dialog_Show(playerid, PrivBD, DIALOG_STYLE_LIST, "Salon - Kup Auto", "{00ff00}Informacje\n{ffffff}Kup\nWeÅ¸ na raty", "Wybierz", "Nie");
 					break;
 				}
 			}*/
@@ -2082,7 +2082,7 @@ new WGZ[2];
 				if(PDV[i][APL] >= 5){
 					if(!success)
 					{
-						BP(i,"B³êdne Has³o RCON",INVALID_PLAYER_ID);
+						BP(i,"BÂ³Ãªdne HasÂ³o RCON",INVALID_PLAYER_ID);
 						return 0;
 					}
 					else {return 1;}
@@ -2149,11 +2149,11 @@ new WGZ[2];
 		return 1;}
 	public OnPlayerLeaveDynamicArea(playerid, areaid){
 		if(PDV[playerid][Arena] == 4 && areaid == MiniZ[0]){
-			GameTextForPlayer(playerid, "~r~~h~~h~Masz 4 sekundy na powrót do strefy gry", 2000, 4);
+			GameTextForPlayer(playerid, "~r~~h~~h~Masz 4 sekundy na powrÃ³t do strefy gry", 2000, 4);
 			PDV[playerid][MinIn] = GetTickCount()+4000;
 		}
 		else if(areaid == WGZ[0] && PDV[playerid][Plays] == 3 && GetPlayerInterior(playerid) != 3 && GM[wgs] == -2){
-			GameTextForPlayer(playerid, "~r~~h~~h~Masz 4 sekundy na powrót do strefy gry", 2000, 4);
+			GameTextForPlayer(playerid, "~r~~h~~h~Masz 4 sekundy na powrÃ³t do strefy gry", 2000, 4);
 			PDV[playerid][WGIn] = GetTickCount()+4000;	
 		}else{
 			foreach(new x : aZones){
@@ -2180,18 +2180,18 @@ new WGZ[2];
 		strcat(str,str2,3500);
 		format(str2,sizeof(str2),"\t{ffffff}Totalny Czas pobytu:{565656}%ih%imin        \n",(PDV[clickedplayerid][TotOnl]+(NetStats_GetConnectedTime(clickedplayerid)/1000)) / 3600,((PDV[clickedplayerid][TotOnl]+(NetStats_GetConnectedTime(clickedplayerid)/1000)) / 60) - (((PDV[clickedplayerid][TotOnl]+(NetStats_GetConnectedTime(clickedplayerid)/1000)) / 3600) * 60));
 		strcat(str,str2,3500);
-		format(str2,sizeof(str2),"\t{ffffff}Wejœcia na serwer:{565656}%i        \n\n\n");
+		format(str2,sizeof(str2),"\t{ffffff}WejÅ“cia na serwer:{565656}%i        \n\n\n");
 		strcat(str,str2,3500);
-		format(str2,sizeof(str2),"\t{ffffff}Iloœæ Achievementów:{565656}%i/67        \n",PDV[clickedplayerid][AchievC]);
+		format(str2,sizeof(str2),"\t{ffffff}IloÅ“Ã¦ AchievementÃ³w:{565656}%i/67        \n",PDV[clickedplayerid][AchievC]);
 		strcat(str,str2,3500);
-		format(str2,sizeof(str2),"\t{ffffff}Iloœæ Czaszek:{565656}%i        \n",PDV[clickedplayerid][DeTa]);
+		format(str2,sizeof(str2),"\t{ffffff}IloÅ“Ã¦ Czaszek:{565656}%i        \n",PDV[clickedplayerid][DeTa]);
 		strcat(str,str2,3500);
 		format(str2,sizeof(str2),"\t{ffffff}Respekt Gangu:{565656}%i        \n",GDV[PDV[clickedplayerid][IGid]][gRspkt]);
 		strcat(str,str2,3500);
 
-		format(str2,sizeof(str2),"\t{ffffff}Zabójstwa:{565656}%i        \n",PDV[clickedplayerid][Ki]);
+		format(str2,sizeof(str2),"\t{ffffff}ZabÃ³jstwa:{565656}%i        \n",PDV[clickedplayerid][Ki]);
 		strcat(str,str2,3500);
-		format(str2,sizeof(str2),"\t{ffffff}Œmierci:{565656}%i        \n",PDV[clickedplayerid][De]);
+		format(str2,sizeof(str2),"\t{ffffff}Å’mierci:{565656}%i        \n",PDV[clickedplayerid][De]);
 		strcat(str,str2,3500);
 		if(PDV[clickedplayerid][Ki] != 0 && PDV[clickedplayerid][De] != 0){
 			format(str2,sizeof(str2),"\t{ffffff}KD Ratio:{565656}%.2f        \n",PDV[clickedplayerid][Ki]/PDV[clickedplayerid][De]);
@@ -2200,19 +2200,19 @@ new WGZ[2];
 			format(str2,sizeof(str2),"\t{ffffff}KD Ratio:{565656}Brak        \n");
 			strcat(str,str2,3500);
 		}
-		//kurwa daj tutaj "odwiedziny"-wejscie na serwer ilosc, "Odznaczenie" poprzez cmd zarz¹d moze daæ odznaczenie typu Maskotka Serwera
-		//Ilosc czaszek, Doœwiadczenie, [Tag]Nazwa Gangu, osiagniecia 0/X (x-nie wiemy czy jeszcze ich dojdzie) 
+		//kurwa daj tutaj "odwiedziny"-wejscie na serwer ilosc, "Odznaczenie" poprzez cmd zarzÂ¹d moze daÃ¦ odznaczenie typu Maskotka Serwera
+		//Ilosc czaszek, DoÅ“wiadczenie, [Tag]Nazwa Gangu, osiagniecia 0/X (x-nie wiemy czy jeszcze ich dojdzie) 
 		//to co tu masz napisane dodaj, a nie te gowienka o pompie, onede, mini, i wywal przegrane solowki bo tym to sie raczej nikt nie chwali XD
 		//Chuj mnie to ~Korwin
 		format(str2,sizeof(str2),"\t{ffffff}Warny:{565656}%i|3        \n\n",PDV[clickedplayerid][wrn]);
 		strcat(str,str2,3500);
-		format(str2,sizeof(str2),"\t{ffffff}Wygrane Solówki:{565656}%i        \n",PDV[clickedplayerid][SKi]);
+		format(str2,sizeof(str2),"\t{ffffff}Wygrane SolÃ³wki:{565656}%i        \n",PDV[clickedplayerid][SKi]);
 		strcat(str,str2,3500);
-		format(str2,sizeof(str2),"\t{ffffff}Zabójstw na Onede:{565656}%i        \n",PDV[clickedplayerid][OKi]);
+		format(str2,sizeof(str2),"\t{ffffff}ZabÃ³jstw na Onede:{565656}%i        \n",PDV[clickedplayerid][OKi]);
 		strcat(str,str2,3500);
-		format(str2,sizeof(str2),"\t{ffffff}Zabójstw Na Pompie:{565656}        %i\n",PDV[clickedplayerid][PKi]);
+		format(str2,sizeof(str2),"\t{ffffff}ZabÃ³jstw Na Pompie:{565656}        %i\n",PDV[clickedplayerid][PKi]);
 		strcat(str,str2,3500);
-		format(str2,sizeof(str2),"\t{ffffff}Zabójstw Na Mini:{565656}%i        \n",PDV[clickedplayerid][MKi]);
+		format(str2,sizeof(str2),"\t{ffffff}ZabÃ³jstw Na Mini:{565656}%i        \n",PDV[clickedplayerid][MKi]);
 		strcat(str,str2,3500);
 		if(PDV[clickedplayerid][VIP]){
 		strcat(str,"\t{ffdd22}VIP:{565656}Tak        \n",3500);}else {
@@ -2359,7 +2359,7 @@ new WGZ[2];
 			new str[156];
 			switch(PCDV[cidp][pOid]){
 				case -1:{
-					format(str, sizeof(str), "{ff0000}-{aaffaa}PRIVCAR{ff0000}-\n{ffffff}Do Kupienia\nExp:{aaffc6}%i\n{ffffff}Pieni¹dze:{fff0aa}%i\n{ffffff}ID:%i",PCDV[cidp][pcexpc],PCDV[cidp][pcmoc],PCDV[cidp][pcidp]);
+					format(str, sizeof(str), "{ff0000}-{aaffaa}PRIVCAR{ff0000}-\n{ffffff}Do Kupienia\nExp:{aaffc6}%i\n{ffffff}PieniÂ¹dze:{fff0aa}%i\n{ffffff}ID:%i",PCDV[cidp][pcexpc],PCDV[cidp][pcmoc],PCDV[cidp][pcidp]);
 				}
 				default:{
 					foreach(Player,i){
@@ -2369,7 +2369,7 @@ new WGZ[2];
 							break;
 						}
 					}	
-					format(str, sizeof(str), "{ff0000}-{aaffaa}PRIVCAR{ff0000}-\n{ffffff}W³aœciciel:%s\nPrzebieg:%i\nID:%i",PCDV[cidp][pcONi],floatround(PCDV[cidp][przebieg],floatround_round),PCDV[cidp][pcidp]);
+					format(str, sizeof(str), "{ff0000}-{aaffaa}PRIVCAR{ff0000}-\n{ffffff}WÂ³aÅ“ciciel:%s\nPrzebieg:%i\nID:%i",PCDV[cidp][pcONi],floatround(PCDV[cidp][przebieg],floatround_round),PCDV[cidp][pcidp]);
 				}
 			}
 			PCDV[cidp][pc3d] = CreateDynamic3DTextLabel(str, -1, 0.0,0.0,0.0,20.0, INVALID_PLAYER_ID, PCDV[cidp][pveh]);
@@ -2460,7 +2460,7 @@ new WGZ[2];
 			new Cache:res = mysql_query(DBM, str, true);
 			cache_get_value_index(0,0,HDV[Hid][ONck],24);
 			cache_delete(res);
-			format(str,sizeof(str),"{ff0000}Zajete\n{56ff56}Posiad³oœæ:{ffffff}%s\n{56ff56}Wlasciciel:{ffffff}%s\n{56ff56}Interior:{ffffff}%i\nID:%i",HDV[Hid][estanam],HDV[Hid][ONck],HDV[Hid][Iid],HDV[Hid][hID]);
+			format(str,sizeof(str),"{ff0000}Zajete\n{56ff56}PosiadÂ³oÅ“Ã¦:{ffffff}%s\n{56ff56}Wlasciciel:{ffffff}%s\n{56ff56}Interior:{ffffff}%i\nID:%i",HDV[Hid][estanam],HDV[Hid][ONck],HDV[Hid][Iid],HDV[Hid][hID]);
 			HDV[Hid][hidP] = CreateDynamicPickup(1272, 1, HDV[Hid][XP],HDV[Hid][YP],HDV[Hid][ZP], 0, 0);
 			HDV[Hid][hidMI] = CreateDynamicMapIcon(HDV[Hid][XP],HDV[Hid][YP],HDV[Hid][ZP], 32, 0);
 			HDV[Hid][hid3D] = CreateDynamic3DTextLabel(str, 0xFFFFFFFF, HDV[Hid][XP],HDV[Hid][YP],HDV[Hid][ZP],15.0);
@@ -2513,7 +2513,7 @@ new WGZ[2];
 				PDV[i][OwOf] = -1;
 				mysql_format(DBM, quer, sizeof(quer), "UPDATE `HoS` SET `Bin`='1',`Oid`='-1',`expi`='0',`moi`='0' WHERE `id`='%i'",HDV[hous][hID]);
 				mq(quer);
-				SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie op³aca³eœ domu i Komornik ci go zabra³");
+				SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie opÂ³acaÂ³eÅ“ domu i Komornik ci go zabraÂ³");
 				return 1;
 			}
 		}
@@ -2557,7 +2557,7 @@ new WGZ[2];
 		HDV[ite][hidP] = CreateDynamicPickup(1273, 1, HDV[ite][XP],HDV[ite][YP],HDV[ite][ZP], 0, 0);
 		HDV[ite][hidMI] = CreateDynamicMapIcon(HDV[ite][XP],HDV[ite][YP],HDV[ite][ZP], 31, 0);
 		new str[256];
-		format(str,sizeof(str),"{00ff00}NA SPRZEDAZ!\n{56ff56}Posiad³oœæ:{ffffff}%s\n{56ff56}Czynsz:{ffffff}%i{00aa00}${ffffff}/%i{ffaaaa}Exp\n{56ff56}Interior:{ffffff}%i\nID:%i",HDV[ite][estanam],HDV[ite][MoP],HDV[ite][ExP],HDV[ite][Iid],HDV[ite][hID]);
+		format(str,sizeof(str),"{00ff00}NA SPRZEDAZ!\n{56ff56}PosiadÂ³oÅ“Ã¦:{ffffff}%s\n{56ff56}Czynsz:{ffffff}%i{00aa00}${ffffff}/%i{ffaaaa}Exp\n{56ff56}Interior:{ffffff}%i\nID:%i",HDV[ite][estanam],HDV[ite][MoP],HDV[ite][ExP],HDV[ite][Iid],HDV[ite][hID]);
 		HDV[ite][hid3D] = CreateDynamic3DTextLabel(str, 0xFFFFFFFF, HDV[ite][XP],HDV[ite][YP],HDV[ite][ZP],15.0);
 		return 1;
 	}
@@ -3289,7 +3289,7 @@ new WGZ[2];
 		return 1;
 	}
 //LogIn
-	//NieLaguj¹cy ale nie dobry w spójnoœci danych
+	//NieLagujÂ¹cy ale nie dobry w spÃ³jnoÅ“ci danych
 	stock SVPlayer(pid){
 		new quer[119];
 		new x = sizeof(quer);
@@ -3324,7 +3324,7 @@ new WGZ[2];
 		mq(quer);
 		return 1;
 	}
-	//Lagujacy Ale dobry w spójnoœci danych
+	//Lagujacy Ale dobry w spÃ³jnoÅ“ci danych
 	stock SVPlayerNT(pid){
 		new quer[119];
 		new str[250];
@@ -3372,7 +3372,7 @@ new WGZ[2];
 		new query[170];
 		mysql_format(DBM, query, sizeof(query), "INSERT INTO `plys`(`nck`, `pass`,`salt`) VALUES ('%s','%s','%s')",nick,PDV[pid][pass],PDV[pid][slt]);
 		mq(query);
-		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {33ff33}Gracz: %s wybra³(a) {ff0033}Ja{ffff33}mai{33cc00}ca{33ff33}, Witamy nowego kumpla!",nick);
+		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {33ff33}Gracz: %s wybraÂ³(a) {ff0033}Ja{ffff33}mai{33cc00}ca{33ff33}, Witamy nowego kumpla!",nick);
 		PDV[pid][NoAcc] = false;
 		TogglePlayerSpectating(pid, 0);
 		PDV[pid][LogIn] = true;
@@ -3402,19 +3402,19 @@ new WGZ[2];
 		new str[479],iz = sizeof(str);
 		strcat(str,"{ff0033}Ja{ffff33}mai{33cc00}ca {007fff}Server {00ff66}Wersja:"VER"\n",iz);
 		strcat(str,"\n",iz);
-		strcat(str,"{00ff66}Projekt powsta³ 25 listopada 2018 roku.\n",iz);
+		strcat(str,"{00ff66}Projekt powstaÂ³ 25 listopada 2018 roku.\n",iz);
 		strcat(str,"     {00ff66}Gamemod pisany przez {00cc99}KorwinPresident\n",iz);
 		strcat(str,"\n",iz);
-		strcat(str,"    {00ff66} Podziêkowania dla:\n",iz);
+		strcat(str,"    {00ff66} PodziÃªkowania dla:\n",iz);
 		strcat(str,"\n",iz);
 		strcat(str,"{00cc99}\tEMTI - Za Obiekty\n",iz);
-		strcat(str,"{00cc99}\tStrajger_ - Za paczkê obiektów z Polski Serwer Zabawy\n",iz);
+		strcat(str,"{00cc99}\tStrajger_ - Za paczkÃª obiektÃ³w z Polski Serwer Zabawy\n",iz);
 		strcat(str,"{00cc99}\tBlueG - Za MySQL R40\n",iz);
 		strcat(str,"{00cc99}\tYourShadow - Za Pawn.CMD i Pawn.Raknet\n",iz);
 		strcat(str,"{00cc99}\tEmmet_ - Za edialog.inc\n",iz);
 		strcat(str,"{00cc99}\tY_Less - Za sscanf2\n",iz);
 
-		Dialog_Show(pid,Autor,DIALOG_STYLE_MSGBOX,"Autorzy",str,"Powrót","Powrót");
+		Dialog_Show(pid,Autor,DIALOG_STYLE_MSGBOX,"Autorzy",str,"PowrÃ³t","PowrÃ³t");
 		return 1;
 	}
 	stock Kontakt(pid){
@@ -3425,36 +3425,36 @@ new WGZ[2];
 		strcat(str,"\n",iz);
 		strcat(str,"{00cccc}\tKorwinPresident:\n",iz);
 		strcat(str,"{00cc99}\t-Discord:MigelOwO#2167\n",iz);
-		Dialog_Show(pid,Kon,DIALOG_STYLE_MSGBOX,"Kontakt",str,"Powrót","Powrót");
+		Dialog_Show(pid,Kon,DIALOG_STYLE_MSGBOX,"Kontakt",str,"PowrÃ³t","PowrÃ³t");
 		return 1;
 	}
 	stock Regulamin(playerid){
 		new str[1755],iz=sizeof(str);
-		strcat(str,"{3399cc}REGULAMIN {ffffff}| {ff0033}Ja{ffff33}mai{33cc00}ca {007fff}Server{FFFFFF}\n{66ff66}1.{00cccc}Zakazuje siê reklamowania serwerów poprzez wysy³anie adresów ip czy te¿ nazw.\n",iz);
-		strcat(str,"{66ff66}2.{00cccc}Surowo zakazuje siê podszywania pod administratorów i graczy.\n{66ff66}3.{00cccc}Zakazuje siê wysy³ania fa³szywych zg³oszeñ do administracji.\n{66ff66}4.{00cccc}Zakazuje siê wy³udzania rangi, doœwiadczenia 'exp' oraz pieniêdzy wirtualnych jak i realnych.\n",iz);
-		strcat(str,"{66ff66}5.{00cccc}Zakazuje siê u¿ywania jakichkolwiek modyfikacji integruj¹cych w gre (np: Spider-mod, s0beit, aim-bot, god)\n{66ff66}6.{00cccc}Zakazuje siê wykorzystywania b³êdów serwera do czerpania w³asnych korzyœci.\n",iz);
-		strcat(str,"{66ff66}7.{00cccc}Zabronione jest ukrywanie 'cheatera' ze wzglêdów kole¿eñskich czy posiadania z niego korzyœci.\n{66ff66}8.{00cccc}Zakazuje siê prowokowaæ do k³ótni, obra¿aæ i wyœmiewaæ.\n{66ff66}9.{00cccc}Zakazuje siê omijania cenzury i zaœmiecania chatów flood'owaniem, spam'em.\n",iz);
-		strcat(str,"{66ff66}10.{00cccc}Zakazuje siê uciekania z podjêtych walk poprzez minimalizowanie, wy³¹czenie gry.\n{66ff66}11.{00cccc}Zakazuje siê wykonywaæ SpawnKill na sparingach gangowych.\n",iz);
-		strcat(str,"{66ff66}12.{00cccc}Zakazuje siê omijanie kary skutkujac jej wyd³u¿eniem b¹dŸ zmian¹ (tyczy sie równie¿ multi kont).\n{66ff66}13.{00cccc}Zakazuje siê obra¿ania uczuæ religijnych i ich wyznawców.\n{66ff66}14.{00cccc}Zakazuje siê znêcania nad graczami pod wzglêdem psychicznym.\n{66ff66}15.{00cccc}Zakazuje siê udostêpniania danych osobowych bez jej zgody.\n",iz);
-		strcat(str,"{66ff66}16.{00cccc}Wszelkie wykroczenia które stawiaj¹ serwer w z³ym swietle bêd¹ karane zale¿nie od sytuacji.\n",iz);
-		strcat(str,"{ff0033}REGULAMIN NIE MOZE BYÆ KOPIOWANY BEZ ZGODY AUTORA!\n{ff0033}Ja{ffff33}ma{33cc00}ica {007fff}Server {3399cc}2018{ffffff}-{3399cc}2019\n",iz);
+		strcat(str,"{3399cc}REGULAMIN {ffffff}| {ff0033}Ja{ffff33}mai{33cc00}ca {007fff}Server{FFFFFF}\n{66ff66}1.{00cccc}Zakazuje siÃª reklamowania serwerÃ³w poprzez wysyÂ³anie adresÃ³w ip czy teÂ¿ nazw.\n",iz);
+		strcat(str,"{66ff66}2.{00cccc}Surowo zakazuje siÃª podszywania pod administratorÃ³w i graczy.\n{66ff66}3.{00cccc}Zakazuje siÃª wysyÂ³ania faÂ³szywych zgÂ³oszeÃ± do administracji.\n{66ff66}4.{00cccc}Zakazuje siÃª wyÂ³udzania rangi, doÅ“wiadczenia 'exp' oraz pieniÃªdzy wirtualnych jak i realnych.\n",iz);
+		strcat(str,"{66ff66}5.{00cccc}Zakazuje siÃª uÂ¿ywania jakichkolwiek modyfikacji integrujÂ¹cych w gre (np: Spider-mod, s0beit, aim-bot, god)\n{66ff66}6.{00cccc}Zakazuje siÃª wykorzystywania bÂ³ÃªdÃ³w serwera do czerpania wÂ³asnych korzyÅ“ci.\n",iz);
+		strcat(str,"{66ff66}7.{00cccc}Zabronione jest ukrywanie 'cheatera' ze wzglÃªdÃ³w koleÂ¿eÃ±skich czy posiadania z niego korzyÅ“ci.\n{66ff66}8.{00cccc}Zakazuje siÃª prowokowaÃ¦ do kÂ³Ã³tni, obraÂ¿aÃ¦ i wyÅ“miewaÃ¦.\n{66ff66}9.{00cccc}Zakazuje siÃª omijania cenzury i zaÅ“miecania chatÃ³w flood'owaniem, spam'em.\n",iz);
+		strcat(str,"{66ff66}10.{00cccc}Zakazuje siÃª uciekania z podjÃªtych walk poprzez minimalizowanie, wyÂ³Â¹czenie gry.\n{66ff66}11.{00cccc}Zakazuje siÃª wykonywaÃ¦ SpawnKill na sparingach gangowych.\n",iz);
+		strcat(str,"{66ff66}12.{00cccc}Zakazuje siÃª omijanie kary skutkujac jej wydÂ³uÂ¿eniem bÂ¹dÅ¸ zmianÂ¹ (tyczy sie rÃ³wnieÂ¿ multi kont).\n{66ff66}13.{00cccc}Zakazuje siÃª obraÂ¿ania uczuÃ¦ religijnych i ich wyznawcÃ³w.\n{66ff66}14.{00cccc}Zakazuje siÃª znÃªcania nad graczami pod wzglÃªdem psychicznym.\n{66ff66}15.{00cccc}Zakazuje siÃª udostÃªpniania danych osobowych bez jej zgody.\n",iz);
+		strcat(str,"{66ff66}16.{00cccc}Wszelkie wykroczenia ktÃ³re stawiajÂ¹ serwer w zÂ³ym swietle bÃªdÂ¹ karane zaleÂ¿nie od sytuacji.\n",iz);
+		strcat(str,"{ff0033}REGULAMIN NIE MOZE BYÃ† KOPIOWANY BEZ ZGODY AUTORA!\n{ff0033}Ja{ffff33}ma{33cc00}ica {007fff}Server {3399cc}2018{ffffff}-{3399cc}2019\n",iz);
 		Dialog_Show(playerid, ShowRD, DIALOG_STYLE_MSGBOX, "REGULAMIN",str, "OK", "OK");
 		return 1;
 	}
 	stock areg(playerid){
 		new str[1310],iz = sizeof(str);
 		strcat(str,"{3399cc}REGULAMIN ADMINISTRACJI {ffffff}| {ff0033}Ja{ffff33}ma{33cc00}ica {007fff}Server{FFFFFF}\n",iz);
-		strcat(str,"{66ff66}1.{00cccc}Zabronione jest obra¿anie, poni¿anie, stawianie w negatywnym œwietle i wyœmiewanie graczy.\n",iz);
-		strcat(str,"{66ff66}2.{00cccc}Katygoryczny zakaz ujawniania jakichkolwiek informacji z dzia³u administracji dla osób nieupowa¿nionych.\n",iz);
-		strcat(str,"{66ff66}3.{00cccc}Zakazuje siê wstrzymywania czy te¿ przeci¹gania do ukarania / odbanowania gracza ze wzglêdów na znajomoœci.\n",iz);
-		strcat(str,"{66ff66}4.{00cccc}Zakaz pomagania graczom w formie leczenia ich czy te¿ uzupe³niania kamizelki w momencie ich walki.\n",iz);
-		strcat(str,"{66ff66}5.{00cccc}Zakaz pomagania graczom daj¹c im jak¹kolwiek przewagê nad innymi b¹dŸ daj¹c mu korzyœci.\n",iz);
-		strcat(str,"{66ff66}6.{00cccc}Katygoryczny zakaz wykorzystywania swojej rangi do w³asnych celów prywatnych.\n",iz);
-		strcat(str,"{66ff66}7.{00cccc}Administrator ma obowi¹zek reagowaæ na zg³oszenia graczy i ich proœby jeœli s¹ mo¿liwe.\n",iz);
-		strcat(str,"{66ff66}8.{00cccc}Spory miêdzy administracj¹ i graczami powinny byæ wyjaœniane b¹dŸ zapobiegane.\n",iz);
-		strcat(str,"{66ff66}9.{00cccc}Administrator ma obowi¹zek zmieniaæ has³o dostêpu do rangi raz na miesi¹c.\n",iz);
-		strcat(str,"{ff0033}Z³amanie regulaminu skutkuje zale¿nie od sytuacji utrat¹ rangi.\n",iz);
-		strcat(str,"{ff0033}REGULAMIN NIE MOZE BYÆ KOPIOWANY BEZ ZGODY AUTORA!\n",iz);
+		strcat(str,"{66ff66}1.{00cccc}Zabronione jest obraÂ¿anie, poniÂ¿anie, stawianie w negatywnym Å“wietle i wyÅ“miewanie graczy.\n",iz);
+		strcat(str,"{66ff66}2.{00cccc}Katygoryczny zakaz ujawniania jakichkolwiek informacji z dziaÂ³u administracji dla osÃ³b nieupowaÂ¿nionych.\n",iz);
+		strcat(str,"{66ff66}3.{00cccc}Zakazuje siÃª wstrzymywania czy teÂ¿ przeciÂ¹gania do ukarania / odbanowania gracza ze wzglÃªdÃ³w na znajomoÅ“ci.\n",iz);
+		strcat(str,"{66ff66}4.{00cccc}Zakaz pomagania graczom w formie leczenia ich czy teÂ¿ uzupeÂ³niania kamizelki w momencie ich walki.\n",iz);
+		strcat(str,"{66ff66}5.{00cccc}Zakaz pomagania graczom dajÂ¹c im jakÂ¹kolwiek przewagÃª nad innymi bÂ¹dÅ¸ dajÂ¹c mu korzyÅ“ci.\n",iz);
+		strcat(str,"{66ff66}6.{00cccc}Katygoryczny zakaz wykorzystywania swojej rangi do wÂ³asnych celÃ³w prywatnych.\n",iz);
+		strcat(str,"{66ff66}7.{00cccc}Administrator ma obowiÂ¹zek reagowaÃ¦ na zgÂ³oszenia graczy i ich proÅ“by jeÅ“li sÂ¹ moÂ¿liwe.\n",iz);
+		strcat(str,"{66ff66}8.{00cccc}Spory miÃªdzy administracjÂ¹ i graczami powinny byÃ¦ wyjaÅ“niane bÂ¹dÅ¸ zapobiegane.\n",iz);
+		strcat(str,"{66ff66}9.{00cccc}Administrator ma obowiÂ¹zek zmieniaÃ¦ hasÂ³o dostÃªpu do rangi raz na miesiÂ¹c.\n",iz);
+		strcat(str,"{ff0033}ZÂ³amanie regulaminu skutkuje zaleÂ¿nie od sytuacji utratÂ¹ rangi.\n",iz);
+		strcat(str,"{ff0033}REGULAMIN NIE MOZE BYÃ† KOPIOWANY BEZ ZGODY AUTORA!\n",iz);
 
 		strcat(str,"{ff0033}Ja{ffff33}ma{33cc00}ica {007fff}Server {3399cc}2018{ffffff}-{3399cc}2019\n",iz);
 		Dialog_Show(playerid, ShowRD, DIALOG_STYLE_MSGBOX, "REGULAMIN ADMINISTRACJI", str, "OK", "OK");
@@ -3495,11 +3495,11 @@ new WGZ[2];
 						GiPlMo(i,10000);
 						PDV[i][Plays] = 0;
 						ReS(i);
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wygra³eœ Chowanego otrzyma³eœ 25 Expa i 10k$");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WygraÂ³eÅ“ Chowanego otrzymaÂ³eÅ“ 25 Expa i 10k$");
 
 					}
 				}
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Chowany zakonczony wygran¹ chowaj¹cych");
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Chowany zakonczony wygranÂ¹ chowajÂ¹cych");
 			}
 			case 1:{
 				foreach(Player,i){
@@ -3509,18 +3509,18 @@ new WGZ[2];
 						ResetPlayerWeapons(i);
 						PDV[i][Plays] = 0;
 						ReS(i);
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wygra³eœ Chowanego otrzyma³eœ 35 Expa i 20k$");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WygraÂ³eÅ“ Chowanego otrzymaÂ³eÅ“ 35 Expa i 20k$");
 						break;
 					}
 				}
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ffaaaa}Chowany zakonczony wygran¹ szukaj¹cego");				
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ffaaaa}Chowany zakonczony wygranÂ¹ szukajÂ¹cego");				
 			}
 		}
 		GM[gCh] = -1;
 		return 1;
 	}
 	CMD:ch(playerid,params[]){
-		if(GM[gCh] == -2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Chowany ju¿ trwa!");return 1;}
+		if(GM[gCh] == -2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Chowany juÂ¿ trwa!");return 1;}
 		new c=0;
 		foreach(Player,i){
 			if(c >= 10){
@@ -3533,17 +3533,17 @@ new WGZ[2];
 		}
 		if(c >= 2 && GM[gCh] == -1){
 			GM[gCh] = GetTickCount()+10000;
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}/ch rozpocznie siê za 10 sekund");
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}/ch rozpocznie siÃª za 10 sekund");
 		}
 		if(c <= 10){
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Zapisa³eœ siê na chowany");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}ZapisaÂ³eÅ“ siÃª na chowany");
 			PDV[playerid][Plays] = 5;
 			GM[pl][5] = c;
-		}else{SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| Ju¿ jest max graczy na chowanym");}
+		}else{SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| JuÂ¿ jest max graczy na chowanym");}
 		return 1;
 	}
 	CMD:kch(playerid,params[]){
-		if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy");return 1;}
+		if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy");return 1;}
 		foreach(Player,i){
 			if(PDV[i][Plays] == 5 || PDV[i][Plays] == 6){
 				PDV[i][Plays] = 0;
@@ -3552,7 +3552,7 @@ new WGZ[2];
 		}
 		GM[pl][4] = 0;
 		GM[gCh] = -1;
-		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Admin zakoñczy³ Chowanego!");
+		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Admin zakoÃ±czyÂ³ Chowanego!");
 		return 1;
 	}
 	stock StartSmo(){
@@ -3586,7 +3586,7 @@ new WGZ[2];
 				if(PDV[i][Plays] == 4){
 					GiRe(i,25);
 					GiPlMo(i,3000);
-					SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Sumo wygra³ gracz %s",PDV[i][Nck]);
+					SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Sumo wygraÂ³ gracz %s",PDV[i][Nck]);
 					GM[pl][3] = -1;
 					GM[Smo] = -1;
 					break;
@@ -3596,7 +3596,7 @@ new WGZ[2];
 		return 1;
 	}
 	CMD:sumo(playerid,params[]){
-		if(GM[Smo] == -2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Sumo ju¿ trwa!");return 1;}
+		if(GM[Smo] == -2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Sumo juÂ¿ trwa!");return 1;}
 		new c=0;
 		foreach(Player,i){
 			if(c >= 10){
@@ -3608,16 +3608,16 @@ new WGZ[2];
 		}
 		if(c >= 2 && GM[Smo] == -1){
 			GM[Smo] = GetTickCount()+10000;
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}/sumo rozpocznie siê za 10 sekund");
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}/sumo rozpocznie siÃª za 10 sekund");
 		}
 		if(c <= 10){
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Zapisa³eœ siê na ");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}ZapisaÂ³eÅ“ siÃª na ");
 			PDV[playerid][Plays] = 4;
-		}else{SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| Ju¿ jest max graczy na sumo");}
+		}else{SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| JuÂ¿ jest max graczy na sumo");}
 		return 1;
 	}
 	CMD:ksum(playerid,params[]){
-		if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy");return 1;}
+		if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy");return 1;}
 		foreach(Player,i){
 			if(PDV[i][Plays] == 4){
 				PDV[i][Plays] = 0;
@@ -3626,7 +3626,7 @@ new WGZ[2];
 		}
 		GM[pl][3] = 0;
 		GM[Smo] = -1;
-		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Admin zakoñczy³ sumo!");
+		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Admin zakoÃ±czyÂ³ sumo!");
 		return 1;
 	}
 	stock StartWG(){
@@ -3668,7 +3668,7 @@ new WGZ[2];
 		GM[wgs] = -1;
 		GM[pl][2] = 0;
 		if(Team == -1){
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WG zakoñczy³o siê bez wygranych");
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WG zakoÃ±czyÂ³o siÃª bez wygranych");
 			return 1;
 		}
 		foreach(Player,i){
@@ -3676,33 +3676,33 @@ new WGZ[2];
 				GiRe(i,40);
 				GiPlMo(i,35000);
 				SetPlayerTeam(i, NO_TEAM);
-				SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Twój team wygra³ jej! Dosta³eœ 40 Expa i 35k$");
+				SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}TwÃ³j team wygraÂ³ jej! DostaÂ³eÅ“ 40 Expa i 35k$");
 			}
 		}
-		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WG siê zakoñczy³o wygra³ team",(Team == 1) ? ("RED") : ("BLUE"));
+		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WG siÃª zakoÃ±czyÂ³o wygraÂ³ team",(Team == 1) ? ("RED") : ("BLUE"));
 		return 1;
 	}
 	CMD:wg(playerid,params[]){
 		if(GM[wgs] == -2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gra jest w toku");return 1;}//Add message
-		if(PDV[playerid][Plays] == 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ju¿ jesteœ zapisany");return 1;}//Add message
+		if(PDV[playerid][Plays] == 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}JuÂ¿ jesteÅ“ zapisany");return 1;}//Add message
 		GM[pl][2] = 0;
 		foreach(Player,i){
 			if(PDV[i][Plays] == 3){
 				GM[pl][2]++;
 			}
 		}
-		if(GM[pl][2] >= 30){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Osi¹gnieto maksymaln¹ iloœæ graczy"); return 1;}
+		if(GM[pl][2] >= 30){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}OsiÂ¹gnieto maksymalnÂ¹ iloÅ“Ã¦ graczy"); return 1;}
 		GM[pl][2]++;
-		SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Zapisa³eœ siê na wg %i/2",GM[pl][2]);
+		SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}ZapisaÂ³eÅ“ siÃª na wg %i/2",GM[pl][2]);
 		PDV[playerid][Plays] = 3;
 		if(GM[pl][2] >= 2 && GM[wgs] == -1){
 			GM[wgs] = GetTickCount()+10000;
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WG zacznie siê za 10 sekund !!/wg!!");
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WG zacznie siÃª za 10 sekund !!/wg!!");
 		}
 		return 1;
 	}
 	CMD:kwg(playerid,params[]){
-		if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy");return 1;}
+		if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy");return 1;}
 		foreach(Player,i){
 			if(PDV[i][Plays] == 3){
 				PDV[i][Plays] = 0;
@@ -3711,7 +3711,7 @@ new WGZ[2];
 		}
 		GM[pl][2] = 0;
 		GM[wgs] = -1;
-		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Admin zakoñczy³ WG!");
+		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Admin zakoÃ±czyÂ³ WG!");
 		return 1;
 	}
 	stock Derby(){
@@ -3722,7 +3722,7 @@ new WGZ[2];
 			}
 		}
 		if(a >=3){
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Derby wystartowa³y");
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Derby wystartowaÂ³y");
 			new r = random(2);
 			a = 0;
 			foreach(Player,i){
@@ -3753,7 +3753,7 @@ new WGZ[2];
 		GM[drby] = -1;
 		GM[pl][1] = 0;
 		if(pid == INVALID_PLAYER_ID){
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nikt nie wygra³ derb O.o");
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nikt nie wygraÂ³ derb O.o");
 			return 1;
 		}
 		PDV[pid][Plays] = 0;
@@ -3761,15 +3761,15 @@ new WGZ[2];
 		GiRe(pid,15);
 		GiPlMo(pid,25000);
 		ReS(pid);
-		SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wygra³eœ Derby Nagroda: 15 Expa i 25000$");
-		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz %s Wygra³ Derby Gratulacje",PDV[pid][Nck]);
+		SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WygraÂ³eÅ“ Derby Nagroda: 15 Expa i 25000$");
+		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz %s WygraÂ³ Derby Gratulacje",PDV[pid][Nck]);
 		return 1;
 	}
 	alias:db("derby");
 	CMD:db(playerid,params[])
 	{
 		if(GM[drby] == -2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gra w toku"); return 1;}
-		if(PDV[playerid][Plays] == 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ju¿ jesteœ zapisany"); return 1;}
+		if(PDV[playerid][Plays] == 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}JuÂ¿ jesteÅ“ zapisany"); return 1;}
 		new a;
 		foreach(Player,i){
 			if(PDV[playerid][Plays] == 2 && !Busy(playerid)){
@@ -3777,22 +3777,22 @@ new WGZ[2];
 			}
 		}
 		if(a >= 15){
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Osi¹gnieto limit graczy na derbach");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}OsiÂ¹gnieto limit graczy na derbach");
 			return 1;
 		}
 		a++;
-		SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Zapisa³eœ siê na derby %i/3",a);
+		SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}ZapisaÂ³eÅ“ siÃª na derby %i/3",a);
 		PDV[playerid][Plays] = 2;
 		if(a >=3 && GM[drby] == -1){
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Za 10 sekund zacznie siê gra Derby zapisz siê /db");
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Za 10 sekund zacznie siÃª gra Derby zapisz siÃª /db");
 			GM[drby] = GetTickCount()+10000;	
 		}
 		return 1;
 	}
 	CMD:kdb(playerid,params[])
 	{
-		if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
-		if(GM[drby] != -2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Derby siê nie zacze³y"); return 1;}
+		if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
+		if(GM[drby] != -2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Derby siÃª nie zaczeÂ³y"); return 1;}
 		foreach(Player,i){
 			if(PDV[i][Plays] == 2){
 				PDV[i][Plays] = 0;
@@ -3866,7 +3866,7 @@ new WGZ[2];
 			}
 		}
 		if(a >= 2 && GM[wyp] == -1){
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {22EE22}Za 10 sekund zacznie siê Wyspa Przetrwania zapisuj siê /wyp");
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {22EE22}Za 10 sekund zacznie siÃª Wyspa Przetrwania zapisuj siÃª /wyp");
 			GM[wyp] = GetTickCount()+10000;
 		}
 		return 1;
@@ -3880,7 +3880,7 @@ new WGZ[2];
 			}
 		}
 		if(a >= 2){
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {22EE22}Wyspa siê rozpocze³a");
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {22EE22}Wyspa siÃª rozpoczeÂ³a");
 			foreach(Player,i){
 				if(PDV[i][Plays] == 1){
 					GetPlayerPos(i,PDV[i][LaX],PDV[i][LaY],PDV[i][LaZ]);
@@ -3957,22 +3957,22 @@ new WGZ[2];
 	CMD:wyp(playerid,params[])
 	{
 		if(GM[wyp] == -2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gra jest w toku >.<"); return 1;}
-		if(PDV[playerid][Plays] == 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Jesteœ ju¿ zapisany"); return 1;}		
+		if(PDV[playerid][Plays] == 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}JesteÅ“ juÂ¿ zapisany"); return 1;}		
 		PDV[playerid][Plays] = 1;
-		SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Zapisa³eœ siê na BattleRoyale!");
+		SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}ZapisaÂ³eÅ“ siÃª na BattleRoyale!");
 		ChWyp();
 		return 1;
 	}
 	CMD:kwyp(playerid,params[])
 	{
-		if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
-		if(GM[wyp] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie ma czego przerywaæ OwO"); return 1;}
+		if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
+		if(GM[wyp] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie ma czego przerywaÃ¦ OwO"); return 1;}
 		foreach(Player,i){
 			if(PDV[i][Plays] == 1){
 				ReS(i);
 			}
 		}
-		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zakoñczono zabawê Wyspy Przetrwania");
+		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZakoÃ±czono zabawÃª Wyspy Przetrwania");
 		GM[wyp] = -1;
 		return 1;
 	}
@@ -4781,7 +4781,7 @@ new WGZ[2];
 			if(PDV[pid][Ba] == 1)
 				{
 					new stry[128];
-					format(stry,sizeof(stry),"Zosta³eœ(aœ) zbanowan(a) permamentnie za naruszanie regulaminu serwera zapraszamy na "SITE_A" i przeczytaj sekcje regulamin\n\n\nA jeœli czujesz siê niewinny(a) zrob ss'a i przedstaw proœbe o ub w dziale o ub\n\nPowód: %s\nAdmin Nadaj¹cy:%s",PDV[pid][BaR],PDV[pid][BaG]);
+					format(stry,sizeof(stry),"ZostaÂ³eÅ“(aÅ“) zbanowan(a) permamentnie za naruszanie regulaminu serwera zapraszamy na "SITE_A" i przeczytaj sekcje regulamin\n\n\nA jeÅ“li czujesz siÃª niewinny(a) zrob ss'a i przedstaw proÅ“be o ub w dziale o ub\n\nPowÃ³d: %s\nAdmin NadajÂ¹cy:%s",PDV[pid][BaR],PDV[pid][BaG]);
 					Dialog_Show(pid,BaD,DIALOG_STYLE_MSGBOX,"{ffffff}BAN :(",stry,"OK","OK"); return 1;
 				}
 			else if(PDV[pid][Ba] == 2)
@@ -4790,11 +4790,11 @@ new WGZ[2];
 					new Float:x,Float:y;
 					x = floatround(PDV[pid][BaT] - gettime()/86400,floatround_tozero);
 					y = floatabs(floatround(PDV[pid][BaT] - gettime()/86400,floatround_tozero) * 1440 - floatround(PDV[pid][BaT] - gettime()/1440,floatround_tozero));
-					format(stry,sizeof(stry),"Zosta³eœ(aœ) zbanowany(a) czasowo za naruszanie regulaminu serwera zapraszamy na "SITE_A" i przeczytaj sekcje regulamin\n\n\nA jeœli czujesz siê niewinny(a) zrob ss'a i przedstaw proœbe o ub w dziale o ub\n\nPowód: %s\nCzas Pozosta³y:%i Dni %i Minut\nAdmin Nadaj¹cy:%s",PDV[pid][BaR],x,y,PDV[pid][BaG]);
+					format(stry,sizeof(stry),"ZostaÂ³eÅ“(aÅ“) zbanowany(a) czasowo za naruszanie regulaminu serwera zapraszamy na "SITE_A" i przeczytaj sekcje regulamin\n\n\nA jeÅ“li czujesz siÃª niewinny(a) zrob ss'a i przedstaw proÅ“be o ub w dziale o ub\n\nPowÃ³d: %s\nCzas PozostaÂ³y:%i Dni %i Minut\nAdmin NadajÂ¹cy:%s",PDV[pid][BaR],x,y,PDV[pid][BaG]);
 					Dialog_Show(pid,BaD,DIALOG_STYLE_MSGBOX,"{ffffff}BAN :(",stry,"OK","OK"); return 1;
 				}
 			else {
-				Dialog_Show(pid,BaD,DIALOG_STYLE_MSGBOX,"{ffffff}á¿¹á¿³á¿¹???","á¿¹á¿³á¿¹ - á¿¹á¿³á¿¹ uá¿³u á¿¹á¿³á¿¹ á¿¹á¿³á¿¹ á¿¹á¿³á¿¹ uá¿³u uá¿³u á¿¹á¿³á¿¹ á¿¹á¿³á¿¹ uá¿³u uá¿³u uá¿³u á¿¹á¿³á¿¹ uá¿³u á¿¹á¿³á¿¹ uá¿³u á¿¹á¿³á¿¹ uá¿³u uá¿³u á¿¹á¿³á¿¹ á¿¹á¿³á¿¹ á¿¹á¿³á¿¹ uá¿³u uá¿³u á¿¹á¿³á¿¹ uá¿³u uá¿³u á¿¹á¿³á¿¹ uá¿³u á¿¹á¿³á¿¹ uá¿³u uá¿³u","A-H-A","Co kurwa?");
+				Dialog_Show(pid,BaD,DIALOG_STYLE_MSGBOX,"{ffffff}Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹???","Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ - Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ uÃ¡Â¿Â³u Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ uÃ¡Â¿Â³u uÃ¡Â¿Â³u Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ uÃ¡Â¿Â³u uÃ¡Â¿Â³u uÃ¡Â¿Â³u Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ uÃ¡Â¿Â³u Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ uÃ¡Â¿Â³u Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ uÃ¡Â¿Â³u uÃ¡Â¿Â³u Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ uÃ¡Â¿Â³u uÃ¡Â¿Â³u Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ uÃ¡Â¿Â³u uÃ¡Â¿Â³u Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ uÃ¡Â¿Â³u Ã¡Â¿Â¹Ã¡Â¿Â³Ã¡Â¿Â¹ uÃ¡Â¿Â³u uÃ¡Â¿Â³u","A-H-A","Co kurwa?");
 			}
 			return 1;
 		}
@@ -4805,8 +4805,8 @@ new WGZ[2];
 		}
 	//AdministrativeF
 		stock KP(pid,str[64],AID){
-			if(INVALID_PLAYER_ID == AID) {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zosta³ wyrzucony przez {565656}Bota {72000b}Powód: {8c000d}%s",PDV[pid][Nck],str);}
-			else { SCMAS(-1,"{72000b}Gracz {565656}%s{72000b} zosta³(a) wyrzucony(a) przez {565656}%s{72000b} Powód: {8c000d}%s",PDV[pid][Nck],PDV[AID][Nck],str);}
+			if(INVALID_PLAYER_ID == AID) {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zostaÂ³ wyrzucony przez {565656}Bota {72000b}PowÃ³d: {8c000d}%s",PDV[pid][Nck],str);}
+			else { SCMAS(-1,"{72000b}Gracz {565656}%s{72000b} zostaÂ³(a) wyrzucony(a) przez {565656}%s{72000b} PowÃ³d: {8c000d}%s",PDV[pid][Nck],PDV[AID][Nck],str);}
 			PDV[pid][ToKick] = true;
 			return 1;
 		}
@@ -4816,12 +4816,12 @@ new WGZ[2];
 			mysql_format(DBM,query,sizeof(query),"UPDATE `plys` SET Ban='0',BaT='0',reas='Erased' WHERE id='%d'",Idp);
 			new queres = mq(query);
 			if(queres == 0) {SCM(AID,-1,"Cos poszlo nie tak z odbanowywaniem gracza o iDP %i",Idp); return 1;}
-			SCM(AID,-1,"Gracz o iDP %i zosta³ odbanowany",Idp);
+			SCM(AID,-1,"Gracz o iDP %i zostaÂ³ odbanowany",Idp);
 			return 1;
 		}
 		stock BP(pid,str[64],AID){
-			if(INVALID_PLAYER_ID == AID) {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zosta³ zbanowany przez {565656}Bota {72000b}Powód: %s",PDV[pid][Nck],str);}
-			else { SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zosta³ zbanowany przez {565656}%s {72000b}Powód: %s",PDV[pid][Nck],PDV[AID][Nck],str);}
+			if(INVALID_PLAYER_ID == AID) {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zostaÂ³ zbanowany przez {565656}Bota {72000b}PowÃ³d: %s",PDV[pid][Nck],str);}
+			else { SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zostaÂ³ zbanowany przez {565656}%s {72000b}PowÃ³d: %s",PDV[pid][Nck],PDV[AID][Nck],str);}
 			new query[120];
 			mysql_format(DBM, query, sizeof(query), "UPDATE `plys` SET `Ban`='1',`reas`='%s' WHERE `id`='%d'",str,PDV[pid][iDP]);
 			mq(query);
@@ -4829,8 +4829,8 @@ new WGZ[2];
 			return 1;
 		}
 		stock BPT(pid,str[64],AID,td,tm){
-			if(INVALID_PLAYER_ID == AID) {SCMAS(-1,"{72000b}Gracz {565656}%s zosta³ zbanowany przez {565656}Bota {72000b}na czas {565656}%i Dni i %i Minut {72000b}Powód:{8c000d}%s",PDV[pid][Nck],td,tm,str);}
-			else {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zosta³ zbanowany przez {565656}%s{72000b} na czas {565656}%i Dni{72000b}Powód:{8c000d}%s",PDV[pid][Nck],PDV[AID][Nck],td,str);}
+			if(INVALID_PLAYER_ID == AID) {SCMAS(-1,"{72000b}Gracz {565656}%s zostaÂ³ zbanowany przez {565656}Bota {72000b}na czas {565656}%i Dni i %i Minut {72000b}PowÃ³d:{8c000d}%s",PDV[pid][Nck],td,tm,str);}
+			else {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zostaÂ³ zbanowany przez {565656}%s{72000b} na czas {565656}%i Dni{72000b}PowÃ³d:{8c000d}%s",PDV[pid][Nck],PDV[AID][Nck],td,str);}
 			td=gettime() + (td * 86400 + tm * 60);
 			new query[148];
 			mysql_format(DBM,query,sizeof(query),"UPDATE `plys` SET `Ban`='2', `reas`='%s', 'BaT'='%i' WHERE `id`='%i'",str,td,PDV[pid][iDP]);
@@ -4840,8 +4840,8 @@ new WGZ[2];
 		}
 		stock MPl(pid,str[64],AID,t)
 		{
-			if(INVALID_PLAYER_ID == AID) {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zosta³ uciszony przez {565656}Bota {72000b}Powód:{8c000d}%s",PDV[pid][Nck],str);}
-			else {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zosta³ uciszony przez {565656}%s {72000b}Powód:{8c000d}%s",PDV[pid][Nck],PDV[AID][Nck],str);}
+			if(INVALID_PLAYER_ID == AID) {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zostaÂ³ uciszony przez {565656}Bota {72000b}PowÃ³d:{8c000d}%s",PDV[pid][Nck],str);}
+			else {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zostaÂ³ uciszony przez {565656}%s {72000b}PowÃ³d:{8c000d}%s",PDV[pid][Nck],PDV[AID][Nck],str);}
 			t = gettime() + t;
 			new query[125];
 			mysql_format(DBM,query,sizeof(query),"UPDATE `plys` SET `Mute`='%i' WHERE `id`='%i'",t,PDV[pid][iDP]);
@@ -4853,13 +4853,13 @@ new WGZ[2];
 			new query[125];
 			mysql_format(DBM,query,sizeof(query),"UPDATE `plys` SET `Mute`='0' WHERE `id`='%i'",PDV[pid][iDP]);
 			PDV[pid][CMT] = 0;
-			SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Admin %s odmutowa³ ciê",PDV[AID][Nck]);
+			SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Admin %s odmutowaÂ³ ciÃª",PDV[AID][Nck]);
 			return 1;
 		}
 		stock JL(pid,t,AID,reas[64])
 		{
-			if(INVALID_PLAYER_ID == AID) {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zosta³ uwiêziony przez {565656}Bota {72000b}Powód:{8c000d}%s",PDV[pid][Nck],reas);}
-			else {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zosta³ uwieziony przez {565656}%s {72000b}Powód:{8c000d}%s",PDV[pid][Nck],PDV[AID][Nck],reas);}
+			if(INVALID_PLAYER_ID == AID) {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zostaÂ³ uwiÃªziony przez {565656}Bota {72000b}PowÃ³d:{8c000d}%s",PDV[pid][Nck],reas);}
+			else {SCMAS(-1,"{72000b}Gracz {565656}%s {72000b}zostaÂ³ uwieziony przez {565656}%s {72000b}PowÃ³d:{8c000d}%s",PDV[pid][Nck],PDV[AID][Nck],reas);}
 			if(Busy(pid)){UnBusy(pid);}
 			t = PDV[pid][JaT] = gettime() + t;
 			PDV[pid][BlCMD] = true;
@@ -4944,7 +4944,7 @@ new WGZ[2];
 		stock InfAd(pid,rID,inf[32])
 		{
 			new FrSpa = Iter_Free(ReporI);
-			if(FrSpa == -1) {SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Raportów jest pe³no"); return 0;}
+			if(FrSpa == -1) {SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}RaportÃ³w jest peÂ³no"); return 0;}
 			Iter_Add(ReporI, FrSpa);
 			format(Repor[FrSpa],40,"%i\t%i\t%s\n",pid,rID,inf);
 
@@ -5031,7 +5031,7 @@ new WGZ[2];
 				Dialog_Show(pid,retidp,DIALOG_STYLE_MSGBOX,"IDP",str,"OK","Yep");
 			}
 			else {
-				SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000} Nie ma takiego gracza, pewnie uciek³");
+				SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000} Nie ma takiego gracza, pewnie uciekÂ³");
 			}
 			return 1;
 		}
@@ -5039,7 +5039,7 @@ new WGZ[2];
 		stock SeUpODP(pid)
 		{
 			if(PDV[pid][Arena] == 0){
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz {afffd4}%s {00ff00}do³¹czy³ na {aa0000}/onede !",PDV[pid][Nck]);
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz {afffd4}%s {00ff00}doÂ³Â¹czyÂ³ na {aa0000}/onede !",PDV[pid][Nck]);
 				PDV[pid][Arena] = 1;
 				GM[arP][0]++;
 				new str[64];
@@ -5059,7 +5059,7 @@ new WGZ[2];
 		stock SeUpRPG(pid)
 		{
 			if(PDV[pid][Arena] == 0){
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz {afffd4}%s {00ff00}do³¹czy³ na {aa0000}/onede !",PDV[pid][Nck]);
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz {afffd4}%s {00ff00}doÂ³Â¹czyÂ³ na {aa0000}/onede !",PDV[pid][Nck]);
 				PDV[pid][Arena] = 6;
 				GM[arP][4]++;
 				new str[64];
@@ -5078,7 +5078,7 @@ new WGZ[2];
 		}
 		stock SeUpPP(pid){
 			if(PDV[pid][Arena] == 0){
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz {afffd4}%s {00ff00}do³¹czy³ na {aa0000}/pompa !",PDV[pid][Nck]);
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz {afffd4}%s {00ff00}doÂ³Â¹czyÂ³ na {aa0000}/pompa !",PDV[pid][Nck]);
 				PDV[pid][Arena] = 3;
 				GM[arP][1]++;
 				new str[64];
@@ -5098,7 +5098,7 @@ new WGZ[2];
 		}
 		stock SeUpMin(pid){
 			if(PDV[pid][Arena] == 0){
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz {afffd4}%s {00ff00}do³¹czy³ na {aa0000}/minigun !",PDV[pid][Nck]);
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz {afffd4}%s {00ff00}doÂ³Â¹czyÂ³ na {aa0000}/minigun !",PDV[pid][Nck]);
 				PDV[pid][Arena] = 4;
 				GM[arP][2]++;
 				new str[64];
@@ -5119,7 +5119,7 @@ new WGZ[2];
 		}
 		stock SeUpSP(pid){
 			if(PDV[pid][Arena] == 0){
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz {afffd4}%s {00ff00}do³¹czy³ na {aa0000}/sniper !",PDV[pid][Nck]);
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz {afffd4}%s {00ff00}doÂ³Â¹czyÂ³ na {aa0000}/sniper !",PDV[pid][Nck]);
 				PDV[pid][Arena] = 5;
 				GM[arP][3]++;
 				new str[64];
@@ -6019,11 +6019,11 @@ new WGZ[2];
         	}  
         	return PDV[playerid][Fps];
 		}
-	//Osi¹gniecia
+	//OsiÂ¹gniecia
 	//PrivCar
 		stock UpdPriv3DTxT(cidp){
 			new str[200];
-			format(str, sizeof(str), "{ff0000}-{aaffaa}PRIVCAR{ff0000}-\n{ffffff}W³aœciciel:%s\nPrzebieg:%iKM\nID:%i",PCDV[cidp][pcONi],floatround(PCDV[cidp][przebieg],floatround_round),PCDV[cidp][pcidp]);
+			format(str, sizeof(str), "{ff0000}-{aaffaa}PRIVCAR{ff0000}-\n{ffffff}WÂ³aÅ“ciciel:%s\nPrzebieg:%iKM\nID:%i",PCDV[cidp][pcONi],floatround(PCDV[cidp][przebieg],floatround_round),PCDV[cidp][pcidp]);
 			UpdateDynamic3DTextLabelText(PCDV[cidp][pc3d], -1, str);
 			return 1;
 		}
@@ -6078,14 +6078,14 @@ new WGZ[2];
 			PCDV[id][PCcolor][1] = color2;
 			PCDV[id][pOid] = oid;
 			new str[156];
-			if(oid == -1){format(str, sizeof(str), "{ff0000}-{aaffaa}PRIVCAR{ff0000}-\n{ffffff}Do Kupienia\nExp:{aaffc6}%i\n{ffffff}Pieni¹dze:{fff0aa}%i\n{ffffff}ID:%i",PCDV[id][pcexpc],PCDV[id][pcmoc],PCDV[id][pcidp]);}
+			if(oid == -1){format(str, sizeof(str), "{ff0000}-{aaffaa}PRIVCAR{ff0000}-\n{ffffff}Do Kupienia\nExp:{aaffc6}%i\n{ffffff}PieniÂ¹dze:{fff0aa}%i\n{ffffff}ID:%i",PCDV[id][pcexpc],PCDV[id][pcmoc],PCDV[id][pcidp]);}
 			else{
 				new quer[64];
 				mysql_format(DBM, quer,64, "SELECT `nck` FROM `plys` WHERE `id`='%i'",oid);
 				new Cache:res = mysql_query(DBM, quer,true);
 				cache_get_value_index(0, 0, PCDV[id][pcONi],24);
 				cache_delete(res);
-				format(str, sizeof(str), "{ff0000}-{aaffaa}PRIVCAR{ff0000}-\n{ffffff}W³aœciciel:%s\n{ffffff}ID:%i",PCDV[id][pcONi],PCDV[id][pcidp]);
+				format(str, sizeof(str), "{ff0000}-{aaffaa}PRIVCAR{ff0000}-\n{ffffff}WÂ³aÅ“ciciel:%s\n{ffffff}ID:%i",PCDV[id][pcONi],PCDV[id][pcidp]);
 			}
 			PCDV[id][pc3d] = CreateDynamic3DTextLabel(str, -1, 0.0,0.0,0.0,20.0, INVALID_PLAYER_ID, PCDV[id][pveh]);
 			new quer[600];
@@ -6102,8 +6102,8 @@ new WGZ[2];
 			return 1;
 		}
 		CMD:przywolaj(playerid,params[]){
-			if(IsPlayerInAnyVehicle(playerid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}WyjdŸ z auta wpierw"); return 1;}
-			if(PDV[playerid][kmrnik]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Miej pieni¹dze na jutro a mo¿e twoje auto zostanie przywrócone"); return 1;}
+			if(IsPlayerInAnyVehicle(playerid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}WyjdÅ¸ z auta wpierw"); return 1;}
+			if(PDV[playerid][kmrnik]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Miej pieniÂ¹dze na jutro a moÂ¿e twoje auto zostanie przywrÃ³cone"); return 1;}
 			new c=-1;
 			foreach(new i : Privs){
 				if(PDV[playerid][iDP] == PCDV[i][pOid]){
@@ -6115,7 +6115,7 @@ new WGZ[2];
 			if(!IsValidVehicle(PCDV[c][pveh])){
 				new str[256];
 				PCDV[c][pveh] = CreateVehicle(PCDV[c][pcmodel], 0.0000,0.000,0.000,0.000,PCDV[c][PCcolor][0],PCDV[c][PCcolor][1], -1);
-				format(str, sizeof(str), "{ff0000}-{aaffaa}PRIVCAR{ff0000}-\n{ffffff}W³aœciciel:%s\n{ffffff}ID:%i",PCDV[c][pcONi],PCDV[c][pcidp]);
+				format(str, sizeof(str), "{ff0000}-{aaffaa}PRIVCAR{ff0000}-\n{ffffff}WÂ³aÅ“ciciel:%s\n{ffffff}ID:%i",PCDV[c][pcONi],PCDV[c][pcidp]);
 				DestroyDynamic3DTextLabel(PCDV[c][pc3d]);
 				PCDV[c][pc3d] = CreateDynamic3DTextLabel(str, -1, 0.000,0.000,0.000,15.0, INVALID_PLAYER_ID, PCDV[c][pveh]);
 				new comp[14];
@@ -6142,11 +6142,11 @@ new WGZ[2];
 			SetVehiclePos(PCDV[c][pveh], x,y,z);
 			SetVehicleZAngle(PCDV[c][pveh], ang);
 			PutPlayerInVehicle(playerid, PCDV[c][pveh], 0);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Przywo³a³eœ swoje auto!");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}PrzywoÂ³aÂ³eÅ“ swoje auto!");
 			return 1;
 		}
 		CMD:svpriv(playerid,params[]){
-			if(PDV[playerid][psved] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zapisywaæ auto mo¿esz co 15 minut"); return 1;}
+			if(PDV[playerid][psved] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZapisywaÃ¦ auto moÂ¿esz co 15 minut"); return 1;}
 			new c=-1;
 			foreach(new i : Privs){
 				if(PCDV[i][pOid] == PDV[playerid][iDP]){
@@ -6157,7 +6157,7 @@ new WGZ[2];
 			if(c == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie posiadasz auta"); return 1;}
 			SvPrivC(c);
 			PDV[playerid][psved] = GetTickCount()+900000;
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Zapisano auto pomyœlnie");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Zapisano auto pomyÅ“lnie");
 			return 1;
 		}
 	//Top
@@ -6452,7 +6452,7 @@ new WGZ[2];
 				if(PDV[i][IGid] == gId){
 					PDV[i][IGid] = -1;
 					PDV[i][GPid] = 0;
-					SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Twój gang zosta³ zlikwidowany");
+					SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}TwÃ³j gang zostaÂ³ zlikwidowany");
 				}
 			}
 			foreach(new i : aZones){
@@ -6578,9 +6578,9 @@ new WGZ[2];
 		stock onSparAcc(gid1,gid2){
 			GDV[gid1][sprST]	=	60;
 			new str[45];
-			format(str,sizeof(str),"Za 60 sekund rozpocznie siê sparing z %s",GDV[gid1][gName]);
+			format(str,sizeof(str),"Za 60 sekund rozpocznie siÃª sparing z %s",GDV[gid1][gName]);
 			MSGGang(gid2,INVALID_PLAYER_ID,str);
-			format(str,sizeof(str),"Za 60 sekund rozpocznie siê sparing z %s",GDV[gid2][gName]);
+			format(str,sizeof(str),"Za 60 sekund rozpocznie siÃª sparing z %s",GDV[gid2][gName]);
 			MSGGang(gid1,INVALID_PLAYER_ID,str);
 			GDV[gid1][SparT] 	=	SetTimer("Spar", 1000, true,gid1,gid2);
 			return 1;
@@ -6590,7 +6590,7 @@ new WGZ[2];
 			new r = random(sizeof(gSparAr));
 			if(!(GDV[gid1][Gspar] && GDV[gid1][Gspar])){
 				KillTimer(GDV[gid1][SparT]);
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Sparing nie móg³ siê zacz¹æ");
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Sparing nie mÃ³gÂ³ siÃª zaczÂ¹Ã¦");
 				return 1;
 			}
 			new c1,c2;
@@ -6616,7 +6616,7 @@ new WGZ[2];
 						ReS(i);
 					}
 				}
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Sparing nie móg³ siê zacz¹æ");
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Sparing nie mÃ³gÂ³ siÃª zaczÂ¹Ã¦");
 				return 1;
 			}
 			GDV[gid1][SprW] = gid2;
@@ -6629,40 +6629,40 @@ new WGZ[2];
 			if(GDV[gid1][SprKillC] > GDV[gid2][SprKillC]){
 				KillTimer(GDV[gid1][SparT]);
 				GDV[gid1][gRspkt] += 10;
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Sparing wygra³ %s",GDV[gid1][gName]);
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Sparing wygraÂ³ %s",GDV[gid1][gName]);
 				foreach(Player,i){
 					if(PDV[i][IGid] == gid1){
 						PDV[i][gSpar] = false;
 						TkPlRe(i,30);
 						TkPlMo(i,30000);
-						SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Przegra³eœ sparing trac¹c 30 exp i 30k$");
+						SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}PrzegraÂ³eÅ“ sparing tracÂ¹c 30 exp i 30k$");
 						ReS(i);
 					}
 					else if(PDV[i][IGid] == gid2){
 						PDV[i][gSpar] = false;
 						GiRe(i,20);
 						GiPlMo(i,20000);
-						SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Wygra³eœ sparing zyskuj¹c 20 exp i 20k$");
+						SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}WygraÂ³eÅ“ sparing zyskujÂ¹c 20 exp i 20k$");
 						ReS(i);
 					}
 				}
 			}else if(GDV[gid1][SprKillC] < GDV[gid2][SprKillC]){
 				KillTimer(GDV[gid1][SparT]);
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Sparing wygra³ %s",GDV[gid2][gName]);
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Sparing wygraÂ³ %s",GDV[gid2][gName]);
 				GDV[gid2][gRspkt] += 10;
 				foreach(Player,i){
 					if(PDV[i][IGid] == gid1){
 						PDV[i][gSpar] = false;
 						TkPlRe(i,30);
 						TkPlMo(i,30000);
-						SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Przegra³eœ sparing trac¹c 30 exp i 30k$");
+						SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}PrzegraÂ³eÅ“ sparing tracÂ¹c 30 exp i 30k$");
 						ReS(i);
 					}
 					else if(PDV[i][IGid] == gid2){
 						PDV[i][gSpar] = false;
 						GiRe(i,20);
 						GiPlMo(i,20000);
-						SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Wygra³eœ sparing zyskuj¹c 20 exp i 20k$");
+						SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}WygraÂ³eÅ“ sparing zyskujÂ¹c 20 exp i 20k$");
 						ReS(i);
 					}
 				}
@@ -6882,34 +6882,34 @@ new WGZ[2];
 			GDV[GZDV[zid][GZoid]][gWar] = false;
 			GDV[GZDV[zid][GZWWG]][gWar] = false;
 			if(GZDV[zid][GZWar] <= 0){
-				SCMA(-1,"{9b9da0}| {ff5656}Wojny{ffffff}-{56ff56}Gangów {9b9da0}| {56ff56}Gang {ff5656}%s{56ff56} Pokona³ Wroga {cc0000}%s",GDV[GZDV[zid][GZoid]][gTag],GDV[GZDV[zid][GZWWG]][gTag]);
+				SCMA(-1,"{9b9da0}| {ff5656}Wojny{ffffff}-{56ff56}GangÃ³w {9b9da0}| {56ff56}Gang {ff5656}%s{56ff56} PokonaÂ³ Wroga {cc0000}%s",GDV[GZDV[zid][GZoid]][gTag],GDV[GZDV[zid][GZWWG]][gTag]);
 				GDV[GZDV[zid][GZWWG]][gRspkt] -= 150;
 				GDV[GZDV[zid][GZoid]][gRspkt] += 100;
-				MSGGang(GZDV[zid][GZoid],INVALID_PLAYER_ID,"Wygraliœcie 100 respektu w tej bitwie o teren");
-				MSGGang(GZDV[zid][GZWWG],INVALID_PLAYER_ID,"Przegraliœcie i straciliœcie 150 respektu");
+				MSGGang(GZDV[zid][GZoid],INVALID_PLAYER_ID,"WygraliÅ“cie 100 respektu w tej bitwie o teren");
+				MSGGang(GZDV[zid][GZWWG],INVALID_PLAYER_ID,"PrzegraliÅ“cie i straciliÅ“cie 150 respektu");
 			}
 			else if(GZDV[zid][GZWar2] <= 0){
-				SCMA(-1,"{9b9da0}| {ff5656}Wojny{ffffff}-{56ff56}Gangów {9b9da0}| {56ff56}Gang {ff5656}%s{56ff56} przej¹³ teren {cc0000}%s",GDV[GZDV[zid][GZWWG]][gTag],GZDV[zid][GZname]);
+				SCMA(-1,"{9b9da0}| {ff5656}Wojny{ffffff}-{56ff56}GangÃ³w {9b9da0}| {56ff56}Gang {ff5656}%s{56ff56} przejÂ¹Â³ teren {cc0000}%s",GDV[GZDV[zid][GZWWG]][gTag],GZDV[zid][GZname]);
 				GDV[GZDV[zid][GZWWG]][gRspkt] += 100;
 				GDV[GZDV[zid][GZoid]][gRspkt] -= 150;	
-				MSGGang(GZDV[zid][GZWWG],INVALID_PLAYER_ID,"Wygraliœcie 100 respektu w tej bitwie o teren");
-				MSGGang(GZDV[zid][GZoid],INVALID_PLAYER_ID,"Przegraliœcie i straciliœcie 150 respektu");
+				MSGGang(GZDV[zid][GZWWG],INVALID_PLAYER_ID,"WygraliÅ“cie 100 respektu w tej bitwie o teren");
+				MSGGang(GZDV[zid][GZoid],INVALID_PLAYER_ID,"PrzegraliÅ“cie i straciliÅ“cie 150 respektu");
 				ChangeGZOw(zid,GZDV[zid][GZWWG]);
 			}
 			else{
 				if(GZDV[zid][GZCas0] > GZDV[zid][GZCas1]){
-					SCMA(-1,"{9b9da0}| {ff5656}Wojny{ffffff}-{56ff56}Gangów {9b9da0}| {56ff56}Gang {ff5656}%s{56ff56} przej¹³ teren {cc0000}%s",GDV[GZDV[zid][GZWWG]][gTag],GZDV[zid][GZname]);
+					SCMA(-1,"{9b9da0}| {ff5656}Wojny{ffffff}-{56ff56}GangÃ³w {9b9da0}| {56ff56}Gang {ff5656}%s{56ff56} przejÂ¹Â³ teren {cc0000}%s",GDV[GZDV[zid][GZWWG]][gTag],GZDV[zid][GZname]);
 					GDV[GZDV[zid][GZWWG]][gRspkt] += 100;
 					GDV[GZDV[zid][GZoid]][gRspkt] -= 150;
-					MSGGang(GZDV[zid][GZWWG],INVALID_PLAYER_ID,"Wygraliœcie 100 respektu w tej bitwie o teren");
-					MSGGang(GZDV[zid][GZoid],INVALID_PLAYER_ID,"Przegraliœcie i straciliœcie 150 respektu");
+					MSGGang(GZDV[zid][GZWWG],INVALID_PLAYER_ID,"WygraliÅ“cie 100 respektu w tej bitwie o teren");
+					MSGGang(GZDV[zid][GZoid],INVALID_PLAYER_ID,"PrzegraliÅ“cie i straciliÅ“cie 150 respektu");
 					ChangeGZOw(zid,GZDV[zid][GZWWG]);
 				}else{
 					GDV[GZDV[zid][GZWWG]][gRspkt] -= 150;
 					GDV[GZDV[zid][GZoid]][gRspkt] += 100;
-					MSGGang(GZDV[zid][GZoid],INVALID_PLAYER_ID,"Wygraliœcie 100 respektu w tej bitwie o teren");
-					MSGGang(GZDV[zid][GZWWG],INVALID_PLAYER_ID,"Przegraliœcie i straciliœcie 150 respektu");
-					SCMA(-1,"{9b9da0}| {ff5656}Wojny{ffffff}-{56ff56}Gangów {9b9da0}| {56ff56}Gang {ff5656}%s{56ff56} Pokona³ Wroga {cc0000}%s",GDV[GZDV[zid][GZoid]][gTag],GDV[GZDV[zid][GZWWG]][gTag]);
+					MSGGang(GZDV[zid][GZoid],INVALID_PLAYER_ID,"WygraliÅ“cie 100 respektu w tej bitwie o teren");
+					MSGGang(GZDV[zid][GZWWG],INVALID_PLAYER_ID,"PrzegraliÅ“cie i straciliÅ“cie 150 respektu");
+					SCMA(-1,"{9b9da0}| {ff5656}Wojny{ffffff}-{56ff56}GangÃ³w {9b9da0}| {56ff56}Gang {ff5656}%s{56ff56} PokonaÂ³ Wroga {cc0000}%s",GDV[GZDV[zid][GZoid]][gTag],GDV[GZDV[zid][GZWWG]][gTag]);
 				}
 			}
 			GZDV[zid][GZWar] = -1;
@@ -6936,15 +6936,15 @@ new WGZ[2];
 		}
 		stock InitateAttack(zid,agid,prs){
 			if(prs == -1){
-				SCMA(-1,"{9b9da0}| {ff5656}Wojny{ffffff}-{56ff56}Gangów {9b9da0}| {56ff56}Gang {ff5656}%s{56ff56} przej¹³ teren {cc0000}%s",GDV[agid][gTag],GZDV[zid][GZname]);
+				SCMA(-1,"{9b9da0}| {ff5656}Wojny{ffffff}-{56ff56}GangÃ³w {9b9da0}| {56ff56}Gang {ff5656}%s{56ff56} przejÂ¹Â³ teren {cc0000}%s",GDV[agid][gTag],GZDV[zid][GZname]);
 				GDV[agid][gRspkt] += 80;
-				MSGGang(agid,INVALID_PLAYER_ID,"Wygraliœcie 80 respektu w tej bitwie o teren");
+				MSGGang(agid,INVALID_PLAYER_ID,"WygraliÅ“cie 80 respektu w tej bitwie o teren");
 				ChangeGZOw(zid,agid);
 				return 1;
 			}
 			GDV[GZDV[zid][GZoid]][gWar] = true;
 			GDV[GZDV[zid][GZWWG]][gWar] = true;
-			SCMA(-1,"{9b9da0}| {ff5656}Wojny{ffffff}-{56ff56}Gangów {9b9da0}| {ff5656}%s {56ff56}vs {ff5656}%s {56ff56}o teren {cc0000}%s",GDV[agid][gTag],GDV[GZDV[zid][GZoid]][gTag],GZDV[zid][GZname]);
+			SCMA(-1,"{9b9da0}| {ff5656}Wojny{ffffff}-{56ff56}GangÃ³w {9b9da0}| {ff5656}%s {56ff56}vs {ff5656}%s {56ff56}o teren {cc0000}%s",GDV[agid][gTag],GDV[GZDV[zid][GZoid]][gTag],GZDV[zid][GZname]);
 			GZDV[zid][GZWWG] = agid;
 			GZDV[zid][GZWar] = prs;
 			IniGZHud(zid);
@@ -7070,15 +7070,15 @@ new WGZ[2];
 			return 1;
 		}
 		CMD:nowrace(pid,pr[]){
-			if(PDV[pid][APL] < 5){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak dostêpu do tej komendy"); return 1;}
+			if(PDV[pid][APL] < 5){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak dostÃªpu do tej komendy"); return 1;}
 			SCM(pid,-1,"{191970}---------------------------------------RC Script----------------------------------------");
-			SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Teraz odbêdzie siê wyscig o id:%i",RCl[Rid]);
+			SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Teraz odbÃªdzie siÃª wyscig o id:%i",RCl[Rid]);
 			SCM(pid,-1,"{00ff00}o nazwie:%s",RCl[RCn]);
 			SCM(pid,-1,"{191970}----------------------------------------------------------------------------------------");
 			return 1;
 		}
 		CMD:newrc(pid,pr[]){
-			if(PDV[pid][APL] < 5){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak dostêpu do tej komendy"); return 1;}
+			if(PDV[pid][APL] < 5){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak dostÃªpu do tej komendy"); return 1;}
 			if(!LoadInrcP()){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak wyscigow w bazie"); return 1;}
 			SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Poprawnie naprawiono");
 			return 1;
@@ -7197,7 +7197,7 @@ new WGZ[2];
 							DestroyVehicle(PDV[i][cID]);
 						}
 					}
-					SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wyœcig siê zakonczy³ wygrali:");
+					SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WyÅ“cig siÃª zakonczyÂ³ wygrali:");
 					SCMA(-1,"1 Miejsce:%s",PDV[rcw[0]][Nck]);
 					SCMA(-1,"2 Miejsce:%s",PDV[rcw[1]][Nck]);
 					SCMA(-1,"3 Miejsce:%s",PDV[rcw[2]][Nck]);
@@ -7213,7 +7213,7 @@ new WGZ[2];
 
 		alias:race("wyscig");
 		CMD:race(playerid,params[]){
-			if(GM[gRC] == -2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Wyœcig ju¿ trwa!");return 1;}
+			if(GM[gRC] == -2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}WyÅ“cig juÂ¿ trwa!");return 1;}
 			new c=0;
 			foreach(Player,i){
 				if(c >= 10){
@@ -7225,34 +7225,34 @@ new WGZ[2];
 			}
 			if(c >= 4 && GM[gRC] != -1){
 				GM[gRC] = GetTickCount()+10000;
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}/ch rozpocznie siê za 10 sekund");
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}/ch rozpocznie siÃª za 10 sekund");
 			}
 			if(c <= 10){
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Zapisa³eœ siê na wyœcig");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}ZapisaÂ³eÅ“ siÃª na wyÅ“cig");
 				PDV[playerid][Plays] = 7;
 				GM[pl][5] = c;
-			}else{SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| Ju¿ jest max graczy na wyscigu");}
+			}else{SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| JuÂ¿ jest max graczy na wyscigu");}
 			return 1;
 		}
 		CMD:crrc(pid,pr[]){
-			if(PDV[pid][APL] < 5){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak dostêpu do tej komendy"); return 1;}
-			else if(numRC >= 100){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Osi¹gnieto limit wyœcigów"); return 1;}
+			if(PDV[pid][APL] < 5){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak dostÃªpu do tej komendy"); return 1;}
+			else if(numRC >= 100){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}OsiÂ¹gnieto limit wyÅ“cigÃ³w"); return 1;}
 			if(!CreatingF){
 				new nm[24];
-				if(sscanf(pr,"s[24]",nm)){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nazwe daj jak¹œ plis np wyscig 1"); return 1;}
+				if(sscanf(pr,"s[24]",nm)){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nazwe daj jakÂ¹Å“ plis np wyscig 1"); return 1;}
 				numRC++;
 				new quer[78];
 				mysql_format(DBM, quer, sizeof(quer), "INSERT INTO `RCa` (`car`,`interior`,`name`) VALUES(`%i`,`%i`,`%i`)",GetVehicleModel(GetPlayerVehicleID(pid)),GetPlayerInterior(pid),nm);
 				mq(quer);
 				CreatingF = true;
-				SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zacz¹³eœ tworzyæ wyœcig");
+				SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZaczÂ¹Â³eÅ“ tworzyÃ¦ wyÅ“cig");
 			}else {
-				SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Coœ pomin¹³êœ jestes pewien ¿e jest 10 spawnów itp.");
+				SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}CoÅ“ pominÂ¹Â³ÃªÅ“ jestes pewien Â¿e jest 10 spawnÃ³w itp.");
 			}
 			return 1;
 		}
 		CMD:crcp(pid,pr[]){
-			if(PDV[pid][APL] < 5){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak dostêpu do tej komendy"); return 1;}
+			if(PDV[pid][APL] < 5){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak dostÃªpu do tej komendy"); return 1;}
 			if(CreatingF){
 				new Float:x,Float:y,Float:z;
 				GetPlayerPos(pid,x,y,z);
@@ -7265,8 +7265,8 @@ new WGZ[2];
 			return 1;
 		}
 		CMD:crend(pid,pr[]){
-			if(PDV[pid][APL] < 5){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak dostêpu do tej komendy"); return 1;}
-			if(RcSp != 10){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}YEEEET Zrób cholerne spawny"); return 1;}
+			if(PDV[pid][APL] < 5){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak dostÃªpu do tej komendy"); return 1;}
+			if(RcSp != 10){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}YEEEET ZrÃ³b cholerne spawny"); return 1;}
 			if(CreatingF){
 				new Float:x, Float:y, Float:z;
 				GetPlayerPos(pid,x,y,z);
@@ -7280,7 +7280,7 @@ new WGZ[2];
 			return 1;
 		}
 		CMD:crsp(pid,pr[]){
-			if(PDV[pid][APL] < 5){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak dostêpu do tej komendy"); return 1;}
+			if(PDV[pid][APL] < 5){SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak dostÃªpu do tej komendy"); return 1;}
 			if(CreatingF){
 				if(RcSp >= 10){CreatingF = true;}
 				RcSp++;
@@ -7290,7 +7290,7 @@ new WGZ[2];
 				new quer[118];
 				mysql_format(DBM, quer, sizeof(quer), "INSERT INTO `RCsp` (`id`,`x`,`y`,`z`,`a`) VALUES('%i','%f','%f','%f','%f')",numRC,x,y,z,a);
 				mq(quer);
-				SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Stworzy³eœ spawn");
+				SCM(pid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}StworzyÂ³eÅ“ spawn");
 			}
 			return 1;
 		}
@@ -7298,7 +7298,7 @@ new WGZ[2];
 	stock ClsChat() {
 		for(new i=0;i<150;i++)
 		{SCMA(-1,"");}
-		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{ffffff} Wyczyszczono Czat z ba³aganu!");
+		SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{ffffff} Wyczyszczono Czat z baÂ³aganu!");
 		return 1;
 	}
 //Komendy
@@ -7306,10 +7306,10 @@ new WGZ[2];
 		CMD:hudtoggle(playerid,params[]){
 			if(PDV[playerid][hudon]){
 				HideHud(playerid);
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Schowa³eœ Hud :)");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}SchowaÂ³eÅ“ Hud :)");
 			}else{
 				ShowHUD(playerid);
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}W³¹czy³eœ Hud");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WÂ³Â¹czyÂ³eÅ“ Hud");
 			}
 			return 1;
 		}
@@ -7318,27 +7318,27 @@ new WGZ[2];
 			if(PDV[playerid][objon]){
 				PDV[playerid][objon] = false;
 				Streamer_ToggleAllItems(playerid, 0, 0, ExceptionalObj, sizeof(ExceptionalObj));
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wy³¹czy³eœ obiekty!");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WyÂ³Â¹czyÂ³eÅ“ obiekty!");
 			}else{
 				PDV[playerid][objon] = true;
 				Streamer_ToggleAllItems(playerid, 0, 1, ExceptionalObj, sizeof(ExceptionalObj));
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}W³¹czy³eœ obiekty!");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WÂ³Â¹czyÂ³eÅ“ obiekty!");
 			}
 			return 1;
 		}
 	//Unsorted
 		CMD:pl(playerid,params[])
 		{
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Twój Packet Loss:%.2f",NetStats_PacketLossPercent(playerid));
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}TwÃ³j Packet Loss:%.2f",NetStats_PacketLossPercent(playerid));
 			return 1;
 		}
 		CMD:ann(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new s[128],t;
-			if(sscanf(params,"is[128]",t,s)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie:/ann [czas] [wiadomosc]");}
-			if(30 < t < 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Czas nie wiêcej ni¿ 30 sekund i nie mniej ni¿ 0"); return 1;}
-			if(strlen(s) > 127){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Od kiedy gracze bêd¹ czytaæ tasiemca?"); return 1;}
+			if(sscanf(params,"is[128]",t,s)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie:/ann [czas] [wiadomosc]");}
+			if(30 < t < 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Czas nie wiÃªcej niÂ¿ 30 sekund i nie mniej niÂ¿ 0"); return 1;}
+			if(strlen(s) > 127){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Od kiedy gracze bÃªdÂ¹ czytaÃ¦ tasiemca?"); return 1;}
 			new count=0;
 			for(new i=0,x=sizeof(s);i<x;i++){
 				if(strfind(s, "~",true, count)){
@@ -7347,7 +7347,7 @@ new WGZ[2];
 			}
 			if(count%2 == 0){
 			}else {
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}prosimy wprowadziæ parzyst¹ liczbê '~' ");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}prosimy wprowadziÃ¦ parzystÂ¹ liczbÃª '~' ");
 				return 1;
 			}
 			t= t*1000;
@@ -7358,20 +7358,20 @@ new WGZ[2];
 		{
 			if(PDV[playerid][APL] >= 1){
 				SetPlayerSpecialAction(playerid, 2);
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zrespi³eœ Jetpack ^.^");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZrespiÂ³eÅ“ Jetpack ^.^");
 				return 1;
 			}
-			else if(PDV[playerid][VIP] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zrespi³eœ Jetpack ^.^");
+			else if(PDV[playerid][VIP] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZrespiÂ³eÅ“ Jetpack ^.^");
 			SetPlayerSpecialAction(playerid, 2);
 			return 1;
 		}
 		CMD:walizka(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			if(IsValidDynamicPickup(GM[wal])){
 				DestroyDynamicPickup(GM[wal]);
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Koniec poszukiwañ na walizke z³y admin j¹ zniszczy³ :C");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Koniec poszukiwaÃ± na walizke zÂ³y admin jÂ¹ zniszczyÂ³ :C");
 				TextDrawHideForAll(waltxd);
 				TextDrawSetString(waltxd, "Walizka");
 				return 1;
@@ -7391,9 +7391,9 @@ new WGZ[2];
 			return 1;
 		}
 		CMD:pinfo(playerid,params[]){
-			if(PDV[playerid][APL] < 4){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 4){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie:/pinfo [id]"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie:/pinfo [id]"); return 1;}
 			foreach(Player,i){
 				if(PDV[i][iDP] == idp){
 					new str[144];
@@ -7416,7 +7416,7 @@ new WGZ[2];
 	//Teleporty
 		CMD:lsszpital(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a)(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a)(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -7432,7 +7432,7 @@ new WGZ[2];
 		
 		CMD:sf(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a)(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a)(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -7448,7 +7448,7 @@ new WGZ[2];
 		
 		CMD:majster(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a)(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a)(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -7464,7 +7464,7 @@ new WGZ[2];
 		
 		CMD:ls(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a)(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a)(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -7480,7 +7480,7 @@ new WGZ[2];
 		
 		CMD:vm(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a)(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a)(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -7495,7 +7495,7 @@ new WGZ[2];
         }
 		CMD:farma(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a)(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a)(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7511,7 +7511,7 @@ new WGZ[2];
         }
 		CMD:calligula(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a)(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a)(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7527,7 +7527,7 @@ new WGZ[2];
         }
 		CMD:miasteczko(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7543,7 +7543,7 @@ new WGZ[2];
         }
 		CMD:rybak(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7559,7 +7559,7 @@ new WGZ[2];
         }
 		CMD:pgr(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7575,7 +7575,7 @@ new WGZ[2];
         }
 		CMD:rcshop(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7591,7 +7591,7 @@ new WGZ[2];
         }
 		CMD:tama(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7607,7 +7607,7 @@ new WGZ[2];
         }
 		CMD:gora(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7623,7 +7623,7 @@ new WGZ[2];
         }
 		CMD:bagno(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7639,7 +7639,7 @@ new WGZ[2];
         }
         CMD:tor1(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7655,7 +7655,7 @@ new WGZ[2];
         }
         CMD:tor2(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7671,7 +7671,7 @@ new WGZ[2];
         }
         CMD:tor3(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7687,7 +7687,7 @@ new WGZ[2];
         }
         CMD:skocznia1(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7703,7 +7703,7 @@ new WGZ[2];
         }
         CMD:skocznia2(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7719,7 +7719,7 @@ new WGZ[2];
         }
         CMD:wyskok1(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7735,7 +7735,7 @@ new WGZ[2];
         }
         CMD:wyskok2(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7751,7 +7751,7 @@ new WGZ[2];
         }
         CMD:wyskok3(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7767,7 +7767,7 @@ new WGZ[2];
         }
         CMD:wyskok4(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7783,7 +7783,7 @@ new WGZ[2];
         }
         CMD:wyskok5(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7799,7 +7799,7 @@ new WGZ[2];
         }
         CMD:wyskok6(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7815,7 +7815,7 @@ new WGZ[2];
         }
         CMD:rury(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7831,7 +7831,7 @@ new WGZ[2];
         }
 		CMD:parkour1(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7847,7 +7847,7 @@ new WGZ[2];
         }
         CMD:parkour2(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7863,7 +7863,7 @@ new WGZ[2];
         }
         CMD:parkour3(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7879,7 +7879,7 @@ new WGZ[2];
         }
 		CMD:zadupie(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7895,7 +7895,7 @@ new WGZ[2];
         }
 		CMD:wzgorze(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7911,7 +7911,7 @@ new WGZ[2];
         }
 		CMD:las(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7927,7 +7927,7 @@ new WGZ[2];
         }
 		CMD:port(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7943,7 +7943,7 @@ new WGZ[2];
         }
 		CMD:boisko(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7959,7 +7959,7 @@ new WGZ[2];
         }
 		CMD:molo(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7975,7 +7975,7 @@ new WGZ[2];
         }
 		CMD:praca(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -7991,7 +7991,7 @@ new WGZ[2];
         }
 		CMD:cmentarz(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -8007,7 +8007,7 @@ new WGZ[2];
         }
 		CMD:cpn(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8022,7 +8022,7 @@ new WGZ[2];
         }
 		CMD:kfc(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8037,7 +8037,7 @@ new WGZ[2];
         }
 		CMD:vinewood(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -8053,7 +8053,7 @@ new WGZ[2];
         }
 		CMD:ruina(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -8069,7 +8069,7 @@ new WGZ[2];
         }
 		CMD:tenis(playerid,params[])
         {
-         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+         	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
@@ -8085,7 +8085,7 @@ new WGZ[2];
         }
 		CMD:plaza(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8100,7 +8100,7 @@ new WGZ[2];
         }
 		CMD:marina(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8115,7 +8115,7 @@ new WGZ[2];
         }
 		CMD:parafia(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8130,7 +8130,7 @@ new WGZ[2];
         }
 		CMD:tunelv(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8145,7 +8145,7 @@ new WGZ[2];
         }
 		CMD:4smoki(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8160,7 +8160,7 @@ new WGZ[2];
         }
 		CMD:faraon(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8175,7 +8175,7 @@ new WGZ[2];
         }
 		CMD:kosciol(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8190,7 +8190,7 @@ new WGZ[2];
         }
 		CMD:plazasf(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8205,7 +8205,7 @@ new WGZ[2];
         }
 		CMD:dompapieza(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8220,7 +8220,7 @@ new WGZ[2];
         }
 		CMD:golf(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8235,7 +8235,7 @@ new WGZ[2];
         }
 		CMD:mcdonald(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8250,7 +8250,7 @@ new WGZ[2];
         }
 		CMD:zlomowisko(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8265,7 +8265,7 @@ new WGZ[2];
         }
 		CMD:szkolajazdy(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8280,7 +8280,7 @@ new WGZ[2];
         }
 		CMD:straz(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8295,7 +8295,7 @@ new WGZ[2];
         }
 		CMD:dworzec(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8310,7 +8310,7 @@ new WGZ[2];
         }
 		CMD:dombiskupa(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8325,7 +8325,7 @@ new WGZ[2];
         }
 		CMD:pier(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8340,7 +8340,7 @@ new WGZ[2];
         }
 		CMD:salon(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8355,7 +8355,7 @@ new WGZ[2];
         }
 		CMD:sfpd(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8370,7 +8370,7 @@ new WGZ[2];
         }
 		CMD:klub(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8385,7 +8385,7 @@ new WGZ[2];
         }
 		CMD:park(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8400,7 +8400,7 @@ new WGZ[2];
         }
 		CMD:burger(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8415,7 +8415,7 @@ new WGZ[2];
         }
 		CMD:sfszpital(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8430,7 +8430,7 @@ new WGZ[2];
         }
 		CMD:wiezienie(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8445,7 +8445,7 @@ new WGZ[2];
         }
 		CMD:stacjaradiowa(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8460,7 +8460,7 @@ new WGZ[2];
         }
 		CMD:korwinolandia(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8475,7 +8475,7 @@ new WGZ[2];
         }
 		CMD:wysypisko(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8490,7 +8490,7 @@ new WGZ[2];
         }
 		CMD:drwal(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8505,7 +8505,7 @@ new WGZ[2];
         }
 		CMD:cpn2(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8520,7 +8520,7 @@ new WGZ[2];
         }
 		CMD:doki(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8535,7 +8535,7 @@ new WGZ[2];
         }
 		CMD:most(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8550,7 +8550,7 @@ new WGZ[2];
         }
 		CMD:lslot(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8565,7 +8565,7 @@ new WGZ[2];
         }
 		CMD:lvlot(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8580,7 +8580,7 @@ new WGZ[2];
         }
 		CMD:sflot(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8595,7 +8595,7 @@ new WGZ[2];
         }
 		CMD:tunesf(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8610,7 +8610,7 @@ new WGZ[2];
         }
 		CMD:tunels(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8625,7 +8625,7 @@ new WGZ[2];
         }
 		CMD:peronls(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8640,7 +8640,7 @@ new WGZ[2];
         }
 		CMD:peronlv(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8655,7 +8655,7 @@ new WGZ[2];
         }
 		CMD:peronsf(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8670,7 +8670,7 @@ new WGZ[2];
         }
 		CMD:lvpd(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8685,7 +8685,7 @@ new WGZ[2];
         }
 		CMD:lspd(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8700,7 +8700,7 @@ new WGZ[2];
         }
 		CMD:stadionlv(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8715,7 +8715,7 @@ new WGZ[2];
         }
 		CMD:stadionls(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8730,7 +8730,7 @@ new WGZ[2];
         }
 		CMD:stadionsf(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8745,7 +8745,7 @@ new WGZ[2];
         }
 		CMD:bay(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8760,7 +8760,7 @@ new WGZ[2];
         }
 		CMD:osiedle(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8775,7 +8775,7 @@ new WGZ[2];
         }
 		CMD:kopalnia(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8790,7 +8790,7 @@ new WGZ[2];
         }
 		CMD:lv(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8805,7 +8805,7 @@ new WGZ[2];
         }
 		CMD:statek(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8820,7 +8820,7 @@ new WGZ[2];
         }
 		CMD:fabryka(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8835,7 +8835,7 @@ new WGZ[2];
         }
 		CMD:minigolf(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8850,7 +8850,7 @@ new WGZ[2];
         }
 		CMD:wojsko(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8865,7 +8865,7 @@ new WGZ[2];
         }
 		CMD:klify(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8880,7 +8880,7 @@ new WGZ[2];
         }
 		CMD:eska(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8895,7 +8895,7 @@ new WGZ[2];
         }
 		CMD:brickleberry(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8910,7 +8910,7 @@ new WGZ[2];
         }
 		CMD:yellowstone(playerid,params[])
         {
-            if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+            if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8925,7 +8925,7 @@ new WGZ[2];
         }
 		CMD:autostrada(playerid,params[])
         {
-        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+        	if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8940,7 +8940,7 @@ new WGZ[2];
         }
 		CMD:magazyny(playerid,params[])
         {
-            if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+            if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
             if(GetPlayerVehicleSeat(playerid) == 0)
             {
                 new vehid = GetPlayerVehicleID(playerid);
@@ -8959,7 +8959,7 @@ new WGZ[2];
 			new str[512],s;
 			foreach(Player,i)
 			{
-				strcat(str,"\tDostêpni Admini:        ",512);
+				strcat(str,"\tDostÃªpni Admini:        ",512);
 				switch(PDV[i][APL]){
 					case 1:{
 						new str2[108];
@@ -8993,14 +8993,14 @@ new WGZ[2];
 					}
 					case 6:{
 						new str2[108];
-						format(str2,sizeof(str2),"\t{ffffff}%s: {ff0000}Zarz¹d        \n",PDV[i][Nck]);
+						format(str2,sizeof(str2),"\t{ffffff}%s: {ff0000}ZarzÂ¹d        \n",PDV[i][Nck]);
 						strcat(str,str2,sizeof(str));
 						s++;
 					}
 				}
 			}
 			if(s == 0){
-				Dialog_Show(playerid, AdDia, DIALOG_STYLE_MSGBOX, "Admini Online", "\t{FF0000}Brak Adminów Online        ", "OK", "OK");
+				Dialog_Show(playerid, AdDia, DIALOG_STYLE_MSGBOX, "Admini Online", "\t{FF0000}Brak AdminÃ³w Online        ", "OK", "OK");
 				return 1;
 			}
 			Dialog_Show(playerid, AdDia, DIALOG_STYLE_MSGBOX, "Admini Online", str, "OK", "OK");
@@ -9008,23 +9008,23 @@ new WGZ[2];
 		}
 		CMD:colour(playerid,params[]){
 			if(PDV[playerid][APL] >= 4){}
-			else if(PDV[playerid][VIP] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			else if(PDV[playerid][VIP] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new h;
-			if(sscanf(params,"H",h)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie:/colour [RGB] "); return 1;}
+			if(sscanf(params,"H",h)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie:/colour [RGB] "); return 1;}
 			PDV[playerid][pcolo] = (((h) << 8) | (255));
 			SetPlayerColor(playerid, PDV[playerid][pcolo]);
 			return 1;
 		}
 		CMD:zw(playerid,params[])
 		{
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			if(!PDV[playerid][zw]){
 			new res[52];
 			sscanf(params,"s[52]",res);
 			if(isnull(res)){
 				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{99ff00} Gracz {aaffaa}%s{99ff00} zaraz wraca",PDV[playerid][Nck]);
 			}else{
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{99ff00} Gracz {aaffaa}%s{99ff00} zaraz wraca Powód: {ccaaaa}%s",PDV[playerid][Nck],res);
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{99ff00} Gracz {aaffaa}%s{99ff00} zaraz wraca PowÃ³d: {ccaaaa}%s",PDV[playerid][Nck],res);
 			}
 			TogglePlayerControllable(playerid,0);
 			PDV[playerid][zw] = true;
@@ -9036,21 +9036,21 @@ new WGZ[2];
 			if(PDV[playerid][zw]){
 				SetPlayerHealth(playerid,100);
 				TogglePlayerControllable(playerid,1);
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{99ff00} Gracz {aaffaa}%s {99ff00}Ju¿ jest!",PDV[playerid][Nck]);
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}|{99ff00} Gracz {aaffaa}%s {99ff00}JuÂ¿ jest!",PDV[playerid][Nck]);
 				PDV[playerid][zw] = false;
 			}
 			return 1;
 		}
 		CMD:wypociny(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 2) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 2) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			if(PDV[playerid][Wypociny])
 			{
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Wy³¹czy³eœ wypociny zmutowanych, dziêki Bogu!");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}WyÂ³Â¹czyÂ³eÅ“ wypociny zmutowanych, dziÃªki Bogu!");
 				PDV[playerid][Wypociny] = false;
 			}
 			else {
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}W³¹czy³eœ wypociny zmutowanych GLHF");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}WÂ³Â¹czyÂ³eÅ“ wypociny zmutowanych GLHF");
 				PDV[playerid][Wypociny] = true;
 			}
 			return 1;
@@ -9063,33 +9063,33 @@ new WGZ[2];
 	//Areny
 		CMD:onede(playerid,params[])
 		{
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			GetPlayerPos(playerid,PDV[playerid][LaX],PDV[playerid][LaY],PDV[playerid][LaZ]);
 			SeUpODP(playerid);
 			return 1;
 		}
 		CMD:pompa(playerid,params[]){
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			GetPlayerPos(playerid,PDV[playerid][LaX],PDV[playerid][LaY],PDV[playerid][LaZ]);
 			SeUpPP(playerid);
 			return 1;
 		}
 		alias:minigun("mini");
 		CMD:minigun(playerid,params[]){
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			GetPlayerPos(playerid, PDV[playerid][LaX],PDV[playerid][LaY],PDV[playerid][LaZ]);
 			SeUpMin(playerid);
 			return 1;
 		}
 		CMD:rpg(playerid,params[]){
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			GetPlayerPos(playerid, PDV[playerid][LaX],PDV[playerid][LaY],PDV[playerid][LaZ]);
 			SeUpRPG(playerid);
 			return 1;
 		}
 		alias:snajper("sniper","snipe");
 		CMD:snajper(playerid,params){
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			GetPlayerPos(playerid, PDV[playerid][LaX],PDV[playerid][LaY],PDV[playerid][LaZ]);
 			SeUpSP(playerid);
 			return 1;
@@ -9124,7 +9124,7 @@ new WGZ[2];
 						unwatch(playerid);
 						unwatch(PDV[playerid][SoP]);
 						PSku[ite][2] = CreateDynamicPickup(1254, 8, x,y,z, GetPlayerVirtualWorld(playerid), GetPlayerInterior(playerid));
-						SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz %s Wygra³ solówkê, Gratulacje!",PDV[PDV[playerid][SoP]][Nck]);
+						SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz %s WygraÂ³ solÃ³wkÃª, Gratulacje!",PDV[PDV[playerid][SoP]][Nck]);
 						PDV[playerid][SoP] = PDV[PDV[playerid][SoP]][SoP] = -1;
 					}
 					case 3:{
@@ -9154,7 +9154,7 @@ new WGZ[2];
 				}
 				if(PDV[playerid][Arena] == 4){GangZoneHideForPlayer(playerid, MiniZ[1]);}
 				PDV[playerid][Arena] = 0;
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Opuœci³eœ Arene");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}OpuÅ“ciÂ³eÅ“ Arene");
 				ReS(playerid);
 			}
 			else if(PDV[playerid][Plays] >= 1){
@@ -9197,11 +9197,11 @@ new WGZ[2];
 					}
 				}
 				PDV[playerid][Plays] = 0;
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Opuœci³eœ Arene");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}OpuÅ“ciÂ³eÅ“ Arene");
 				ReS(playerid);
 			}
 			else {
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie jesteœ na arenie");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie jesteÅ“ na arenie");
 			}
 			return 1;
 		}
@@ -9217,9 +9217,9 @@ new WGZ[2];
 			strcat(str,str2,3500);
 			format(str2,sizeof(str2),"\t{ffffff}Totalny Czas pobytu:{565656}%ih%imin        \n",(PDV[playerid][TotOnl]+(NetStats_GetConnectedTime(playerid)/1000)) / 3600,((PDV[playerid][TotOnl]+(NetStats_GetConnectedTime(playerid)/1000)) / 60) - (((PDV[playerid][TotOnl]+(NetStats_GetConnectedTime(playerid)/1000)) / 3600) * 60));
 
-			format(str2,sizeof(str2),"\t{ffffff}Zabójstwa:{565656}%i        \n",PDV[playerid][Ki]);
+			format(str2,sizeof(str2),"\t{ffffff}ZabÃ³jstwa:{565656}%i        \n",PDV[playerid][Ki]);
 			strcat(str,str2,3500);
-			format(str2,sizeof(str2),"\t{ffffff}Œmierci:{565656}%i        \n",PDV[playerid][De]);
+			format(str2,sizeof(str2),"\t{ffffff}Å’mierci:{565656}%i        \n",PDV[playerid][De]);
 			strcat(str,str2,3500);
 			if(PDV[playerid][Ki] != 0 && PDV[playerid][De] != 0){
 				format(str2,sizeof(str2),"\t{ffffff}KD Ratio{565656}%.2f        \n",PDV[playerid][Ki]/PDV[playerid][De]);
@@ -9230,21 +9230,21 @@ new WGZ[2];
 			}
 			format(str2,sizeof(str2),"\t{ffffff}Warny:{565656}%i|3        \n\n",PDV[playerid][wrn]);
 			strcat(str,str2,3500);
-			format(str2,sizeof(str2),"\t{ffffff}Wygrane Solówki:{565656}%i        \n",PDV[playerid][SKi]);
+			format(str2,sizeof(str2),"\t{ffffff}Wygrane SolÃ³wki:{565656}%i        \n",PDV[playerid][SKi]);
 			strcat(str,str2,3500);
-			format(str2,sizeof(str2),"\t{ffffff}Przegrane Solówki:{565656}%i        \n\n",PDV[playerid][SDe]);
+			format(str2,sizeof(str2),"\t{ffffff}Przegrane SolÃ³wki:{565656}%i        \n\n",PDV[playerid][SDe]);
 			strcat(str,str2,3500);
-			format(str2,sizeof(str2),"\t{ffffff}Zabójstw na Onede:{565656}%i        \n",PDV[playerid][OKi]);
+			format(str2,sizeof(str2),"\t{ffffff}ZabÃ³jstw na Onede:{565656}%i        \n",PDV[playerid][OKi]);
 			strcat(str,str2,3500);
-			format(str2,sizeof(str2),"\t{ffffff}Œmierci Na Onede:{565656}%i        \n\n",PDV[playerid][ODe]);
+			format(str2,sizeof(str2),"\t{ffffff}Å’mierci Na Onede:{565656}%i        \n\n",PDV[playerid][ODe]);
 			strcat(str,str2,3500);
-			format(str2,sizeof(str2),"\t{ffffff}Zabójstw Na Pompie:{565656}        %i\n",PDV[playerid][PKi]);
+			format(str2,sizeof(str2),"\t{ffffff}ZabÃ³jstw Na Pompie:{565656}        %i\n",PDV[playerid][PKi]);
 			strcat(str,str2,3500);
-			format(str2,sizeof(str2),"\t{ffffff}Œmierci Na Pompie:{565656}%i        \n\n",PDV[playerid][PDe]);
+			format(str2,sizeof(str2),"\t{ffffff}Å’mierci Na Pompie:{565656}%i        \n\n",PDV[playerid][PDe]);
 			strcat(str,str2,3500);
-			format(str2,sizeof(str2),"\t{ffffff}Zabójstw Na Mini:{565656}%i        \n",PDV[playerid][MKi]);
+			format(str2,sizeof(str2),"\t{ffffff}ZabÃ³jstw Na Mini:{565656}%i        \n",PDV[playerid][MKi]);
 			strcat(str,str2,3500);
-			format(str2,sizeof(str2),"\t{ffffff}Œmierci Na Mini:{565656}%i        \n\n",PDV[playerid][MDe]);
+			format(str2,sizeof(str2),"\t{ffffff}Å’mierci Na Mini:{565656}%i        \n\n",PDV[playerid][MDe]);
 			strcat(str,str2,3500);
 			if(PDV[playerid][VIP]){
 			strcat(str,"\t{ffdd22}VIP:{565656}Tak        \n",2000);}else {
@@ -9257,14 +9257,14 @@ new WGZ[2];
 		{
 			switch(GetPlayerState(playerid))
 			{
-				case 4..6: {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie zmienia siê skina podczas wchodzenia/wychodzenia z pojazdu!");return 1;}
+				case 4..6: {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie zmienia siÃª skina podczas wchodzenia/wychodzenia z pojazdu!");return 1;}
 			}
 			new skid;
-			if(sscanf(params,"i",skid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /skin [id]"); return 1;}
+			if(sscanf(params,"i",skid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /skin [id]"); return 1;}
 			if(0 > skid > 311) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niepoprawne id skina"); return 1;}
 			SetPlayerSkin(playerid, skid);
 			PDV[playerid][PSk] = skid;
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Zmieni³eœ skina na :%i",skid);
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}ZmieniÂ³eÅ“ skina na :%i",skid);
 			return 1;
 		}
 	//invis
@@ -9272,7 +9272,7 @@ new WGZ[2];
 		CMD:invisible(playerid,params[])
 		{
 			if(PDV[playerid][VIP] >= 1){goto a;}
-			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			a:
 			SetPlayerColor(playerid,0xFFFFFF00);
 			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {afffd4}Jestes teraz niewidzialny");
@@ -9281,16 +9281,16 @@ new WGZ[2];
 	//Solo
 		CMD:zsolo(playerid,params[])
 		{
-			if(PDV[playerid][Wat] != -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Juz coœ ogl¹dasz");}
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}			
-			if(Busy(playerid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Jesteœ zajêty wyjdz z areny"); return 1;}
+			if(PDV[playerid][Wat] != -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Juz coÅ“ oglÂ¹dasz");}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}			
+			if(Busy(playerid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}JesteÅ“ zajÃªty wyjdz z areny"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /solo [id] [bron] [id arena]"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /solo [id] [bron] [id arena]"); return 1;}
 			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest online");return 1;}
-			if(idp == playerid){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ty g³uptasie nie mo¿esz ogl¹daæ siebie");return 1;}
-			if(PDV[idp][SoP] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie robi solówy"); return 1;}
+			if(idp == playerid){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ty gÂ³uptasie nie moÂ¿esz oglÂ¹daÃ¦ siebie");return 1;}
+			if(PDV[idp][SoP] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie robi solÃ³wy"); return 1;}
 			new ite = Iter_Free(SWaI[idp]);
-			if(ite != ITER_NONE){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracza nie mo¿e ogl¹daæ wiêcej ludzi"); return 1;}
+			if(ite != ITER_NONE){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracza nie moÂ¿e oglÂ¹daÃ¦ wiÃªcej ludzi"); return 1;}
 			GetPlayerPos(playerid,PDV[playerid][LaX],PDV[playerid][LaY],PDV[playerid][LaZ]);
 			SetPlayerInterior(playerid, GetPlayerInterior(idp));
 			SetPlayerVirtualWorld(playerid, GetPlayerVirtualWorld(idp));
@@ -9306,7 +9306,7 @@ new WGZ[2];
 				PDV[playerid][DMS] = CreateDynamic3DTextLabel("{ff0000}|DM OFF|", -1, 0.0,0.0,1.4, 15.0, playerid, INVALID_VEHICLE_ID,0,GetPlayerVirtualWorld(idp),GetPlayerInterior(idp));
 			}
 			else{
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ERROR: Z³e id Areny cofanie zmian...");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ERROR: ZÂ³e id Areny cofanie zmian...");
 				ReS(playerid);
 				return 1;
 			}
@@ -9326,45 +9326,45 @@ new WGZ[2];
 					}
 				}	
 			}
-			else{SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie ogl¹dasz niczego LoL"); return 1;}
+			else{SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie oglÂ¹dasz niczego LoL"); return 1;}
 			return 1;
 		}
 		CMD:soloff(playerid,params[]){
 			if(PDV[playerid][SolOff]){
 				PDV[playerid][SolOff] = false;
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}W³¹czono solówki!");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WÂ³Â¹czono solÃ³wki!");
 			}else{
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wy³¹czono solówki!");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WyÂ³Â¹czono solÃ³wki!");
 				PDV[playerid][SolOff] = true;
 			}
 			return 1;
 		}
 		CMD:solo(playerid,params[])
 		{
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
-			if(PDV[playerid][SolOff]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Najpierw w³¹cz solówki !"); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][SolOff]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Najpierw wÂ³Â¹cz solÃ³wki !"); return 1;}
 			new idp,gid,arid;
-			if(sscanf(params,"uii",idp,gid,arid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /solo [id] [bron] [id arena]"); return 1;}
+			if(sscanf(params,"uii",idp,gid,arid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /solo [id] [bron] [id arena]"); return 1;}
 			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest online");return 1;}
-			if(idp == playerid){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ty g³uptasie nie mozesz walczyæ ze sob¹");return 1;}
-			if(PDV[idp][SoP] != -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz Ju¿ ma proœbê o solówke"); return 1;}
+			if(idp == playerid){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ty gÂ³uptasie nie mozesz walczyÃ¦ ze sobÂ¹");return 1;}
+			if(PDV[idp][SoP] != -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz JuÂ¿ ma proÅ“bÃª o solÃ³wke"); return 1;}
 			if(3 < arid < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zle id areny"); return 1;}
 			if(19 <= gid <= 21 || gid > 43){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niepoprawne id broni"); return 1;}
-			if(PDV[idp][SolOff]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz ma wy³¹czone solówki"); return 1;}
+			if(PDV[idp][SolOff]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz ma wyÂ³Â¹czone solÃ³wki"); return 1;}
 			new str2[24];
 			switch(gid)
 			{
-				case 0:{strcat(str2,"Piêsci",sizeof(str2));}
+				case 0:{strcat(str2,"PiÃªsci",sizeof(str2));}
 				case 1:{strcat(str2,"Kastet",sizeof(str2));}
 				case 2:{strcat(str2,"Kij Golfowy",sizeof(str2));}
-				case 3:{strcat(str2,"Pa³ka policyjna",sizeof(str2));}
-				case 4:{strcat(str2,"Nó¿",sizeof(str2));}
+				case 3:{strcat(str2,"PaÂ³ka policyjna",sizeof(str2));}
+				case 4:{strcat(str2,"NÃ³Â¿",sizeof(str2));}
 				case 5:{strcat(str2,"Kij Bejsbolowy",sizeof(str2));}
-				case 6:{strcat(str2,"£opate",sizeof(str2));}
+				case 6:{strcat(str2,"Â£opate",sizeof(str2));}
 				case 7:{strcat(str2,"Kij Bilardowy",sizeof(str2));}
 				case 8:{strcat(str2,"Katane",sizeof(str2));}
-				case 9:{strcat(str2,"Pi³e",sizeof(str2));}
-				case 10:{strcat(str2,"Rózowe Dildo",sizeof(str2));}
+				case 9:{strcat(str2,"PiÂ³e",sizeof(str2));}
+				case 10:{strcat(str2,"RÃ³zowe Dildo",sizeof(str2));}
 				case 11:{strcat(str2,"Dildo",sizeof(str2));}
 				case 12:{strcat(str2,"Wibrator",sizeof(str2));}
 				case 13:{strcat(str2,"Wibrator Srebrny",sizeof(str2));}
@@ -9390,10 +9390,10 @@ new WGZ[2];
 				case 36:{strcat(str2,"HeatSeek RPG",sizeof(str2));}
 				case 37:{strcat(str2,"Miotacz ognia",sizeof(str2));}
 				case 38:{strcat(str2,"Minigun",sizeof(str2));}
-				case 39:{strcat(str2,"£adunek wybuchowy",sizeof(str2));}
+				case 39:{strcat(str2,"Â£adunek wybuchowy",sizeof(str2));}
 				case 40:{strcat(str2,"Detonator",sizeof(str2));}
 				case 41:{strcat(str2,"Spray",sizeof(str2));}
-				case 42:{strcat(str2,"Gaœnica",sizeof(str2));}
+				case 42:{strcat(str2,"GaÅ“nica",sizeof(str2));}
 			}
 			PDV[idp][SoBr] = gid;
 			PDV[idp][SoP] = playerid;
@@ -9401,8 +9401,8 @@ new WGZ[2];
 			PDV[playerid][SoA] = arid;
 			PDV[playerid][SoP] = idp;
 			new str[256];
-			format(str,sizeof(str),"{ffffff}Gracz %s wyzywa ciê na {FF0000}solówe {ffffff}na %s",PDV[playerid][Nck],str2);
-			Dialog_Show(idp,SolD,DIALOG_STYLE_MSGBOX,"solówka",str,"Tak","Nie");
+			format(str,sizeof(str),"{ffffff}Gracz %s wyzywa ciÃª na {FF0000}solÃ³we {ffffff}na %s",PDV[playerid][Nck],str2);
+			Dialog_Show(idp,SolD,DIALOG_STYLE_MSGBOX,"solÃ³wka",str,"Tak","Nie");
 			return 1;
 		}
 		CMD:idbroni(playerid,params[])
@@ -9414,7 +9414,7 @@ new WGZ[2];
 			strcat(str,"3 - Palka policyjna\n",iz);
 			strcat(str,"4 - noz\n",iz);
 			strcat(str,"5 - Kij Bejsbolowy\n",iz);
-			strcat(str,"6 - £opata\n",iz);
+			strcat(str,"6 - Â£opata\n",iz);
 			strcat(str,"7 - Kij bilardowy\n",iz);
 			strcat(str,"8 - Katana\n",iz);
 			strcat(str,"9 - Pila\n",iz);
@@ -9457,10 +9457,10 @@ new WGZ[2];
 		alias:hp("zycie","100hp","heal");
 		CMD:hp(playerid,params[])
 		{
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			if(PDV[playerid][VIP] < 1) {
 				new Res = TkPlMo(playerid,5000);
-				if(Res == 0) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki na kupienie HP"); return 1;}
+				if(Res == 0) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki na kupienie HP"); return 1;}
 				else {
 					SetPlayerHealth(playerid,100);
 					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Uleczono za 5,000$");
@@ -9471,10 +9471,10 @@ new WGZ[2];
 		alias:armor("arm","armour","kamizelka");
 		CMD:armor(playerid,params[])
 		{
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			if(PDV[playerid][VIP] < 1) {
 				new Res = TkPlMo(playerid,10000);
-				if(Res == 0) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki na kupienie Armora"); return 1;}
+				if(Res == 0) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki na kupienie Armora"); return 1;}
 				else {
 					SetPlayerArmour(playerid,100);
 					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Uzbrojono za 10,000$");
@@ -9491,10 +9491,10 @@ new WGZ[2];
 		alias:repair("napraw","rep");
 		CMD:repair(playerid,params[])
 		{
-			if(PDV[playerid][ColDr] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zwolnij z naprawianiem tego auta %is zosta³o",(PDV[playerid][ColDr] - GetTickCount())/1000); return 1;}
-			if(Busy(playerid) || PDV[playerid][Plays] != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie mo¿esz teraz naprawiaæ auta"); return 1;}
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
-			if(GetPlayerVehicleSeat(playerid) != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Wsi¹dŸ do auta jako kierowca"); return 1;}
+			if(PDV[playerid][ColDr] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zwolnij z naprawianiem tego auta %is zostaÂ³o",(PDV[playerid][ColDr] - GetTickCount())/1000); return 1;}
+			if(Busy(playerid) || PDV[playerid][Plays] != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie moÂ¿esz teraz naprawiaÃ¦ auta"); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(GetPlayerVehicleSeat(playerid) != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}WsiÂ¹dÅ¸ do auta jako kierowca"); return 1;}
 			new vehid = GetPlayerVehicleID(playerid);
 			PDV[playerid][ColDr] = GetTickCount()+10000;
 			RepairVehicle(vehid);
@@ -9504,9 +9504,9 @@ new WGZ[2];
 		alias:flip("f");
 		CMD:flip(playerid,params[])
 		{
-			if(PDV[playerid][ColD] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zwolnij z flipowaniem tego auta %is zosta³o",(PDV[playerid][ColD] - GetTickCount())/1000); return 1;}
-			if(Busy(playerid) || PDV[playerid][Plays] != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie mo¿esz teraz flipowaæ"); return 1;}
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][ColD] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zwolnij z flipowaniem tego auta %is zostaÂ³o",(PDV[playerid][ColD] - GetTickCount())/1000); return 1;}
+			if(Busy(playerid) || PDV[playerid][Plays] != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie moÂ¿esz teraz flipowaÃ¦"); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			if(GetPlayerVehicleSeat(playerid) != 0) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Wsiadz do auta jako kierowca"); return 1;}
 			PDV[playerid][ColD] = GetTickCount()+10000;
 			new vehid = GetPlayerVehicleID(playerid);
@@ -9521,10 +9521,10 @@ new WGZ[2];
 		}
 		CMD:tune(playerid,params[])
 		{
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
-			if(GetPlayerVehicleSeat(playerid) != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Wsi¹dŸ do auta jako kierowca"); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(GetPlayerVehicleSeat(playerid) != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}WsiÂ¹dÅ¸ do auta jako kierowca"); return 1;}
 			new Res = TkPlMo(playerid,6000);
-			if(Res == 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki"); return 1;}
+			if(Res == 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki"); return 1;}
 			new vehid = GetPlayerVehicleID(playerid);
 			AddVehicleComponent(vehid, 1087);
 			AddVehicleComponent(vehid,random(13)+1073);
@@ -9538,9 +9538,9 @@ new WGZ[2];
 		}
 		CMD:acar(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 4){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 4){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new mod[24];
-			if(sscanf(params,"s[24]",mod)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /car [nazwa auta]"); return 1;}
+			if(sscanf(params,"s[24]",mod)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /car [nazwa auta]"); return 1;}
 			new modid = GetVehidByName(mod);
 			if(modid == -1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Taki pojazd nie istnieje"); return 1;}
 			mod[0] = EOS;
@@ -9555,10 +9555,10 @@ new WGZ[2];
 		}
 		CMD:car(playerid,params[])
 		{
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
-			if(IsPlayerInAnyVehicle(playerid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}WyjdŸ z Auta");return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(IsPlayerInAnyVehicle(playerid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}WyjdÅ¸ z Auta");return 1;}
 			new mod[24];
-			if(sscanf(params,"s[24]",mod)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /car [nazwa auta]"); return 1;}
+			if(sscanf(params,"s[24]",mod)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /car [nazwa auta]"); return 1;}
 			new modid = GetVehidByName(mod);
 			if(modid == -1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Taki pojazd nie istnieje"); return 1;}
 			mod[0] = EOS;
@@ -9600,8 +9600,8 @@ new WGZ[2];
 		{
 			if(PDV[playerid][ChSp] >= 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Woah zwolnij kowboju"); return 1;}
 			new idp,Ms[110];
-			if(sscanf(params,"us[110]",idp,Ms)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /pm [id] [wiadomosc]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony");return 1;}
+			if(sscanf(params,"us[110]",idp,Ms)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /pm [id] [wiadomosc]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony");return 1;}
 			SCM(idp,-1,"{565656}%s {00af2b}>>> {565656}Ja : {999999}%s",PDV[playerid][Nck],Ms);
 			SCM(playerid,-1,"{565656}Ja {00af2b}>>> {565656}%s : {999999}%s",PDV[idp][Nck],Ms);
 			foreach(Player,i){
@@ -9614,7 +9614,7 @@ new WGZ[2];
 		CMD:l(playerid,params[]){
 			if(PDV[playerid][ChSp] >= 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Woah zwolnij kowboju"); return 1;}
 			new Ms[128];
-			if(sscanf(params,"s[128]",Ms)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /l [tekst]"); return 1;}
+			if(sscanf(params,"s[128]",Ms)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /l [tekst]"); return 1;}
 			new Float:x,Float:y,Float:z;
 			GetPlayerPos(playerid, x,y,z);
 			foreach(Player,i){
@@ -9628,7 +9628,7 @@ new WGZ[2];
 		}
 		CMD:atpm(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy");return 1;}
+			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy");return 1;}
 			if(!PDV[playerid][SPM]){
 				PDV[playerid][SPM] = true;
 				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wlaczyles podglad wiadomosci");
@@ -9642,12 +9642,12 @@ new WGZ[2];
 		}
 	//sp lp
 		CMD:sp(playerid,params[]){
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			Dialog_Show(playerid, spD, DIALOG_STYLE_LIST, "Twoje zapisane pozycje", "1\n2\n3\n", "Ok","Anuluj");
 			return 1;
 		}
 		CMD:lp(playerid,params[]){
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			Dialog_Show(playerid, lpD, DIALOG_STYLE_LIST, "Twoje zapisane pozycje", "1\n2\n3\n", "Ok","Anuluj");
 			return 1;
 		}
@@ -9699,7 +9699,7 @@ new WGZ[2];
 			strcat(str,"Kij policyjny\t50$\n");
 			strcat(str,"Noz\t3999$\n");
 			strcat(str,"Kij bejsbolowy\t50$\n");
-			strcat(str,"£opata\t100$\n");
+			strcat(str,"Â£opata\t100$\n");
 			strcat(str,"Kij bilardowy\t50$\n");
 			strcat(str,"Katana\t200$\n");
 			strcat(str,"Pila\t6000$\n");
@@ -9822,67 +9822,67 @@ new WGZ[2];
 		{
 			new str[1556];
 			new x = sizeof(str);
-			strcat(str,"{3399cc}/idzdo [id] - Wysy³asz proœbê o teleportacje\n",x);
-			strcat(str,"/tpoff - Wy³¹czasz mo¿liwosæ teleportacji do Ciebie\n",x);
-			strcat(str,"/dotacja - Darmowy exp i $ na dzieñ\n",x);
+			strcat(str,"{3399cc}/idzdo [id] - WysyÂ³asz proÅ“bÃª o teleportacje\n",x);
+			strcat(str,"/tpoff - WyÂ³Â¹czasz moÂ¿liwosÃ¦ teleportacji do Ciebie\n",x);
+			strcat(str,"/dotacja - Darmowy exp i $ na dzieÃ±\n",x);
 			strcat(str,"/rsp - Respawn postaci\n",x);
 			strcat(str,"/sv - Zapisuje statystyki\n",x);
-			strcat(str,"/teles - Spis teleportów\n",x);
-			strcat(str,"/solo - Wyzywasz gracza na solówkê\n",x);
-			strcat(str,"/solooff - Wy³¹czasz solówki\n",x);
-			strcat(str,"/zsolo - Podgladasz solówkê\n",x);
-			strcat(str,"/czsolo - Przestajesz podgl¹daæ solówkê\n",x);
+			strcat(str,"/teles - Spis teleportÃ³w\n",x);
+			strcat(str,"/solo - Wyzywasz gracza na solÃ³wkÃª\n",x);
+			strcat(str,"/solooff - WyÂ³Â¹czasz solÃ³wki\n",x);
+			strcat(str,"/zsolo - Podgladasz solÃ³wkÃª\n",x);
+			strcat(str,"/czsolo - Przestajesz podglÂ¹daÃ¦ solÃ³wkÃª\n",x);
 			strcat(str,"/tune - Ulepszanie pojazdu\n",x);
 			strcat(str,"/fix - Naprawiasz pojazd\n",x);
-			strcat(str,"/flip - Stawiasz pojazd na 4 ko³a\n",x);
-			strcat(str,"/admins - Spis obecnych administratorów na serwerze\n",x);
+			strcat(str,"/flip - Stawiasz pojazd na 4 koÂ³a\n",x);
+			strcat(str,"/admins - Spis obecnych administratorÃ³w na serwerze\n",x);
 			strcat(str,"/zw - Wstrzymanie gry\n",x);
-			strcat(str,"/jj - Powrót do gry\n",x);
-			strcat(str,"/bronie - Lista dostêpnych broni\n",x);
-			strcat(str,"/cars - Spis pojazdów\n",x);
+			strcat(str,"/jj - PowrÃ³t do gry\n",x);
+			strcat(str,"/bronie - Lista dostÃªpnych broni\n",x);
+			strcat(str,"/cars - Spis pojazdÃ³w\n",x);
 			strcat(str,"/idbroni - Tabela z id broni\n",x);
-			strcat(str,"/armor - Uzupe³nienie pancerza\n",x);
-			strcat(str,"/zycie - Uzupe³nienie ¿ycia\n",x);
+			strcat(str,"/armor - UzupeÂ³nienie pancerza\n",x);
+			strcat(str,"/zycie - UzupeÂ³nienie Â¿ycia\n",x);
 			strcat(str,"/skin [id] - Zmiana skina\n",x);
 			strcat(str,"/staty [id] - Sprawdzasz statystyki innego gracza\n",x);
 			strcat(str,"/dom - Menu domu\n",x);
-			strcat(str,"/solo - Wyzywasz gracza na solówkê\n",x);
-			strcat(str,"/solo - Wyzywasz gracza na solówkê\n",x);
+			strcat(str,"/solo - Wyzywasz gracza na solÃ³wkÃª\n",x);
+			strcat(str,"/solo - Wyzywasz gracza na solÃ³wkÃª\n",x);
 			strcat(str,"/wyjdz - Wychodzisz z domu\n",x);
 			strcat(str,"/opusc - Opuszczasz arene\n",x);
-			strcat(str,"/onede - Do³¹czasz do areny onede\n",x);
-			strcat(str,"/minigun - Do³¹czasz do areny minigun\n",x);
-			strcat(str,"/pompa - Do³¹czasz do areny shotgun\n",x);
-			strcat(str,"/snajper - Do³¹czasz do areny sniper\n",x);
-			strcat(str,"/pl - Sprawdzasz swój PacketLoss\n",x);
-			strcat(str,"/car [nazwa] - Przywo³ujesz pojazd\n",x);
-			strcat(str,"/pm [id] [tekst] - Wysy³asz przywatn¹ wiadomoœæ\n",x);
-			strcat(str,"/l [tekst] - Wysy³asz wiadomoœæ do osób w pobli¿u\n",x);
-			strcat(str,"/autor - Najwa¿niejsze informacje o serwerze\n",x);
+			strcat(str,"/onede - DoÂ³Â¹czasz do areny onede\n",x);
+			strcat(str,"/minigun - DoÂ³Â¹czasz do areny minigun\n",x);
+			strcat(str,"/pompa - DoÂ³Â¹czasz do areny shotgun\n",x);
+			strcat(str,"/snajper - DoÂ³Â¹czasz do areny sniper\n",x);
+			strcat(str,"/pl - Sprawdzasz swÃ³j PacketLoss\n",x);
+			strcat(str,"/car [nazwa] - PrzywoÂ³ujesz pojazd\n",x);
+			strcat(str,"/pm [id] [tekst] - WysyÂ³asz przywatnÂ¹ wiadomoÅ“Ã¦\n",x);
+			strcat(str,"/l [tekst] - WysyÂ³asz wiadomoÅ“Ã¦ do osÃ³b w pobliÂ¿u\n",x);
+			strcat(str,"/autor - NajwaÂ¿niejsze informacje o serwerze\n",x);
 			strcat(str,"/regulamin - Zasady serwera\n",x);
 			strcat(str,"/areg - Zasady administracji\n",x);
-			strcat(str,"/kontakt - kontakt z zarz¹dem\n",x);
+			strcat(str,"/kontakt - kontakt z zarzÂ¹dem\n",x);
 			strcat(str,"/dystans [id] - Sprawdzasz dystans do danego gracza\n",x);
-			strcat(str,"/vicinity - Sprawdzasz graczy w pobli¿u\n",x);
-			strcat(str,"/raport [id] - Zg³aszasz gracza do administracji",x);
-			///dokoñczyæ pod koniec serwera i spisaæ wszystkie komendy
-			//Zgadzam siê!
+			strcat(str,"/vicinity - Sprawdzasz graczy w pobliÂ¿u\n",x);
+			strcat(str,"/raport [id] - ZgÂ³aszasz gracza do administracji",x);
+			///dokoÃ±czyÃ¦ pod koniec serwera i spisaÃ¦ wszystkie komendy
+			//Zgadzam siÃª!
 			Dialog_Show(playerid,commandsD,DIALOG_STYLE_MSGBOX,"Komendy",str,"OK","OK");
 			return 1;
 		}
 	
 		CMD:acm(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new strfor[557];
 			new iz = sizeof(strfor);
-			strcat(strfor,"/kick [id] [Powód] - Wiadomoœæ\n",iz);
-			strcat(strfor,"/mute [id] [czas] [Powód] - Uciszasz kogos na dana ilosc czasu",iz);
+			strcat(strfor,"/kick [id] [PowÃ³d] - WiadomoÅ“Ã¦\n",iz);
+			strcat(strfor,"/mute [id] [czas] [PowÃ³d] - Uciszasz kogos na dana ilosc czasu",iz);
 			strcat(strfor,"/bant \n",iz);
 			strcat(strfor,"/ban \n",iz);
 			strcat(strfor,"/tpt - teleportacja do gracza \n",iz);
 			strcat(strfor,"/tph - teleportacja gracza do siebie\n",iz);
-			strcat(strfor,"/emulate id - pisanie za dan¹ osobê \n",iz);
+			strcat(strfor,"/emulate id - pisanie za danÂ¹ osobÃª \n",iz);
 			strcat(strfor,"/gmoney \n",iz);
 			strcat(strfor,"/gexp \n",iz);
 			strcat(strfor,"/wypociny \n",iz);
@@ -9921,7 +9921,7 @@ new WGZ[2];
 		alias:sync("rsp");
 		CMD:sync(playerid,params[])
 		{
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			if(Busy(playerid)){return 1;}
 			ClearAnimations(playerid);
 			TogglePlayerControllable(playerid,0);
@@ -9935,11 +9935,11 @@ new WGZ[2];
 		alias:alogin("logonadmin");
 		CMD:alogin(playerid,params[])
 		{
-			if(PDV[playerid][nAPL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy");return 1;}
+			if(PDV[playerid][nAPL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy");return 1;}
 			else {
 				if(PDV[playerid][APL] >= 1)
 				{
-					Dialog_Show(playerid,AdPassUL,DIALOG_STYLE_MSGBOX,"Panel Logowania Admina","Czy napewno chcesz siê wylogowaæ z rangi Administracyjynej?","Tak","Nie");
+					Dialog_Show(playerid,AdPassUL,DIALOG_STYLE_MSGBOX,"Panel Logowania Admina","Czy napewno chcesz siÃª wylogowaÃ¦ z rangi Administracyjynej?","Tak","Nie");
 				}
 				else {
 					if(!strcmp("sIT", PDV[playerid][AdP],false)){
@@ -9950,7 +9950,7 @@ new WGZ[2];
 					}
 					else{
 						new str[156];
-						format(str,sizeof(str),"{ffffff}Twoj level Admina: {565656}%i\n\n {ffffff}Nick:{0000aa}%s\n\n{32cd32}Zaloguj siê by otrzymaæ uprawnienia admina podajac has³o",PDV[playerid][nAPL],PDV[playerid][Nck]);
+						format(str,sizeof(str),"{ffffff}Twoj level Admina: {565656}%i\n\n {ffffff}Nick:{0000aa}%s\n\n{32cd32}Zaloguj siÃª by otrzymaÃ¦ uprawnienia admina podajac hasÂ³o",PDV[playerid][nAPL],PDV[playerid][Nck]);
 						Dialog_Show(playerid,AdPassL,DIALOG_STYLE_PASSWORD,"Panel Logowania Admina",str,"OK","Nope");
 					}
 				}
@@ -9959,28 +9959,28 @@ new WGZ[2];
 		}
 		CMD:adpanel(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy");return 1;}
-			Dialog_Show(playerid, AdminDIAL, DIALOG_STYLE_TABLIST, "Admin Panel", "Zmieñ Has³o na Konto Admina\nSkasuj Konto \tAPL {dd0000}6\n{ffffff}Zmieñ Has³o Graczowi\tAPL {dd0000}6", "OK","Nje");
+			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy");return 1;}
+			Dialog_Show(playerid, AdminDIAL, DIALOG_STYLE_TABLIST, "Admin Panel", "ZmieÃ± HasÂ³o na Konto Admina\nSkasuj Konto \tAPL {dd0000}6\n{ffffff}ZmieÃ± HasÂ³o Graczowi\tAPL {dd0000}6", "OK","Nje");
 			return 1;
 		}
 		CMD:rspauta(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy");return 1;}
+			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy");return 1;}
 			RspCars();
 			return 1;
 		}
 		CMD:spec(playerid,params[])
 		{
 			if(PDV[playerid][Spect] != -1){
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Przesta³eœ Specowaæ");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}PrzestaÂ³eÅ“ SpecowaÃ¦");
 				TogglePlayerSpectating(playerid, 0);
 				PDV[playerid][Spect] = -1;
 				ReS(playerid);
 			}
-			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy");return 1;}
+			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy");return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /spec [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest pod³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /spec [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest podÂ³Â¹czony"); return 1;}
 			GetPlayerPos(playerid, PDV[playerid][LaX], PDV[playerid][LaY], PDV[playerid][LaZ]);
 			PDV[playerid][Spect] = idp;
 			SetPlayerVirtualWorld(playerid,GetPlayerVirtualWorld(idp));
@@ -9993,22 +9993,22 @@ new WGZ[2];
 	//Lokalizacja
 		CMD:dotacja(playerid,params[])
 		{
-			if(PDV[playerid][TkD]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ju¿ wzi¹³eœ dotacje w tym dniu"); return 1;}
+			if(PDV[playerid][TkD]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}JuÂ¿ wziÂ¹Â³eÅ“ dotacje w tym dniu"); return 1;}
 			PDV[playerid][TkD] = true;
 			new qu[56];
 			mysql_format(DBM,qu,sizeof(qu),"UPDATE `plys` SET `tkd`='1' WHERE `id`='%i'",PDV[playerid][iDP]);
 			new ranM = random(50000)+20000,ranR = random(50)+25;
 			GiPlMo(playerid,ranM);
 			GiRe(playerid,ranR);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Wzi¹³eœ Dotacje Otrzyma³eœ %i$ i %i Expa",ranM,ranR);
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}WziÂ¹Â³eÅ“ Dotacje OtrzymaÂ³eÅ“ %i$ i %i Expa",ranM,ranR);
 			return 1;
 		}
 		alias:dystans("distance");
 		CMD:dystans(playerid,params[])
 		{
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /dystans [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /dystans [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			new Float:x1,Float:y1,Float:z1,Float:x2,Float:y2,Float:z2;
 			GetPlayerPos(playerid,x1,y1,z1);
 			GetPlayerPos(idp,x2,y2,z2);
@@ -10030,7 +10030,7 @@ new WGZ[2];
 						x2 = floatabs(floatsqroot((x1+y1+z1)-(x2+y2+z2)));
 						if(x2 <= 150.0){
 							new str2[32];
-							format(str2,32,"Gracz %s Odleg³oœæ:%1.f\n",PDV[i][Nck],x2);
+							format(str2,32,"Gracz %s OdlegÂ³oÅ“Ã¦:%1.f\n",PDV[i][Nck],x2);
 							strcat(str,str2,256);
 							s++;
 						}
@@ -10043,16 +10043,16 @@ new WGZ[2];
 		}
 		CMD:idzdo(playerid,params[])
 		{
-			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zraniony(a) i masz zablokowane cmd %is zosta³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
+			if(PDV[playerid][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zraniony(a) i masz zablokowane cmd %is zostaÂ³o",(PDV[playerid][Btle] - GetTickCount())/1000); return 1;}
 			if(PDV[playerid][TpSp]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zwolnij z ta teleportacja"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /idzdo [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /idzdo [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			if(Busy(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz jest zajety");}
 			if(PDV[idp][TpOf]) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz ma wylaczone tp"); return 1;}
-			if(PDV[idp][Ptp] != -1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Do gracza ktos siê teleportuje"); return 1;}
+			if(PDV[idp][Ptp] != -1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Do gracza ktos siÃª teleportuje"); return 1;}
 			new str[156];
-			format(str,sizeof(str),"{cccccc}Osoba {afffd4}%s {cccccc}Chce siê do ciebie teleportowac akceptujesz to?",PDV[playerid][Nck]);
+			format(str,sizeof(str),"{cccccc}Osoba {afffd4}%s {cccccc}Chce siÃª do ciebie teleportowac akceptujesz to?",PDV[playerid][Nck]);
 			PDV[idp][Ptp] = playerid;
 			Dialog_Show(idp,Tp,DIALOG_STYLE_MSGBOX,"Teleport",str,"OK","Nie");
 			return 1;
@@ -10066,10 +10066,10 @@ new WGZ[2];
 		alias:tph("tphere");
 		CMD:tph(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /tph [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /tph [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			if(Busy(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz jest zajety"); return 1;}
 			new Float:x,Float:y,Float:z;
 			GetPlayerPos(playerid,x,y,z);
@@ -10077,17 +10077,17 @@ new WGZ[2];
 				new vehid= GetPlayerVehicleID(idp);
 				SetVehiclePos(vehid, x,y,z);
 			}else{SetPlayerPos(idp,x+2,y,z);}
-			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}zosta³eœ(aœ) teleportowany przez %s",PDV[playerid][Nck]);
+			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}zostaÂ³eÅ“(aÅ“) teleportowany przez %s",PDV[playerid][Nck]);
 			return 1;
 		}
 		alias:tpt("tpto");
 		CMD:tpt(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /tpt [id]"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /tpt [id]"); return 1;}
 			if(idp == playerid) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}AHA?");return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			if(Busy(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz jest zajety"); return 1;}
 			new Float:x,Float:y,Float:z;
 			GetPlayerPos(idp,x,y,z);
@@ -10095,7 +10095,7 @@ new WGZ[2];
 				new vehid = GetPlayerVehicleID(playerid);
 				SetVehiclePos(vehid,x,y,z+5);
 			}else{ SetPlayerPos(playerid,x+2,y,z);}
-			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Admin %s Teleportowal siê do ciebie",PDV[playerid][Nck]);
+			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Admin %s Teleportowal siÃª do ciebie",PDV[playerid][Nck]);
 			return 1;
 		}
 	//Reporty
@@ -10104,18 +10104,18 @@ new WGZ[2];
 		{
 			if(PDV[playerid][RpCl] == true){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Woah zwolnij kowboju");return 1;}
 			new idp,res[32];
-			if(sscanf(params,"ur[32]",idp,res)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /report [id oskarzanego] [Powód]"); return 1;}
+			if(sscanf(params,"ur[32]",idp,res)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /report [id oskarzanego] [PowÃ³d]"); return 1;}
 			if(idp == playerid){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}AHA?"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			InfAd(playerid,idp,res);
 			return 1;
 		}
 		alias:reporty("raporty","reports");
 		CMD:reporty(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new str[650];
-			strcat(str, "Repor\tOskar\tPowód\n",sizeof(str));
+			strcat(str, "Repor\tOskar\tPowÃ³d\n",sizeof(str));
 			foreach(new i : ReporI)
 			{
 				strcat(str, Repor[i], sizeof(str));
@@ -10125,10 +10125,10 @@ new WGZ[2];
 		}
 		CMD:mute(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new res[64],idp,t;
-			if(sscanf(params,"uis[64]",idp,t,res)) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /Mute [id] [czas] [Powód]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"uis[64]",idp,t,res)) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /Mute [id] [czas] [PowÃ³d]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			else {
 				if(PDV[playerid][APL] < PDV[idp][APL] && ZjebUmysl == true) {KP(playerid,"{9b9da0}| {B90E0E}Anti-M-HAdm {9b9da0}| Cya",INVALID_PLAYER_ID); return 1;}
 				MPl(idp,res,playerid,t);
@@ -10137,10 +10137,10 @@ new WGZ[2];
 		}
 		CMD:unmute(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /unMute [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /unMute [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			else {
 				UMPl(idp,playerid);
 			}
@@ -10149,10 +10149,10 @@ new WGZ[2];
 		alias:gmoney("dajhajs","dajszmal","dajkapuste","givemoney","gmon","dajkase");
 		CMD:gmoney(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp,mo;
-			if(sscanf(params,"ui",idp,mo)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /gmoney [id] [ilosc]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"ui",idp,mo)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /gmoney [id] [ilosc]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			GiPlMo(idp,mo);
 			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Admin %s dal ci %i$",PDV[playerid][Nck],mo);
 			return 1;
@@ -10160,10 +10160,10 @@ new WGZ[2];
 		alias:armp("armorp","armourp");
 		CMD:armp(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /armp [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /armp [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			if(PDV[idp][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz jest ranny i nie moze byc leczony"); return 1;}
 			SetPlayerArmour(idp,100);
 			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {afffd4}Admin %s dal armor",PDV[playerid][Nck]);	
@@ -10172,42 +10172,42 @@ new WGZ[2];
 		alias:healp("hpp");
 		CMD:healp(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 1) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /healp [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /healp [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			if(PDV[idp][Btle] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz jest ranny i nie moze byc leczony"); return 1;}
 			SetPlayerHealth(idp,100);
 			PDV[idp][God] = false;
-			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {afffd4}Admin %s uleczyl ciê",PDV[playerid][Nck]);
+			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {afffd4}Admin %s uleczyl ciÃª",PDV[playerid][Nck]);
 			return 1;
 		}
 		CMD:god(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}		
+			if(PDV[playerid][APL] < 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}		
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /god [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony");return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /god [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony");return 1;}
 			PDV[idp][God] = true;
 			SetPlayerHealth(idp,0x7F800000);
-			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Otrzyma³eœ Goda od %s",PDV[playerid][Nck]);
+			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}OtrzymaÂ³eÅ“ Goda od %s",PDV[playerid][Nck]);
 			return 1;
 		}
 		CMD:vehgod(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {FF0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {FF0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /vehgod [id]"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /vehgod [id]"); return 1;}
 			PDV[idp][VehGod] = true;
-			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Otrzyma³eœ VehGoda od %s",PDV[playerid][Nck]);
+			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}OtrzymaÂ³eÅ“ VehGoda od %s",PDV[playerid][Nck]);
 			return 1;
 		}
 		CMD:kick(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 2) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 2) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new res[64],idp;
-			if(sscanf(params, "us[64]", idp, res)) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /Kick [id] [Powód]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params, "us[64]", idp, res)) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /Kick [id] [PowÃ³d]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			else {
 				if(PDV[playerid][APL] < PDV[idp][APL] && ZjebUmysl == true) {KP(playerid,"{9b9da0}| {B90E0E}Anti-K-HAdm {9b9da0}| Cya",INVALID_PLAYER_ID); return 1;}
 				KP(idp,res,playerid);
@@ -10216,12 +10216,12 @@ new WGZ[2];
 		}
 		CMD:warn(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 2) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 2) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new res[64],idp;
-			if(sscanf(params,"us[64]",idp,res)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /warn [id] [Powód]");}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"us[64]",idp,res)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /warn [id] [PowÃ³d]");}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			PDV[idp][wrn]++;
-			SCMAS(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz %s zosta³ ostrze¿ony przez Admina %s %i|3 Powód: %s",PDV[idp][Nck],PDV[playerid][Nck],PDV[idp][wrn],res);
+			SCMAS(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz %s zostaÂ³ ostrzeÂ¿ony przez Admina %s %i|3 PowÃ³d: %s",PDV[idp][Nck],PDV[playerid][Nck],PDV[idp][wrn],res);
 			PlayerPlaySound(idp, 1147, 0,0,0);
 			new quer[128];
 			if(PDV[idp][wrn] >= 3){
@@ -10237,10 +10237,10 @@ new WGZ[2];
 		}
 		CMD:unwarn(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /unwarn [id]");}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /unwarn [id]");}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			PDV[idp][wrn]--;
 			new quer[128];
 			mysql_format(DBM, quer, sizeof(quer), "UPDATE `plys SET `Warn`='%i' WHERE `id`='%i'",PDV[idp][wrn],PDV[idp][iDP]);
@@ -10249,43 +10249,43 @@ new WGZ[2];
 		}
 		CMD:freeze(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /freeze [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /freeze [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			if(PDV[idp][FrP]){
 				TogglePlayerControllable(idp,1);
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) odmrozony");
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) odmrozony");
 				PDV[idp][FrP] = false;
 			}else {
 				TogglePlayerControllable(idp,0);
-				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zosta³eœ(aœ) zamrozony");
+				SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}zostaÂ³eÅ“(aÅ“) zamrozony");
 				PDV[idp][FrP] = true;
 			}
 			return 1;
 		}
 		CMD:blockcmd(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 4){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 4){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /blockcmd [id]"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /blockcmd [id]"); return 1;}
 			if(PDV[idp][BlCMD]){
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Odblokowa³eœ CMD graczowi");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}OdblokowaÂ³eÅ“ CMD graczowi");
 				SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Odblokowano ci CMD");
 				PDV[idp][BlCMD] = false;
 			}
 			else{
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Zablokowa³eœ CMD graczowi");
-				SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zablokowano ci CMD Admin Blokuj¹cy:%s",PDV[playerid][Nck]);
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}ZablokowaÂ³eÅ“ CMD graczowi");
+				SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zablokowano ci CMD Admin BlokujÂ¹cy:%s",PDV[playerid][Nck]);
 				PDV[idp][BlCMD] = true;
 			}
 			return 1;
 		}
 		CMD:emulate(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp,say[144];
-			if(sscanf(params,"us[144]",idp,say)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /emulate [id] [:)]"); return 1;}
+			if(sscanf(params,"us[144]",idp,say)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /emulate [id] [:)]"); return 1;}
 			if(say[0] == '/'){
 				PC_EmulateCommand(idp,say);
 			}
@@ -10296,16 +10296,16 @@ new WGZ[2];
 		}
 		CMD:ip(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /ip [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /ip [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}%s",PDV[idp][ipP]);
 			return 1;
 		}
 		CMD:healall(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 3) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 3) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			foreach(Player,i){
 				if(!Busy(i)){
 					SetPlayerHealth(i,100);
@@ -10316,7 +10316,7 @@ new WGZ[2];
 		}
 		CMD:armorall(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 3) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 3) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			foreach(Player,i){
 				if(!Busy(i)){
 					SetPlayerArmour(i,100);
@@ -10328,20 +10328,20 @@ new WGZ[2];
 		alias:gpweap("giveweapon","gw","dajbron");
 		CMD:gpweap(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy");return 1;}
+			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy");return 1;}
 			new idp,wep,am;
-			if(sscanf(params,"uii",idp,wep,am)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /gpweap [idp] [bron] [ammo]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"uii",idp,wep,am)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /gpweap [idp] [bron] [ammo]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			GivePlayerWeapon(idp, wep, am);
 			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Admin %s dal ci bron",PDV[playerid][Nck]);
 			return 1;
 		}
 		CMD:explode(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}U¿ycie: /explode [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}UÂ¿ycie: /explode [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			if(PDV[playerid][APL] < PDV[idp][APL] && ZjebUmysl){
 				new Float:x,Float:y,Float:z;
 				GetPlayerPos(playerid, x,y,z);
@@ -10354,48 +10354,48 @@ new WGZ[2];
 		}
 		CMD:kill(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 3) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 3) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /Kill [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /Kill [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			SetPlayerHealth(idp, 0);
-			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {a30023}zosta³eœ(aœ) zabity przez admina %s",PDV[playerid][Nck]);
+			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {a30023}zostaÂ³eÅ“(aÅ“) zabity przez admina %s",PDV[playerid][Nck]);
 			return 1;
 		}
 		CMD:jail(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie Masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie Masz dostÃªpu do tej komendy"); return 1;}
 			new idp,t,reas[64];
-			if(sscanf(params,"uis[64]",idp,t,reas)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}U¿ycie: /jail [id] [czas] [Powód]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"uis[64]",idp,t,reas)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}UÂ¿ycie: /jail [id] [czas] [PowÃ³d]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			JL(idp,t,playerid,reas);
 			return 1;
 		}
 		CMD:unjail(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie Masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 3){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie Masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}U¿ycie: /unjail [id]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"u",idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}UÂ¿ycie: /unjail [id]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			UJL(idp);
 			return 1;
 		}
 		CMD:bant(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 3)  { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 3)  { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new res[64],idp,td,tm;
-			if(sscanf(params,"uiis[64]",td,tm,res)) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /bant [id] [C Dni] [C Min] [Powód]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"uiis[64]",td,tm,res)) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /bant [id] [C Dni] [C Min] [PowÃ³d]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			if(PDV[playerid][APL] < PDV[idp][APL] && ZjebUmysl == true) {KP(playerid,"{9b9da0}| {B90E0E}Anti-BT-HAdm {9b9da0}| Cya",INVALID_PLAYER_ID); return 1;}
 			BPT(idp,res,playerid,td,tm);
 			return 1;
 		}
 		CMD:sethp(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 4) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 4) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp,Float:hp;
-			if(sscanf(params,"uf",idp,hp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /sethp [id] [hp]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"uf",idp,hp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /sethp [id] [hp]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			SetPlayerHealth(playerid,hp);
 			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {afffd4}Ustawiles graczowi hp %s",PDV[idp][Nck]);
 			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {afffd4}Admin %s zmienil ci hp",PDV[playerid][Nck]);
@@ -10405,10 +10405,10 @@ new WGZ[2];
 		alias:ban("b");
 		CMD:ban(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 4) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 4) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new res[64],idp;
-			if(sscanf(params,"us[64]",idp,res)) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /ban [id] [Powód]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"us[64]",idp,res)) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /ban [id] [PowÃ³d]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			else {
 				if(PDV[playerid][APL] < PDV[idp][APL] && ZjebUmysl == true) {KP(playerid,"{9b9da0}| {B90E0E}Anti-B-HAdm {9b9da0}| Cya",INVALID_PLAYER_ID); return 1;}
 				BP(idp,res,playerid);
@@ -10418,10 +10418,10 @@ new WGZ[2];
 		alias:gexp("dajexp","givexp","giveexp","dexp");
 		CMD:gexp(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 4){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 4){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp,am;
-			if(sscanf(params,"ui",idp,am)){ SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /giexp [id] [ilosc]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"ui",idp,am)){ SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /giexp [id] [ilosc]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			if(-10000 > am > 10000){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie mozesz dac wiecej niz 10k lub mniej");return 1;}
 			GiRe(idp,am);
 			SCM(idp,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Admin %s dal ci %i expa",PDV[playerid][Nck],am);
@@ -10429,9 +10429,9 @@ new WGZ[2];
 		}
 		CMD:ub(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 4) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 4) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp;
-			if(sscanf(params,"u",idp)) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /ub [idpgr]"); return 1;}
+			if(sscanf(params,"u",idp)) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /ub [idpgr]"); return 1;}
 			else {
 				UBP(idp,playerid);
 			}
@@ -10439,7 +10439,7 @@ new WGZ[2];
 		}
 		CMD:freezeall(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 4) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 4) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			foreach(Player,i) {
 				TogglePlayerControllable(i,0);
 				PDV[i][FrP] = true;
@@ -10449,7 +10449,7 @@ new WGZ[2];
 		}
 		CMD:unfreezeall(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 4) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 4) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			foreach(Player,i){
 				TogglePlayerControllable(i,0);
 				PDV[i][FrP] = false;
@@ -10459,15 +10459,15 @@ new WGZ[2];
 		alias:cls("c");
 		CMD:cls(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			ClsChat();
 			return 1;
 		}
 		CMD:cidpon(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 5) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 5) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new name[32];
-			if(sscanf(params,"s[32]",name)){ SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /cidpon [Nazwa gracza]"); return 1;}
+			if(sscanf(params,"s[32]",name)){ SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /cidpon [Nazwa gracza]"); return 1;}
 			else {
 				new query[64];
 				SqlEscStr(name,name);
@@ -10478,7 +10478,7 @@ new WGZ[2];
 		}
 		CMD:wywalboty(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			foreach(Player,i){
 				new ip[16];
 				GetPlayerIp(playerid,ip,16);
@@ -10492,29 +10492,29 @@ new WGZ[2];
 		}
 		CMD:sv(playerid,params[])
 		{
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Pomyœlnie zapisano statystyki!");
-			if(PDV[playerid][SCl] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Staty mo¿esz zapisywaæ co pó³ godziny"); return 1;}
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}PomyÅ“lnie zapisano statystyki!");
+			if(PDV[playerid][SCl] >= GetTickCount()){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Staty moÂ¿esz zapisywaÃ¦ co pÃ³Â³ godziny"); return 1;}
 			PDV[playerid][SCl] = GetTickCount()+1800000;
 			SVPlayer(playerid);
 			return 1;
 		}
 		CMD:svall(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			foreach(Player,i){
 				SVPlayer(i);
 			}
 			TextDrawShowForAll(Save);
 			GM[svTx] = GetTickCount()+4000;
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Pomyœlnie zapisano wszystkim statystyki!");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}PomyÅ“lnie zapisano wszystkim statystyki!");
 			return 1;
 		}
 		CMD:setrank(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 6) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 6) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new idp,r;
-			if(sscanf(params,"ui",idp,r)){ SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /setrpl [idg] [idr]"); return 1;}
-			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest po³¹czony"); return 1;}
+			if(sscanf(params,"ui",idp,r)){ SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /setrpl [idg] [idr]"); return 1;}
+			if(!IsPlayerConnected(idp)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz nie jest poÂ³Â¹czony"); return 1;}
 			if(PDV[playerid][APL] < r) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Rank id is higher than the giver of rank"); return 1;}
 			if(0 > r > 6) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Rank id too high or too low"); return 1;}
 			new quer[128];
@@ -10522,20 +10522,20 @@ new WGZ[2];
 			new quere = mq(quer);
 			PDV[idp][nAPL] = r;
 			if(quere == 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}MySQL Error couldn't give a Rank");}
-			else {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Dano range pomyœlnie");}
+			else {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Dano range pomyÅ“lnie");}
 			return 1;
 		}
 		CMD:wiad(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 6){ SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 6){ SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new ran = random(sizeof(RandomMsg));
 			SCMA(-1,RandomMsg[ran]);
 			return 1;
 		}
 		CMD:rlg(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 6) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
-			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Wy³¹czanie Serwera . . .");
+			if(PDV[playerid][APL] < 6) { SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
+			SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}WyÂ³Â¹czanie Serwera . . .");
 			GM[Rest] = GetTickCount()+800;
 			return 1;
 		}
@@ -10547,15 +10547,15 @@ new WGZ[2];
 			strcat(str,"{ffffff}-Nazwa domu:",x);
 			strcat(str,HDV[PDV[playerid][OwOf]][estanam],x);
 			strcat(str,"\n",x);
-			strcat(str,"{ffffff}-Has³o:",x);
+			strcat(str,"{ffffff}-HasÂ³o:",x);
 			strcat(str,HDV[PDV[playerid][OwOf]][hpass],x);
 			strcat(str,"\n",x);
-			strcat(str,"{ffffff}-Drzwi:Otwarte/zamkniête\n",x);
+			strcat(str,"{ffffff}-Drzwi:Otwarte/zamkniÃªte\n",x);
 			strcat(str,"{ffffff}-Sejf domowy:\n",x);
-			strcat(str,"\t{FFAA1D}-{ffffff}Wp³aæ hajs\n",x);
-			strcat(str,"\t{FFAA1D}-{ffffff}Wyp³aæ hajs\n",x);
-			strcat(str,"\t{FFAA1D}-{ffffff}Wp³aæ exp\n",x);
-			strcat(str,"\t{FFAA1D}-{ffffff}Wyp³aæ exp\n",x);
+			strcat(str,"\t{FFAA1D}-{ffffff}WpÂ³aÃ¦ hajs\n",x);
+			strcat(str,"\t{FFAA1D}-{ffffff}WypÂ³aÃ¦ hajs\n",x);
+			strcat(str,"\t{FFAA1D}-{ffffff}WpÂ³aÃ¦ exp\n",x);
+			strcat(str,"\t{FFAA1D}-{ffffff}WypÂ³aÃ¦ exp\n",x);
 			strcat(str,"{ffffff}-Meble(WIP)\n",x);
 			strcat(str,"{ffffff}-Klucze\n",x);
 			strcat(str,"{ffffff}-Zabezpieczenia\n",x);
@@ -10572,37 +10572,37 @@ new WGZ[2];
 		CMD:pukpuk(playerid,params[])
 		{
 			new i = IPAH(playerid);
-			if(i == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie jesteœ w pobli¿u domu"); return 1;}
+			if(i == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie jesteÅ“ w pobliÂ¿u domu"); return 1;}
 			if(!HDV[i][Bin]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Dom jest niezamieszkany");return 1;}
 			foreach(Player,g)
 			{
-				if(GetPlayerVirtualWorld(g) == HDV[i][hID]+300){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}PUK! PUK! ktoœ puka");}
+				if(GetPlayerVirtualWorld(g) == HDV[i][hID]+300){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}PUK! PUK! ktoÅ“ puka");}
 			}
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Wkurwi³eœ graczy w domu gratulacje!");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}WkurwiÂ³eÅ“ graczy w domu gratulacje!");
 			return 1;
 		}
 		alias:rob("Obrabuj","Zrabuj");
 		CMD:rob(playerid,params[])
 		{
 			new i = IPAH(playerid);
-			if(i == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie jesteœ w pobli¿u domu"); return 1;}
+			if(i == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie jesteÅ“ w pobliÂ¿u domu"); return 1;}
 			if(!HDV[i][Bin]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Dom jest niezamieszkany"); return 1;}
-			if(i == PDV[playerid][OwOf]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ty g³uptasie nie mo¿esz obrabowaæ samego siebie"); return 1;}
+			if(i == PDV[playerid][OwOf]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ty gÂ³uptasie nie moÂ¿esz obrabowaÃ¦ samego siebie"); return 1;}
 			new r = random(100);
 			switch(HDV[i][Security]){
 				case 0:{
 					if(r <= 91){
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Obrabowa³eœ Dom!");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ObrabowaÂ³eÅ“ Dom!");
 						GiRe(playerid,HDV[i][expi]/10);
 						GiPlMo(playerid,HDV[i][moni]/2);
 						new str[128];
-						format(str,128,"\t{ffffff}*****{56aaaa}£upy{ffffff}*****\t\n\tExp:%d\t\n\tKasa:%d\t",HDV[i][expi]/10,HDV[i][moni]/2);
-						Dialog_Show(playerid, Robbed, DIALOG_STYLE_MSGBOX, "{00ff00}Twoje ³upy", str, "OK","OK");
+						format(str,128,"\t{ffffff}*****{56aaaa}Â£upy{ffffff}*****\t\n\tExp:%d\t\n\tKasa:%d\t",HDV[i][expi]/10,HDV[i][moni]/2);
+						Dialog_Show(playerid, Robbed, DIALOG_STYLE_MSGBOX, "{00ff00}Twoje Â³upy", str, "OK","OK");
 						HDV[i][expi] -= HDV[i][expi]/10;
 						HDV[i][moni] -= HDV[i][moni]/2;
 					}
 					else{
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie uda³o ci siê! :C");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie udaÂ³o ci siÃª! :C");
 						PDV[playerid][Bounty][0] += 15000*1;
 						PDV[playerid][Bounty][1] += 30*1;
 						SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nagroda za gracza %s : %d$/%d Exp",PDV[playerid][Nck],PDV[playerid][Bounty][0],PDV[playerid][Bounty][1]);
@@ -10610,17 +10610,17 @@ new WGZ[2];
 				}
 				case 1:{
 					if(r <= 60){
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Obrabowa³eœ Dom!");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ObrabowaÂ³eÅ“ Dom!");
 						GiRe(playerid,HDV[i][expi]/10);
 						GiPlMo(playerid,HDV[i][moni]/2);
 						new str[128];
-						format(str,128,"\t{ffffff}*****{56aaaa}£upy{ffffff}*****\t\n\tExp:%d\t\n\tKasa:%d\t",HDV[i][expi]/10,HDV[i][moni]/2);
-						Dialog_Show(playerid, Robbed, DIALOG_STYLE_MSGBOX, "{00ff00}Twoje ³upy", str, "OK","OK");
+						format(str,128,"\t{ffffff}*****{56aaaa}Â£upy{ffffff}*****\t\n\tExp:%d\t\n\tKasa:%d\t",HDV[i][expi]/10,HDV[i][moni]/2);
+						Dialog_Show(playerid, Robbed, DIALOG_STYLE_MSGBOX, "{00ff00}Twoje Â³upy", str, "OK","OK");
 						HDV[i][expi] -= HDV[i][expi]/10;
 						HDV[i][moni] -= HDV[i][moni]/2;
 					}
 					else{
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie uda³o ci siê! :C");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie udaÂ³o ci siÃª! :C");
 						PDV[playerid][Bounty][0] += 15000*2;
 						PDV[playerid][Bounty][1] += 30*2;
 						SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nagroda za gracza %s : %d$/%d Exp",PDV[playerid][Nck],PDV[playerid][Bounty][0],PDV[playerid][Bounty][1]);
@@ -10628,17 +10628,17 @@ new WGZ[2];
 				}
 				case 2:{
 					if(r <= 44){
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Obrabowa³eœ Dom!");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ObrabowaÂ³eÅ“ Dom!");
 						GiRe(playerid,HDV[i][expi]/10);
 						GiPlMo(playerid,HDV[i][moni]/2);
 						new str[128];
-						format(str,128,"\t{ffffff}*****{56aaaa}£upy{ffffff}*****\t\n\tExp:%d\t\n\tKasa:%d\t",HDV[i][expi]/10,HDV[i][moni]/2);
-						Dialog_Show(playerid, Robbed, DIALOG_STYLE_MSGBOX, "{00ff00}Twoje ³upy", str, "OK","OK");
+						format(str,128,"\t{ffffff}*****{56aaaa}Â£upy{ffffff}*****\t\n\tExp:%d\t\n\tKasa:%d\t",HDV[i][expi]/10,HDV[i][moni]/2);
+						Dialog_Show(playerid, Robbed, DIALOG_STYLE_MSGBOX, "{00ff00}Twoje Â³upy", str, "OK","OK");
 						HDV[i][expi] -= HDV[i][expi]/10;
 						HDV[i][moni] -= HDV[i][moni]/2;
 					}
 					else{
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie uda³o ci siê! :C");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie udaÂ³o ci siÃª! :C");
 						PDV[playerid][Bounty][0] += 15000*3;
 						PDV[playerid][Bounty][1] += 30*3;
 						SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nagroda za gracza %s : %d$/%d Exp",PDV[playerid][Nck],PDV[playerid][Bounty][0],PDV[playerid][Bounty][1]);
@@ -10646,18 +10646,18 @@ new WGZ[2];
 				}
 				case 3:{
 					if(r <= 10){
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Obrabowa³eœ Dom!");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ObrabowaÂ³eÅ“ Dom!");
 						GiRe(playerid,HDV[i][expi]/10);
 						GiPlMo(playerid,HDV[i][moni]/2);
 						new str[128];
-						format(str,128,"\t{ffffff}*****{56aaaa}£upy{ffffff}*****\t\n\tExp:%d\t\n\tKasa:%d\t",HDV[i][expi]/10,HDV[i][moni]/2);
-						Dialog_Show(playerid, Robbed, DIALOG_STYLE_MSGBOX, "{00ff00}Twoje ³upy", str, "OK","OK");
+						format(str,128,"\t{ffffff}*****{56aaaa}Â£upy{ffffff}*****\t\n\tExp:%d\t\n\tKasa:%d\t",HDV[i][expi]/10,HDV[i][moni]/2);
+						Dialog_Show(playerid, Robbed, DIALOG_STYLE_MSGBOX, "{00ff00}Twoje Â³upy", str, "OK","OK");
 						HDV[i][expi] -= HDV[i][expi]/10;
 						HDV[i][moni] -= HDV[i][moni]/2;
 					
 					}
 					else{
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie uda³o ci siê! :C");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie udaÂ³o ci siÃª! :C");
 						PDV[playerid][Bounty][0] += 15000*4;
 						PDV[playerid][Bounty][1] += 30*4;
 						SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nagroda za gracza %s : %d$/%d Exp",PDV[playerid][Nck],PDV[playerid][Bounty][0],PDV[playerid][Bounty][1]);					
@@ -10665,17 +10665,17 @@ new WGZ[2];
 				}
 				case 4:{
 					if(r <= 2){
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Obrabowa³eœ Dom!");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ObrabowaÂ³eÅ“ Dom!");
 						GiRe(playerid,HDV[i][expi]/10);
 						GiPlMo(playerid,HDV[i][moni]/2);
 						new str[128];
-						format(str,128,"\t{ffffff}*****{56aaaa}£upy{ffffff}*****\t\n\tExp:%d\t\n\tKasa:%d\t",HDV[i][expi]/10,HDV[i][moni]/2);
-						Dialog_Show(playerid, Robbed, DIALOG_STYLE_MSGBOX, "{00ff00}Twoje ³upy", str, "OK","OK");
+						format(str,128,"\t{ffffff}*****{56aaaa}Â£upy{ffffff}*****\t\n\tExp:%d\t\n\tKasa:%d\t",HDV[i][expi]/10,HDV[i][moni]/2);
+						Dialog_Show(playerid, Robbed, DIALOG_STYLE_MSGBOX, "{00ff00}Twoje Â³upy", str, "OK","OK");
 						HDV[i][expi] -= HDV[i][expi]/10;
 						HDV[i][moni] -= HDV[i][moni]/2;
 					}
 					else{
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie uda³o ci siê! :C");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie udaÂ³o ci siÃª! :C");
 						PDV[playerid][Bounty][0] += 15000*5;
 						PDV[playerid][Bounty][1] += 30*5;
 						SCMA(-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nagroda za gracza %s : %d$/%d Exp",PDV[playerid][Nck],PDV[playerid][Bounty][0],PDV[playerid][Bounty][1]);
@@ -10688,7 +10688,7 @@ new WGZ[2];
 		CMD:spass(playerid,params[])
 		{
 			if(PDV[playerid][OwOf] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz domu O.o"); return 1;}
-			Dialog_Show(playerid, PassD, DIALOG_STYLE_PASSWORD, "Has³o Na Dom", "Za³ó¿ has³o na dom dziêki temu 1 prostemu triku", "OK", "Nie");
+			Dialog_Show(playerid, PassD, DIALOG_STYLE_PASSWORD, "HasÂ³o Na Dom", "ZaÂ³Ã³Â¿ hasÂ³o na dom dziÃªki temu 1 prostemu triku", "OK", "Nie");
 			return 1;
 		}
 		CMD:meble(playerid,params[]){
@@ -10697,14 +10697,14 @@ new WGZ[2];
 		CMD:estatename(playerid,params[])
 		{
 			if(PDV[playerid][OwOf] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz domu O.o"); return 1;}
-			Dialog_Show(playerid,estnmD,DIALOG_STYLE_INPUT,"Zmien nazwê swojej posiad³oœci","Wpisz tu now¹ nazwe swojej posiad³oœci","OK","Wstecz");
+			Dialog_Show(playerid,estnmD,DIALOG_STYLE_INPUT,"Zmien nazwÃª swojej posiadÂ³oÅ“ci","Wpisz tu nowÂ¹ nazwe swojej posiadÂ³oÅ“ci","OK","Wstecz");
 			return 1;
 		}
 		CMD:sejf(playerid,params[])
 		{
 			if(PDV[playerid][OwOf] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz domu O.o"); return 1;}
 			new str[48];
-			format(str,sizeof(str),"Twój stan sejfu wynosi:\nEXP:\t%i\nHajs:\t%i",HDV[PDV[playerid][OwOf]][expi],HDV[PDV[playerid][OwOf]][moni]);
+			format(str,sizeof(str),"TwÃ³j stan sejfu wynosi:\nEXP:\t%i\nHajs:\t%i",HDV[PDV[playerid][OwOf]][expi],HDV[PDV[playerid][OwOf]][moni]);
 			Dialog_Show(playerid,sejfd,DIALOG_STYLE_MSGBOX,"Twoj stan sejfu",str,"OK","OK");
 			return 1;
 		}
@@ -10714,49 +10714,49 @@ new WGZ[2];
 			if(PDV[playerid][OwOf] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz domu O.o"); return 1;}
 			if(HDV[PDV[playerid][OwOf]][Lck]){
 				HDV[PDV[playerid][OwOf]][Lck] = false;
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Otworzy³eœ swój dom :3!");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}OtworzyÂ³eÅ“ swÃ³j dom :3!");
 			}else {
 				HDV[PDV[playerid][OwOf]][Lck] = true;
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Zamkn¹³eœ swój dom!");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}ZamknÂ¹Â³eÅ“ swÃ³j dom!");
 			}
 			return 1;
 		}
 		CMD:wexp(playerid,params[])
 		{
 			if(PDV[playerid][OwOf] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz domu O.o"); return 1;}
-			Dialog_Show(playerid, wexpD, DIALOG_STYLE_INPUT, "Wp³aæ Expa", "Iloœæ Expa Któr¹ chcesz wp³aciæ", "OK", "Anuluj");
+			Dialog_Show(playerid, wexpD, DIALOG_STYLE_INPUT, "WpÂ³aÃ¦ Expa", "IloÅ“Ã¦ Expa KtÃ³rÂ¹ chcesz wpÂ³aciÃ¦", "OK", "Anuluj");
 			return 1;
 		}
 		CMD:wmon(playerid,params[])
 		{
 			if(PDV[playerid][OwOf] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz domu O.o"); return 1;}
-			Dialog_Show(playerid, wmonD, DIALOG_STYLE_INPUT, "Wp³aæ Kase", "Iloœæ Kasy Któr¹ chcesz wp³aciæ", "OK", "Anuluj");
+			Dialog_Show(playerid, wmonD, DIALOG_STYLE_INPUT, "WpÂ³aÃ¦ Kase", "IloÅ“Ã¦ Kasy KtÃ³rÂ¹ chcesz wpÂ³aciÃ¦", "OK", "Anuluj");
 			return 1;
 		}
 		CMD:wyexp(playerid,params[])
 		{
 			if(PDV[playerid][OwOf] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz domu O.o"); return 1;}
-			Dialog_Show(playerid, wyexpD, DIALOG_STYLE_INPUT, "Wyp³aæ Exp", "Iloœæ Expa Któr¹ chcesz wyp³aciæ", "OK", "Anuluj");
+			Dialog_Show(playerid, wyexpD, DIALOG_STYLE_INPUT, "WypÂ³aÃ¦ Exp", "IloÅ“Ã¦ Expa KtÃ³rÂ¹ chcesz wypÂ³aciÃ¦", "OK", "Anuluj");
 			return 1;
 		}
 		CMD:wymon(playerid,params[])
 		{
 			if(PDV[playerid][OwOf] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz domu O.o"); return 1;}
-			Dialog_Show(playerid, wymonD, DIALOG_STYLE_INPUT, "Wyp³aæ Kase", "Iloœæ Kasy Któr¹ chcesz wyp³aciæ", "OK", "Anuluj");
+			Dialog_Show(playerid, wymonD, DIALOG_STYLE_INPUT, "WypÂ³aÃ¦ Kase", "IloÅ“Ã¦ Kasy KtÃ³rÂ¹ chcesz wypÂ³aciÃ¦", "OK", "Anuluj");
 			return 1;
 		}
 		CMD:buy(playerid,params[])
 		{
-			if(PDV[playerid][OwOf] != -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Masz ju¿ dom!"); return 1;}
+			if(PDV[playerid][OwOf] != -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Masz juÂ¿ dom!"); return 1;}
 			new i = IPAH(playerid);
-			if(i == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie jesteœ w pobli¿u domu"); return 1;}
-			if(HDV[i][Bin]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Dom jest zajêty"); return 1;}
+			if(i == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie jesteÅ“ w pobliÂ¿u domu"); return 1;}
+			if(HDV[i][Bin]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Dom jest zajÃªty"); return 1;}
 			new x = TkPlRe(playerid,HDV[i][ExP]);
-			if(!x){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak expa by kupiæ ten dom"); return 1;}
+			if(!x){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak expa by kupiÃ¦ ten dom"); return 1;}
 			x = TkPlMo(playerid,HDV[i][MoP]);
 			if(!x){
 				GiRe(playerid,HDV[i][ExP]);
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak hajsu by kupiæ ten dom");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak hajsu by kupiÃ¦ ten dom");
 				return 1;
 			}
 			HDV[i][Bin] = true;
@@ -10770,17 +10770,17 @@ new WGZ[2];
 			DestroyDynamicMapIcon(HDV[i][hidMI]);
 			DestroyDynamic3DTextLabel(HDV[i][hid3D]);
 			new str[256];
-			format(str,sizeof(str),"{ff0000}Zajete\n{56ff56}Posiad³oœæ:{ffffff}%s\n{56ff56}Wlasciciel:{ffffff}%s\n{56ff56}Interior:{ffffff}%i\nID:%i",HDV[i][estanam],HDV[i][ONck],HDV[i][Iid],HDV[i][hID]);
+			format(str,sizeof(str),"{ff0000}Zajete\n{56ff56}PosiadÂ³oÅ“Ã¦:{ffffff}%s\n{56ff56}Wlasciciel:{ffffff}%s\n{56ff56}Interior:{ffffff}%i\nID:%i",HDV[i][estanam],HDV[i][ONck],HDV[i][Iid],HDV[i][hID]);
 			HDV[i][hidP] = CreateDynamicPickup(1272, 1, HDV[i][XP],HDV[i][YP],HDV[i][ZP], 0, 0);
 			HDV[i][hidMI] = CreateDynamicMapIcon(HDV[i][XP],HDV[i][YP],HDV[i][ZP], 32, 0);
 			UpdateDynamic3DTextLabelText(HDV[i][hid3D], 0xFFFFFFFF, str);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Kupi³eœ Dom!");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}KupiÂ³eÅ“ Dom!");
 			return 1;
 		}
 		CMD:sell(playerid,params[])
 		{
 			if(PDV[playerid][OwOf] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz domu O.o"); return 1;}
-			new i = PDV[playerid][OwOf]; //Nie chcia³o mi siê patrzeæ na spaggetti z HDV[PDV[playerid][OwOf]][COS]
+			new i = PDV[playerid][OwOf]; //Nie chciaÂ³o mi siÃª patrzeÃ¦ na spaggetti z HDV[PDV[playerid][OwOf]][COS]
 			GiRe(playerid,HDV[i][expi]);
 			GiPlMo(playerid,HDV[i][moni]);
 			HDV[i][expi] = 0;
@@ -10796,9 +10796,9 @@ new WGZ[2];
 			DestroyDynamicMapIcon(HDV[i][hidMI]);
 			HDV[i][hidP] = CreateDynamicPickup(1273, 1, HDV[i][XP],HDV[i][YP],HDV[i][ZP], 0, 0);
 			HDV[i][hidMI] = CreateDynamicMapIcon(HDV[i][XP],HDV[i][YP],HDV[i][ZP], 31, 0);
-			format(quer,sizeof(quer),"{00ff00}NA SPRZEDAZ!\n{56ff56}Posiad³oœæ:{ffffff}%s\n{56ff56}Czynsz:{ffffff}%i{00aa00}${ffffff}/%i{ffaaaa}Exp\n{56ff56}Interior:{ffffff}%i\nID:%i",HDV[i][estanam],HDV[i][MoP],HDV[i][ExP],HDV[i][Iid],HDV[i][hID]);
+			format(quer,sizeof(quer),"{00ff00}NA SPRZEDAZ!\n{56ff56}PosiadÂ³oÅ“Ã¦:{ffffff}%s\n{56ff56}Czynsz:{ffffff}%i{00aa00}${ffffff}/%i{ffaaaa}Exp\n{56ff56}Interior:{ffffff}%i\nID:%i",HDV[i][estanam],HDV[i][MoP],HDV[i][ExP],HDV[i][Iid],HDV[i][hID]);
 			UpdateDynamic3DTextLabelText(HDV[i][hid3D], 0xFFFFFFFF, quer);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Sprzeda³eœ Dom");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}SprzedaÂ³eÅ“ Dom");
 			return 1;
 		}
 		CMD:klucze(playerid,params[]){
@@ -10807,8 +10807,8 @@ new WGZ[2];
 		CMD:wejdz(playerid,params[])
 		{
 			new i = IPAH(playerid);
-			if(i == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie jesteœ w pobli¿u domu"); return 1;}
-			if(HDV[i][Lck] && HDV[i][Oid] != PDV[playerid][iDP]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Dom jest zamkniêty"); return 1;}
+			if(i == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie jesteÅ“ w pobliÂ¿u domu"); return 1;}
+			if(HDV[i][Lck] && HDV[i][Oid] != PDV[playerid][iDP]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Dom jest zamkniÃªty"); return 1;}
 			if(!HDV[i][Bin]){
 				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Masz 30 sekund na zwiedzenie");
 				PDV[playerid][CtD] = GetTickCount()+30000;
@@ -10818,7 +10818,7 @@ new WGZ[2];
 			SetPlayerVirtualWorld(playerid, i+300);
 			SetPlayerPos(playerid, IntId[HDV[i][Iid]][0],IntId[HDV[i][Iid]][1],IntId[HDV[i][Iid]][2]);
 			SetPlayerFacingAngle(playerid, IntId[HDV[i][Iid]][3]);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wszed³eœ do domu");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WszedÂ³eÅ“ do domu");
 			return 1;
 		}
 		CMD:wyjdz(playerid,params[])
@@ -10826,26 +10826,26 @@ new WGZ[2];
 			PDV[playerid][CtD] = 0;
 			PDV[playerid][SetF] = 0;
 			new x = GetPlayerVirtualWorld(playerid);
-			if(x < 300){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie ma z czego wychodziæ?"); return 1;}
+			if(x < 300){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie ma z czego wychodziÃ¦?"); return 1;}
 			x -= 300;
 			SetPlayerInterior(playerid, 0);
 			SetPlayerVirtualWorld(playerid, 0);
 			SetPlayerPos(playerid,HDV[x][XP],HDV[x][YP],HDV[x][ZP]);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Wyszed³eœ z domu");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WyszedÂ³eÅ“ z domu");
 			return 1;
 		}
 		CMD:arespawn(playerid,params[]){
 			if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostepu do tej komendy"); return 1;}
 			SpawnPlayer(playerid);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Zrespawnowa³eœ siê za pomoc¹ /arespawn");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}ZrespawnowaÂ³eÅ“ siÃª za pomocÂ¹ /arespawn");
 			return 1;
 		}
 		CMD:interiory(playerid,params[])
 		{
 			if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostepu do tej komendy"); return 1;}
 			new inty;
-			if(sscanf(params,"i",inty)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /interiory [id]"); return 1;}
-			if(0 > inty > sizeof(IntId)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Z³e id interioru LoL 0-144"); return 1;}
+			if(sscanf(params,"i",inty)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /interiory [id]"); return 1;}
+			if(0 > inty > sizeof(IntId)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZÂ³e id interioru LoL 0-144"); return 1;}
 			GetPlayerPos(playerid, PDV[playerid][LaX],PDV[playerid][LaY],PDV[playerid][LaZ]);
 			SetPlayerInterior(playerid, IntIdK[inty]);
 			SetPlayerPos(playerid, IntId[inty][0],IntId[inty][1],IntId[inty][2]);
@@ -10856,14 +10856,14 @@ new WGZ[2];
 		{
 			if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostepu do tej komendy"); return 1;}
 			new inty,rey,cshy,estaname[24];
-			if(sscanf(params,"iiis[24]",inty,rey,cshy,estaname)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /addh [int] [exp] [kasa] [nazwadomu]"); return 1;}
-			if(0 > inty > sizeof(IntId)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Z³e id interioru sprawdz /interiory [id]"); return 1;}
-			if(rey < 1 || cshy < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Wartosci na koñcu nie mog¹ byæ mniejsze od 0"); return 1;}
+			if(sscanf(params,"iiis[24]",inty,rey,cshy,estaname)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /addh [int] [exp] [kasa] [nazwadomu]"); return 1;}
+			if(0 > inty > sizeof(IntId)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZÂ³e id interioru sprawdz /interiory [id]"); return 1;}
+			if(rey < 1 || cshy < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Wartosci na koÃ±cu nie mogÂ¹ byÃ¦ mniejsze od 0"); return 1;}
 			new x = AddHous(playerid,inty,rey,cshy,estaname);
 			if(x){
 				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00dd00}Domy:Poprawnie stworzono Dom!!! Yay!");
 			}else{
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {dd0000}Domy:Kurwa nie dzia³a");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {dd0000}Domy:Kurwa nie dziaÂ³a");
 			}
 			return 1;
 		}
@@ -10871,9 +10871,9 @@ new WGZ[2];
 		{
 			if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostepu do tej komendy"); return 1;}
 			new inty,Hid;
-			if(sscanf(params,"ii",inty,Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /chioh [int] [Hid]"); return 1;}
+			if(sscanf(params,"ii",inty,Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /chioh [int] [Hid]"); return 1;}
 			if(!Iter_Contains(IHo, Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Taki dom nie istnieje"); return 1;}
-			if(0 > inty > sizeof(IntId)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Z³e id interioru sprawdz /interiory [id]"); return 1;}
+			if(0 > inty > sizeof(IntId)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZÂ³e id interioru sprawdz /interiory [id]"); return 1;}
 			new quer[128];
 			mysql_format(DBM,quer,128, "UPDATE `HoS` SET `Iid`='%d' WHERE `id`='%d'", inty,Hid);
 			mq(quer);
@@ -10885,9 +10885,9 @@ new WGZ[2];
 		{
 			if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostepu do tej komendy"); return 1;}
 			new inty,Hid;
-			if(sscanf(params,"ii",inty,Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /chcoh [Hajsy] [Hid]"); return 1;}
+			if(sscanf(params,"ii",inty,Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /chcoh [Hajsy] [Hid]"); return 1;}
 			if(!Iter_Contains(IHo, Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Taki dom nie istnieje"); return 1;}
-			if(inty < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}W g³owie masz olej?"); return 1;}
+			if(inty < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}W gÂ³owie masz olej?"); return 1;}
 			HDV[Hid][MoP] = inty;
 			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00dd00}Zmieniono Koszt w hajsie domu: %i",Hid);
 			return 1;
@@ -10896,28 +10896,28 @@ new WGZ[2];
 		{
 			if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostepu do tej komendy"); return 1;}
 			new inty,Hid;
-			if(sscanf(params,"ii",inty,Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /chcoh [Hajsy] [Hid]"); return 1;}
+			if(sscanf(params,"ii",inty,Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /chcoh [Hajsy] [Hid]"); return 1;}
 			if(!Iter_Contains(IHo, Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Taki dom nie istnieje"); return 1;}
-			if(inty < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}W g³owie masz olej?"); return 1;}
+			if(inty < 1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}W gÂ³owie masz olej?"); return 1;}
 			HDV[Hid][ExP] = inty;
 			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00dd00}Zmieniono Koszt w expie domu: %i",Hid);
 			return 1;
 		}
 		CMD:remh(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new Hid;
-			if(sscanf(params,"i",Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /remh [id]"); return 1;}
+			if(sscanf(params,"i",Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /remh [id]"); return 1;}
 			if(!Iter_Contains(IHo, Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Taki dom nie istnieje"); return 1;}
 			DelHous(Hid);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Poprawnie Usun¹³eœ Dom");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Poprawnie UsunÂ¹Â³eÅ“ Dom");
 			return 1;
 		}
 		CMD:moveh(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy");return 1;}
+			if(PDV[playerid][APL] < 6){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy");return 1;}
 			new Hid;
-			if(sscanf(params,"i",Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie /moveh [id]"); return 1;}
+			if(sscanf(params,"i",Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie /moveh [id]"); return 1;}
 			if(!Iter_Contains(IHo,Hid)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie ma takiego domu"); return 1;}
 			new quer[256];
 			GetPlayerPos(playerid,HDV[Hid][XP],HDV[Hid][YP],HDV[Hid][ZP]);
@@ -10926,20 +10926,20 @@ new WGZ[2];
 			DestroyDynamicPickup(HDV[Hid][hidP]);
 			DestroyDynamic3DTextLabel(HDV[Hid][hid3D]);
 			hElemCr(Hid);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Poprawnie Przenios³eœ Dom");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Poprawnie PrzeniosÂ³eÅ“ Dom");
 			return 1;
 		}
 	//Vehicle Params
 		CMD:lock(playerid,params[]){
-			if(GetPlayerVehicleSeat(playerid) != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca  {9b9da0}| {ff0000}Nie jesteœ kierowc¹ pojazdu!"); return 1;}
+			if(GetPlayerVehicleSeat(playerid) != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca  {9b9da0}| {ff0000}Nie jesteÅ“ kierowcÂ¹ pojazdu!"); return 1;}
 			new v = GetPlayerVehicleID(playerid);
 			SetVehicleParamsEx(v, 0, 0, 0, 1, 0, 0, 0);
 			SetVehicleParamsForPlayer(v, playerid, 0, 0);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca  {9b9da0}| {ff0000}Broooom! Pi Pi! Zamkniête!");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca  {9b9da0}| {ff0000}Broooom! Pi Pi! ZamkniÃªte!");
 			return 1;
 		}
 		CMD:unlock(playerid,params[]){
-			if(GetPlayerVehicleSeat(playerid) != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca  {9b9da0}| {ff0000}Nie jesteœ kierowc¹ pojazdu!"); return 1;}
+			if(GetPlayerVehicleSeat(playerid) != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca  {9b9da0}| {ff0000}Nie jesteÅ“ kierowcÂ¹ pojazdu!"); return 1;}
 			SetVehicleParamsEx(GetPlayerVehicleID(playerid), 0, 0, 0, 0, 0, 0, 0);
 			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca  {9b9da0}| {ff0000}Broooom! Pi Pi! Otwarte!");
 			return 1;
@@ -10948,7 +10948,7 @@ new WGZ[2];
 			if(GetPlayerVehicleSeat(playerid) != 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca  {9b9da0}| {ff0000}Nie posiadasz privCar'a"); return 1;}
 			SetVehicleParamsEx(PDV[playerid][pvidp], 0, 0, 0, 1, 0, 0, 0);
 			SetVehicleParamsForPlayer(PDV[playerid][pvidp], playerid, 0, 0);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca  {9b9da0}| {ff0000}Broooom! Pi Pi! Zamkniête!");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca  {9b9da0}| {ff0000}Broooom! Pi Pi! ZamkniÃªte!");
 			return 1;
 		}
 		CMD:unlockp(playerid,params[]){
@@ -10960,15 +10960,15 @@ new WGZ[2];
 	//Gangi
 		CMD:gang(playerid,params[]){
 			if(PDV[playerid][IGid] == -1){
-				Dialog_Show(playerid, GangD, DIALOG_STYLE_LIST, "{aaffaa}Gang {ffffff}- Menu", "Stwórz Gang\nLista Gangów\nTop Respektu\nInformacje", "OK","Anuluj");
+				Dialog_Show(playerid, GangD, DIALOG_STYLE_LIST, "{aaffaa}Gang {ffffff}- Menu", "StwÃ³rz Gang\nLista GangÃ³w\nTop Respektu\nInformacje", "OK","Anuluj");
 			}else{
-				Dialog_Show(playerid, GangJD, DIALOG_STYLE_LIST, "{aaffaa}Gang {ffffff}- Menu", "Twój Gang\nLista Gangów\nTop Respektu\nInformacje", "OK","Anuluj");
+				Dialog_Show(playerid, GangJD, DIALOG_STYLE_LIST, "{aaffaa}Gang {ffffff}- Menu", "TwÃ³j Gang\nLista GangÃ³w\nTop Respektu\nInformacje", "OK","Anuluj");
 			}
 			return 1;
 		}
 		CMD:stworzgang(playerid,params[]){
 			if(PDV[playerid][IGid] != -1){return 0;}
-			Dialog_Show(playerid, GangSD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Stwórz Gang", "Stwórz Gang\n{aaffaa}Gang kosztuje {ffaaaa}30k {aaffaa}Expa i {ffaaaa}300k$ {aaffaa}Pieniêdzy\n{aaaaaa}Przed stworzeniem Gangu podaj jego Tag i Nazwe po przecinku\nPrzyk³ad:PK,PartiaKorwin", "Ok","Nie");
+			Dialog_Show(playerid, GangSD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- StwÃ³rz Gang", "StwÃ³rz Gang\n{aaffaa}Gang kosztuje {ffaaaa}30k {aaffaa}Expa i {ffaaaa}300k$ {aaffaa}PieniÃªdzy\n{aaaaaa}Przed stworzeniem Gangu podaj jego Tag i Nazwe po przecinku\nPrzykÂ³ad:PK,PartiaKorwin", "Ok","Nie");
 			return 1;
 		}
 		CMD:listagangow(playerid,params[]){
@@ -10978,9 +10978,9 @@ new WGZ[2];
 				strcat(str,"\n",iz);
 			}
 			if(isnull(str)){
-				strcat(str,"{ff0000}Brak gangów",iz);
+				strcat(str,"{ff0000}Brak gangÃ³w",iz);
 			}
-			Dialog_Show(playerid, GangLD, DIALOG_STYLE_LIST, "{aaffaa}Gang {ffffff}- Lista Gangów", str, "Wybierz","Nie");
+			Dialog_Show(playerid, GangLD, DIALOG_STYLE_LIST, "{aaffaa}Gang {ffffff}- Lista GangÃ³w", str, "Wybierz","Nie");
 			return 1;
 		}
 		CMD:topgangow(playerid,params[]){
@@ -10992,67 +10992,67 @@ new WGZ[2];
 		}
 		CMD:ginfo(playerid,params[]){
 			new str[416];
-			strcat(str, "------------------System Gangów------------------\nKrótko o gangach:\nWst¹pienie lub za³o¿enie gangu zalicza osi¹gniêcie i daje mo¿liwoœæ zaliczenia innych.",sizeof(str));
-			strcat(str,"\nJeœli gang posiada teren wszyscy cz³onkowie na tym zyskuj¹ otrzymuj¹c co godzinê exp na w³asne konto.\nGangi nale¿y ulepszaæ by z czasem wiêcej z niego zyskiwaæ.",sizeof(str));
-			strcat(str,"\nZa³o¿enie gangu kosztuje : 50k expa i 300k$\nUtrzymanie gangu kosztuje 2.4kExp i 15k$ na dzien",sizeof(str));
+			strcat(str, "------------------System GangÃ³w------------------\nKrÃ³tko o gangach:\nWstÂ¹pienie lub zaÂ³oÂ¿enie gangu zalicza osiÂ¹gniÃªcie i daje moÂ¿liwoÅ“Ã¦ zaliczenia innych.",sizeof(str));
+			strcat(str,"\nJeÅ“li gang posiada teren wszyscy czÂ³onkowie na tym zyskujÂ¹ otrzymujÂ¹c co godzinÃª exp na wÂ³asne konto.\nGangi naleÂ¿y ulepszaÃ¦ by z czasem wiÃªcej z niego zyskiwaÃ¦.",sizeof(str));
+			strcat(str,"\nZaÂ³oÂ¿enie gangu kosztuje : 50k expa i 300k$\nUtrzymanie gangu kosztuje 2.4kExp i 15k$ na dzien",sizeof(str));
 			Dialog_Show(playerid, infoD, DIALOG_STYLE_MSGBOX, "{aaffaa}Gang {ffffff}- Info", str, "OK","");
 			return 1;
 		}
 		CMD:mojgang(playerid,params[]){
 			if(PDV[playerid][IGid] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz gangu"); return 1;}
-			Dialog_Show(playerid, GangMD, DIALOG_STYLE_LIST, "{aaffaa}Gang {ffffff}- Mój gang", "Dodaj Gracza\nUsun Cz³onka\nInfo O Gangu\nUlepsz Gang\nCz³onkowie\nPrzed³u¿ Gang", "OK","Anuluj");
+			Dialog_Show(playerid, GangMD, DIALOG_STYLE_LIST, "{aaffaa}Gang {ffffff}- MÃ³j gang", "Dodaj Gracza\nUsun CzÂ³onka\nInfo O Gangu\nUlepsz Gang\nCzÂ³onkowie\nPrzedÂ³uÂ¿ Gang", "OK","Anuluj");
 			return 1;
 		}
 		CMD:dodajg(playerid,params[]){
 			if(PDV[playerid][IGid] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz gangu"); return 1;}
 			if(PDV[playerid][GPid] <= 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz permisji do tej komendy"); return 1;}
-			Dialog_Show(playerid, GangDGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Dodaj Gracza", "{ffffff}Podaj ID gracza którego chcesz dodaæ", "OK","Nie");
+			Dialog_Show(playerid, GangDGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Dodaj Gracza", "{ffffff}Podaj ID gracza ktÃ³rego chcesz dodaÃ¦", "OK","Nie");
 			return 1;
 		}
 		CMD:usung(playerid,params[]){
 			if(PDV[playerid][IGid] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz gangu"); return 1;}
 			if(PDV[playerid][GPid] <= 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz permisji do tej komendy"); return 1;}
-			Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ffffff}Podaj ID gracza którego chcesz Usun¹æ", "OK","Nie");
+			Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ffffff}Podaj ID gracza ktÃ³rego chcesz UsunÂ¹Ã¦", "OK","Nie");
 			return 1;
 		}
 		CMD:gaccept(playerid,params[]){
 			if(PDV[playerid][IGidI] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak zaproszenia"); return 1;}
 			foreach(Player,i){
 				if(PDV[i][IGid] == PDV[playerid][IGidI] && PDV[i][GPid] <= 1){
-					SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz %s zaakceptowa³ zaproszenie",PDV[playerid][Nck]);
+					SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz %s zaakceptowaÂ³ zaproszenie",PDV[playerid][Nck]);
 				}
 			}
 			PDV[playerid][IGid] = PDV[playerid][IGidI];
 			PDV[playerid][IGidI] = -1;
 			GDV[PDV[playerid][IGid]][gMem]++;
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Do³¹czy³eœ do gangu %s",GDV[PDV[playerid][IGid]][gName]);
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}DoÂ³Â¹czyÂ³eÅ“ do gangu %s",GDV[PDV[playerid][IGid]][gName]);
 			return 1;
 		}
 		CMD:gdeny(playerid,params[]){
 			if(PDV[playerid][IGidI] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak Zaproszenia"); return 1;}
 			foreach(Player,i){
 				if(PDV[i][IGid] == PDV[playerid][IGidI] && PDV[i][GPid] <= 1){
-					SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz %s odrzuci³ zaproszenie",PDV[playerid][Nck]);
+					SCM(i,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz %s odrzuciÂ³ zaproszenie",PDV[playerid][Nck]);
 				}
 			}
 			PDV[playerid][IGidI] = -1;
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Odrzuci³eœ zaproszenie");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}OdrzuciÂ³eÅ“ zaproszenie");
 			return 1;
 		}
 		CMD:gopusc(playerid,params[]){
 			if(PDV[playerid][IGid] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak Gangu"); return 1;}
-			if(PDV[playerid][GPid] == 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Jesteœ liderem nie mo¿esz siê usun¹æ"); return 1;}
+			if(PDV[playerid][GPid] == 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}JesteÅ“ liderem nie moÂ¿esz siÃª usunÂ¹Ã¦"); return 1;}
 			new str[45];
-			format(str,sizeof(str),"Gracz %s opuœci³ gang",PDV[playerid][Nck]);
+			format(str,sizeof(str),"Gracz %s opuÅ“ciÂ³ gang",PDV[playerid][Nck]);
 			MSGGang(PDV[playerid][IGid],INVALID_PLAYER_ID,str);
 			GDV[PDV[playerid][IGid]][gMem]--;
 			PDV[playerid][IGid] = -1;
 			PDV[playerid][GPid] = 0;
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Odszed³eœ z gangu");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}OdszedÂ³eÅ“ z gangu");
 			return 1;
 		}
 		CMD:gulepsz(playerid,params[]){
-			if(PDV[playerid][GPid] != 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie jesteœ liderem gangu"); return 1;}
+			if(PDV[playerid][GPid] != 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie jesteÅ“ liderem gangu"); return 1;}
 			Dialog_Show(playerid, GangUpGD, DIALOG_STYLE_TABLIST_HEADERS, "{aaffaa}Gang {ffffff}- Ulepsz Gang", "LVL\tKoszt\n{ffffff}LVL 1\t75k Expa i 500k$\nLVL 2\t100k Expa i 750k$\nLVL 3\t150k Expa 1mln $\nLVL 4\t200k expa i 2 mln$", "OK","Nie");
 			return 1;
 		}
@@ -11066,7 +11066,7 @@ new WGZ[2];
 				}
 			}
 			new str[520];
-			format(str,sizeof(str),"Gang:%s\nTag:%s\n\nRespekt:%i\nIloœæ Terenów:%i\nIloœæ Cz³onków:%i\nCz³onkowie Online:{00ff00}%s",GDV[PDV[playerid][IGid]][gName],GDV[PDV[playerid][IGid]][gTag],GDV[PDV[playerid][IGid]][gRspkt],GDV[PDV[playerid][IGid]][gTrtCoun],GDV[PDV[playerid][IGid]][gMem],st2);
+			format(str,sizeof(str),"Gang:%s\nTag:%s\n\nRespekt:%i\nIloÅ“Ã¦ TerenÃ³w:%i\nIloÅ“Ã¦ CzÂ³onkÃ³w:%i\nCzÂ³onkowie Online:{00ff00}%s",GDV[PDV[playerid][IGid]][gName],GDV[PDV[playerid][IGid]][gTag],GDV[PDV[playerid][IGid]][gRspkt],GDV[PDV[playerid][IGid]][gTrtCoun],GDV[PDV[playerid][IGid]][gMem],st2);
 			Dialog_Show(playerid, infoD, DIALOG_STYLE_TABLIST_HEADERS, "{aaffaa}Gang {ffffff}- Info o Gangu", str, "Ok","");
 			return 1;
 		}
@@ -11080,19 +11080,19 @@ new WGZ[2];
 				}
 			}
 			new str[520];
-			format(str,sizeof(str),"{ffffff}Cz³onkowie Online:{00ff00}%s",st2);
+			format(str,sizeof(str),"{ffffff}CzÂ³onkowie Online:{00ff00}%s",st2);
 			Dialog_Show(playerid, infoD, DIALOG_STYLE_TABLIST_HEADERS, "{aaffaa}Gang {ffffff}- Info o Gangu", str, "Ok","");	
 			return 1;
 		}
 		CMD:gprzedluz(playerid,params[]){
 			if(PDV[playerid][IGid] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak Gangu"); return 1;}
-			Dialog_Show(playerid, expirG, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Przed³u¿", "{ffffff}Wpisz iloœæ dni na któr¹ chcesz przed³u¿yæ {aaffaa}Gang","OK","Anuluj");
+			Dialog_Show(playerid, expirG, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- PrzedÂ³uÂ¿", "{ffffff}Wpisz iloÅ“Ã¦ dni na ktÃ³rÂ¹ chcesz przedÂ³uÂ¿yÃ¦ {aaffaa}Gang","OK","Anuluj");
 			return 1;
 		}
 		CMD:spar(playerid,params[]){
-			if(PDV[playerid][GPid] < 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej komendy"); return 1;}
+			if(PDV[playerid][GPid] < 2){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej komendy"); return 1;}
 			new spra;
-			if(sscanf(params,"i",spra)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie:/spar [id]");}
+			if(sscanf(params,"i",spra)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie:/spar [id]");}
 			return 1;
 		}
 		CMD:sparaccept(playerid,params[]){
@@ -11101,12 +11101,12 @@ new WGZ[2];
 	//Zones
 		CMD:stworzteren(playerid,params[])
 		{
-			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej cmd"); return 1;}
+			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej cmd"); return 1;}
 			if(floatround(GM[GZs0],floatround_round) == 0){
-				if(sscanf(params,"s[24]",GZnm)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /stworzteren [nazwa]"); return 1;}
+				if(sscanf(params,"s[24]",GZnm)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /stworzteren [nazwa]"); return 1;}
 				new Float:z;
 				GetPlayerPos(playerid, GM[GZs0],GM[GZs1], z);
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Uda³o ci siê stworzyæ pierwsz¹ czêœæ strefy idŸ teraz do drugiego rogu");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UdaÂ³o ci siÃª stworzyÃ¦ pierwszÂ¹ czÃªÅ“Ã¦ strefy idÅ¸ teraz do drugiego rogu");
 			}else{
 				new Float:z;
 				GetPlayerPos(playerid,GM[GZs2],GM[GZs3],z);
@@ -11118,47 +11118,47 @@ new WGZ[2];
 				GM[GZs2] = 0.000;
 				GM[GZs3] = 0.000;
 				if(x == 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Dojebano do limitu stref");}
-				else{SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Brawo Stworzy³eœ strefe");}
+				else{SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Brawo StworzyÂ³eÅ“ strefe");}
 			}
 			return 1;
 		}
 		CMD:sledzt(playerid,params[]){
-			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej cmd"); return 1;}
+			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej cmd"); return 1;}
 			if(!PDV[playerid][zSl]){
 				PDV[playerid][zSl] = true;
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}W³¹czy³eœ Œledzenie id terenu");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}WÂ³Â¹czyÂ³eÅ“ Å’ledzenie id terenu");
 			}else{
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Wy³¹czy³eœ Œledzenie id terenu");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}WyÂ³Â¹czyÂ³eÅ“ Å’ledzenie id terenu");
 				PDV[playerid][zSl] = false;
 			}
 			return 1;
 		}
 		CMD:usunteren(playerid,params[]){
-			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tej cmd"); return 1;}
+			if(PDV[playerid][APL] < 5){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostÃªpu do tej cmd"); return 1;}
 			new x;
-			if(sscanf(params,"i",x)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}U¿ycie: /ausunteren [id]"); return 1;}
-			if(!Iter_Contains(aZones, x)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Takie coœ nie istnieje"); return 1;}
+			if(sscanf(params,"i",x)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}UÂ¿ycie: /ausunteren [id]"); return 1;}
+			if(!Iter_Contains(aZones, x)){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Takie coÅ“ nie istnieje"); return 1;}
 			DestroyZone(x);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Poprawnie usuniêto strefe");
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Poprawnie usuniÃªto strefe");
 			return 1;
 		}
 //Dialog ---WATCHOUT NOT DOCUMENTED---
 	Dialog:expirG(playerid,response,listitem,inputtext[]){
 		if(PDV[playerid][IGid] == -1){return 1;}
 		if(response){
-			if(isnull(inputtext)){Dialog_Show(playerid, expirG, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Przed³u¿", "{ffffff}Wpisz iloœæ dni na któr¹ chcesz przed³u¿yæ {aaffaa}Gang\n{ff0000}Wpisz COŒ!","OK","Anuluj");}
-			if(!IsNumeric(inputtext)){Dialog_Show(playerid, expirG, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Przed³u¿", "{ffffff}Wpisz iloœæ dni na któr¹ chcesz przed³u¿yæ {aaffaa}Gang\n{ff0000}ILOŒÆ DNI!","OK","Anuluj");}
+			if(isnull(inputtext)){Dialog_Show(playerid, expirG, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- PrzedÂ³uÂ¿", "{ffffff}Wpisz iloÅ“Ã¦ dni na ktÃ³rÂ¹ chcesz przedÂ³uÂ¿yÃ¦ {aaffaa}Gang\n{ff0000}Wpisz COÅ’!","OK","Anuluj");}
+			if(!IsNumeric(inputtext)){Dialog_Show(playerid, expirG, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- PrzedÂ³uÂ¿", "{ffffff}Wpisz iloÅ“Ã¦ dni na ktÃ³rÂ¹ chcesz przedÂ³uÂ¿yÃ¦ {aaffaa}Gang\n{ff0000}ILOÅ’Ã† DNI!","OK","Anuluj");}
 			new v = strval(inputtext);
 			new cos = TkPlRe(playerid,v * 2400);
-			if(!cos){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak œrodków potrzebne %i Exp",v * 2400); return 1;}
+			if(!cos){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak Å“rodkÃ³w potrzebne %i Exp",v * 2400); return 1;}
 			cos = TkPlMo(playerid,v * 15000);
 			if(!cos){
 				GiRe(playerid,v * 2400);
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak œrodków potrzebne %i Hajsu",v * 15000);
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Brak Å“rodkÃ³w potrzebne %i Hajsu",v * 15000);
 				return 1;
 			}
 			GDV[PDV[playerid][IGid]][gExpire] += v;
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff80}Przed³u¿y³eœ Gang na {00ffff}%i {00ff80}dni",GDV[PDV[playerid][IGid]][gExpire]);
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff80}PrzedÂ³uÂ¿yÂ³eÅ“ Gang na {00ffff}%i {00ff80}dni",GDV[PDV[playerid][IGid]][gExpire]);
 		}
 		return 1;
 	}
@@ -11184,62 +11184,62 @@ new WGZ[2];
 			case 0:{
 				if(GDV[PDV[playerid][IGid]][LVL] < listitem){
 					new v = TkPlRe(playerid,75000);
-					if(!v){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki"); return 1;}
+					if(!v){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki"); return 1;}
 					v = TkPlMo(playerid,500000);
 					if(!v){
 						GiRe(playerid,75000);
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki");
 						return 1;
 					}
 					GDV[PDV[playerid][IGid]][LVL] = 1;
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Brawo ulepszy³eœ Gang");
+					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Brawo ulepszyÂ³eÅ“ Gang");
 				}
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ju¿ masz wiêkszy lvl b¹dŸ taki sam");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}JuÂ¿ masz wiÃªkszy lvl bÂ¹dÅ¸ taki sam");
 			}
 			case 1:{
 				if(GDV[PDV[playerid][IGid]][LVL] < listitem){
 					new v = TkPlRe(playerid,100000);
-					if(!v){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki"); return 1;}
+					if(!v){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki"); return 1;}
 					v = TkPlMo(playerid,750000);
 					if(!v){
 						GiRe(playerid,100000);
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki");
 						return 1;
 					}
 					GDV[PDV[playerid][IGid]][LVL] = 2;
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Brawo ulepszy³eœ Gang");
+					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Brawo ulepszyÂ³eÅ“ Gang");
 				}
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ju¿ masz wiêkszy lvl b¹dŸ taki sam");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}JuÂ¿ masz wiÃªkszy lvl bÂ¹dÅ¸ taki sam");
 			}
 			case 2:{
 				if(GDV[PDV[playerid][IGid]][LVL] < listitem){
 					new v = TkPlRe(playerid,150000);
-					if(!v){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki"); return 1;}
+					if(!v){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki"); return 1;}
 					v = TkPlMo(playerid,1000000);
 					if(!v){
 						GiRe(playerid,150000);
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki");
 						return 1;
 					}
 					GDV[PDV[playerid][IGid]][LVL] = 3;
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Brawo ulepszy³eœ Gang");
+					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Brawo ulepszyÂ³eÅ“ Gang");
 				}
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ju¿ masz wiêkszy lvl b¹dŸ taki sam");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}JuÂ¿ masz wiÃªkszy lvl bÂ¹dÅ¸ taki sam");
 			}
 			case 3:{
 				if(GDV[PDV[playerid][IGid]][LVL] < listitem){
 					new v = TkPlRe(playerid,200000);
-					if(!v){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki"); return 1;}
+					if(!v){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki"); return 1;}
 					v = TkPlMo(playerid,2000000);
 					if(!v){
 						GiRe(playerid,200000);
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki");
+						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki");
 						return 1;
 					}
 					GDV[PDV[playerid][IGid]][LVL] = 4;
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Brawo ulepszy³eœ Gang");
+					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Brawo ulepszyÂ³eÅ“ Gang");
 				}
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Ju¿ masz wiêkszy lvl b¹dŸ taki sam");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}JuÂ¿ masz wiÃªkszy lvl bÂ¹dÅ¸ taki sam");
 			}
 		}
 		return 1;
@@ -11249,12 +11249,12 @@ new WGZ[2];
 		else {
 			if(PDV[playerid][GPid] == 0){return 1;}
 			if(PDV[playerid][IGid] == -1){return 1;}
-			if(isnull(inputtext)){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}BRAK ID GRACZA!\n{ffffff}Podaj ID gracza którego chcesz Usun¹æ", "OK","Nie");return 1;}
+			if(isnull(inputtext)){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}BRAK ID GRACZA!\n{ffffff}Podaj ID gracza ktÃ³rego chcesz UsunÂ¹Ã¦", "OK","Nie");return 1;}
 			new x = strval(inputtext);
-			if(!IsPlayerConnected(x)){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}Gracz nie istnieje!\n{ffffff}Podaj ID gracza którego chcesz Usun¹æ", "OK","Nie");return 1;}
-			if(PDV[x][IGid] != -1){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}Gracz jest ju¿ w innym gangu\n{ffffff}Podaj ID gracza którego chcesz Usun¹æ", "OK","Nie");return 1;}
+			if(!IsPlayerConnected(x)){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}Gracz nie istnieje!\n{ffffff}Podaj ID gracza ktÃ³rego chcesz UsunÂ¹Ã¦", "OK","Nie");return 1;}
+			if(PDV[x][IGid] != -1){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}Gracz jest juÂ¿ w innym gangu\n{ffffff}Podaj ID gracza ktÃ³rego chcesz UsunÂ¹Ã¦", "OK","Nie");return 1;}
 			PDV[x][IGidI] = PDV[playerid][IGid];
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Zosta³eœ zaproszony do Gangu {aaffaa}%s{00ff00} przez {aaffaa}%s{ffffff} /gaccept",GDV[PDV[playerid][IGid]][gName],PDV[playerid][Nck]);
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}ZostaÂ³eÅ“ zaproszony do Gangu {aaffaa}%s{00ff00} przez {aaffaa}%s{ffffff} /gaccept",GDV[PDV[playerid][IGid]][gName],PDV[playerid][Nck]);
 		}	
 		return 1;
 	}
@@ -11263,15 +11263,15 @@ new WGZ[2];
 		else {
 			if(PDV[playerid][GPid] == 0){return 1;}
 			if(PDV[playerid][IGid] == -1){return 1;}
-			if(isnull(inputtext)){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}BRAK ID GRACZA!\n{ffffff}Podaj ID gracza którego chcesz Usun¹æ", "OK","Nie");return 1;}
+			if(isnull(inputtext)){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}BRAK ID GRACZA!\n{ffffff}Podaj ID gracza ktÃ³rego chcesz UsunÂ¹Ã¦", "OK","Nie");return 1;}
 			new x = strval(inputtext);
-			if(!IsPlayerConnected(x)){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}Gracz nie istnieje!\n{ffffff}Podaj ID gracza którego chcesz Usun¹æ", "OK","Nie");return 1;}
-			if(PDV[x][IGid] != PDV[x][IGid]){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}Gracz jest nie w tym gangu\n{ffffff}Podaj ID gracza którego chcesz Usun¹æ", "OK","Nie");return 1;}
-			if(PDV[x][GPid] == 2){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}Gracz jest liderem!\n{ffffff}Podaj ID gracza którego chcesz Usun¹æ", "OK","Nie");return 1;}
+			if(!IsPlayerConnected(x)){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}Gracz nie istnieje!\n{ffffff}Podaj ID gracza ktÃ³rego chcesz UsunÂ¹Ã¦", "OK","Nie");return 1;}
+			if(PDV[x][IGid] != PDV[x][IGid]){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}Gracz jest nie w tym gangu\n{ffffff}Podaj ID gracza ktÃ³rego chcesz UsunÂ¹Ã¦", "OK","Nie");return 1;}
+			if(PDV[x][GPid] == 2){Dialog_Show(playerid, GangUGD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Usun Gracza", "{ff0000}Gracz jest liderem!\n{ffffff}Podaj ID gracza ktÃ³rego chcesz UsunÂ¹Ã¦", "OK","Nie");return 1;}
 			PDV[x][IGid] = -1;
 			PDV[x][GPid] = 0;
 			GDV[PDV[playerid][IGid]][gMem]--;
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Zosta³eœ wyrzucony z gangu przez %s",PDV[playerid][Nck]);
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ZostaÂ³eÅ“ wyrzucony z gangu przez %s",PDV[playerid][Nck]);
 		}
 		return 1;
 	}
@@ -11287,8 +11287,8 @@ new WGZ[2];
 							strcat(MembersOnline,"\n",iz);
 						}
 					}
-					format(str,sizeof(str),"Gang:%s\nTag:%s\n\nID:%i\nRespekt:%i\nTereny:%i\nCz³onkowie Online:%s",GDV[x][gName],GDV[x][gTag],x,GDV[x][gRspkt],GDV[x][gTrtCoun],MembersOnline);
-					Dialog_Show(playerid, infoD, DIALOG_STYLE_MSGBOX, "{aaffaa}Gang {ffffff}- Lista Gangów", str, "OK","");
+					format(str,sizeof(str),"Gang:%s\nTag:%s\n\nID:%i\nRespekt:%i\nTereny:%i\nCzÂ³onkowie Online:%s",GDV[x][gName],GDV[x][gTag],x,GDV[x][gRspkt],GDV[x][gTrtCoun],MembersOnline);
+					Dialog_Show(playerid, infoD, DIALOG_STYLE_MSGBOX, "{aaffaa}Gang {ffffff}- Lista GangÃ³w", str, "OK","");
 					break;
 				}
 			}
@@ -11298,28 +11298,28 @@ new WGZ[2];
 	Dialog:GangSD(playerid,response,listitem,inputtext[]){
 		if(!response){}
 		else{
-			if(isnull(inputtext)){Dialog_Show(playerid, GangSD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Stwórz Gang", "{ff0000}Ju¿ taka nazwa gangu istnieje!\nStwórz Gang\n{aaffaa}Gang kosztuje {ffaaaa}30k {aaffaa}Expa i {ffaaaa}300k$ {aaffaa}Pieniêdzy\n{aaaaaa}Przed stworzeniem Gangu podaj jego Tag i Nazwe po przecinku\nPrzyk³ad:PK,PartiaKorwin", "Ok","Nie");}
-			if(strlen(inputtext) > 31){Dialog_Show(playerid, GangSD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Stwórz Gang", "Stwórz Gang\n{ff0000}Za du¿o znaków max(30)\n{aaffaa}Gang kosztuje {ffaaaa}30k {aaffaa}Expa i {ffaaaa}300k$ {aaffaa}Pieniêdzy\n{aaaaaa}Przed stworzeniem Gangu podaj jego Tag i Nazwe po przecinku\nPrzyk³ad:PK,PartiaKorwin", "Ok","Nie"); return 1;}
-			if(strfind(inputtext,",") != -1){Dialog_Show(playerid, GangSD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Stwórz Gang", "Stwórz Gang\n{ff0000}le wpisa³eœ Tag i nazwe gangu popatrz na dole po przyk³ad\n{aaffaa}Gang kosztuje {ffaaaa}30k {aaffaa}Expa i {ffaaaa}300k$ {aaffaa}Pieniêdzy\n{aaaaaa}Przed stworzeniem Gangu podaj jego Tag i Nazwe po przecinku\nPrzyk³ad:PK,PartiaKorwin", "Ok","Nie"); return 1;}
+			if(isnull(inputtext)){Dialog_Show(playerid, GangSD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- StwÃ³rz Gang", "{ff0000}JuÂ¿ taka nazwa gangu istnieje!\nStwÃ³rz Gang\n{aaffaa}Gang kosztuje {ffaaaa}30k {aaffaa}Expa i {ffaaaa}300k$ {aaffaa}PieniÃªdzy\n{aaaaaa}Przed stworzeniem Gangu podaj jego Tag i Nazwe po przecinku\nPrzykÂ³ad:PK,PartiaKorwin", "Ok","Nie");}
+			if(strlen(inputtext) > 31){Dialog_Show(playerid, GangSD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- StwÃ³rz Gang", "StwÃ³rz Gang\n{ff0000}Za duÂ¿o znakÃ³w max(30)\n{aaffaa}Gang kosztuje {ffaaaa}30k {aaffaa}Expa i {ffaaaa}300k$ {aaffaa}PieniÃªdzy\n{aaaaaa}Przed stworzeniem Gangu podaj jego Tag i Nazwe po przecinku\nPrzykÂ³ad:PK,PartiaKorwin", "Ok","Nie"); return 1;}
+			if(strfind(inputtext,",") != -1){Dialog_Show(playerid, GangSD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- StwÃ³rz Gang", "StwÃ³rz Gang\n{ff0000}Âle wpisaÂ³eÅ“ Tag i nazwe gangu popatrz na dole po przykÂ³ad\n{aaffaa}Gang kosztuje {ffaaaa}30k {aaffaa}Expa i {ffaaaa}300k$ {aaffaa}PieniÃªdzy\n{aaaaaa}Przed stworzeniem Gangu podaj jego Tag i Nazwe po przecinku\nPrzykÂ³ad:PK,PartiaKorwin", "Ok","Nie"); return 1;}
 			new TagG[6],NazwaG[24];
 			new h = strfind(inputtext, ",");
 			strmid(TagG, inputtext, 0, h, sizeof(TagG));
 			strmid(NazwaG, inputtext, h, 31, sizeof(NazwaG));
 			foreach(new x : GTHC){
 				if(!strcmp(GDV[x][gTag], TagG, false)){
-					Dialog_Show(playerid, GangSD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Stwórz Gang", "{ff0000}Ju¿ taka nazwa gangu istnieje!\nStwórz Gang\n{aaffaa}Gang kosztuje {ffaaaa}30k {aaffaa}Expa i {ffaaaa}300k$ {aaffaa}Pieniêdzy\n{aaaaaa}Przed stworzeniem Gangu podaj jego Tag i Nazwe po przecinku\nPrzyk³ad:PK,PartiaKorwin", "Ok","Nie");
+					Dialog_Show(playerid, GangSD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- StwÃ³rz Gang", "{ff0000}JuÂ¿ taka nazwa gangu istnieje!\nStwÃ³rz Gang\n{aaffaa}Gang kosztuje {ffaaaa}30k {aaffaa}Expa i {ffaaaa}300k$ {aaffaa}PieniÃªdzy\n{aaaaaa}Przed stworzeniem Gangu podaj jego Tag i Nazwe po przecinku\nPrzykÂ³ad:PK,PartiaKorwin", "Ok","Nie");
 					return 1;
 				}
 				else if(!strcmp(GDV[x][gName],NazwaG,false)){
-					Dialog_Show(playerid, GangSD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- Stwórz Gang", "{ff0000}Ju¿ taka nazwa gangu istnieje!\nStwórz Gang\n{aaffaa}Gang kosztuje {ffaaaa}30k {aaffaa}Expa i {ffaaaa}300k$ {aaffaa}Pieniêdzy\n{aaaaaa}Przed stworzeniem Gangu podaj jego Tag i Nazwe po przecinku\nPrzyk³ad:PK,PartiaKorwin", "Ok","Nie");
+					Dialog_Show(playerid, GangSD, DIALOG_STYLE_INPUT, "{aaffaa}Gang {ffffff}- StwÃ³rz Gang", "{ff0000}JuÂ¿ taka nazwa gangu istnieje!\nStwÃ³rz Gang\n{aaffaa}Gang kosztuje {ffaaaa}30k {aaffaa}Expa i {ffaaaa}300k$ {aaffaa}PieniÃªdzy\n{aaaaaa}Przed stworzeniem Gangu podaj jego Tag i Nazwe po przecinku\nPrzykÂ³ad:PK,PartiaKorwin", "Ok","Nie");
 					return 1;
 				}
 			}
 			new str[170];
 			SetPVarString(playerid, "TagGp", TagG);
 			SetPVarString(playerid, "NazwaGp", NazwaG);
-			format(str,sizeof(str),"{ffffff}Czy napewno chcesz stworzyæ Gang?\nNazwa Gangu:{aaffaa}%s\n{ffffff}Tag Gangu:{aaffaa}%s\nBêdzie cie to kosztowa³o 30k Expa i 300k$",NazwaG,TagG);
-			Dialog_Show(playerid, GangSDc, DIALOG_STYLE_MSGBOX, "{aaffaa}Gang {ffffff}- Stwórz Gang{ff0000}Potwierdz", str, "Tak","Nie");
+			format(str,sizeof(str),"{ffffff}Czy napewno chcesz stworzyÃ¦ Gang?\nNazwa Gangu:{aaffaa}%s\n{ffffff}Tag Gangu:{aaffaa}%s\nBÃªdzie cie to kosztowaÂ³o 30k Expa i 300k$",NazwaG,TagG);
+			Dialog_Show(playerid, GangSDc, DIALOG_STYLE_MSGBOX, "{aaffaa}Gang {ffffff}- StwÃ³rz Gang{ff0000}Potwierdz", str, "Tak","Nie");
 		}
 		return 1;
 	}
@@ -11329,20 +11329,20 @@ new WGZ[2];
 		GetPVarString(playerid, "NazwaGp", NazwaG, 24);
 		DeletePVar(playerid, "TagGp");
 		DeletePVar(playerid, "NazwaGp");
-		if(strlen(TagG) <= 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {FF0000}Tag musi mieæ wiêcej ni¿ 0 znaków!!!!"); return 1;}
-		if(strlen(NazwaG) <= 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {FF0000}Nazwa musi mieæ wiêcej ni¿ 0 znaków!!!!"); return 1;}
+		if(strlen(TagG) <= 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {FF0000}Tag musi mieÃ¦ wiÃªcej niÂ¿ 0 znakÃ³w!!!!"); return 1;}
+		if(strlen(NazwaG) <= 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {FF0000}Nazwa musi mieÃ¦ wiÃªcej niÂ¿ 0 znakÃ³w!!!!"); return 1;}
 		if(!response){}
 		else {
 			new v = TkPlRe(playerid,30000);
-			if(!v){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki"); return 1;}
+			if(!v){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki"); return 1;}
 			v = TkPlMo(playerid,300000);
 			if(!v){
 				GiRe(playerid,30000);
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki");
+				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczajÂ¹ce Å“rodki");
 				return 1;
 			}
 			CreateGang(NazwaG,PDV[playerid][iDP],TagG);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}Pomyœlnie stworzono Gang:%s",NazwaG);
+			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaffaa}PomyÅ“lnie stworzono Gang:%s",NazwaG);
 		}
 		return 1;
 	}
@@ -11388,7 +11388,7 @@ new WGZ[2];
 				}
 				case 2:{
 					new str[340];
-					format(str,sizeof(str),"Nick\tZabójstwa\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i",Top[0][TopKilln],Top[0][TopKill],Top[1][TopKilln],Top[1][TopKill],Top[2][TopKilln],Top[2][TopKill],Top[3][TopKilln],Top[3][TopKill],
+					format(str,sizeof(str),"Nick\tZabÃ³jstwa\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i",Top[0][TopKilln],Top[0][TopKill],Top[1][TopKilln],Top[1][TopKill],Top[2][TopKilln],Top[2][TopKill],Top[3][TopKilln],Top[3][TopKill],
 						Top[4][TopKilln],Top[4][TopKill],Top[5][TopKilln],Top[5][TopKill],Top[6][TopKilln],Top[6][TopKill],Top[7][TopKilln],Top[7][TopKill],Top[8][TopKilln],Top[8][TopKill],Top[9][TopKilln],Top[9][TopKill]);
 					Dialog_Show(playerid,TopDx,DIALOG_STYLE_TABLIST_HEADERS,"Top 10",str,"OK","OK");
 				}
@@ -11398,1060 +11398,4 @@ new WGZ[2];
 						Top[4][TopDeathn],Top[4][TopDeath],Top[5][TopDeathn],Top[5][TopDeath],Top[6][TopDeathn],Top[6][TopDeath],Top[7][TopDeathn],Top[7][TopDeath],Top[8][TopDeathn],Top[8][TopDeath],Top[9][TopDeathn],Top[9][TopDeath]);
 					Dialog_Show(playerid,TopDx,DIALOG_STYLE_TABLIST_HEADERS,"Top 10",str,"OK","OK");
 				}
-				case 4:{
-					new str[340];
-					format(str,sizeof(str),"Nick\tSkulls\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i",Top[0][TopDetan],Top[0][TopDeta],Top[1][TopDetan],Top[1][TopDeta],Top[2][TopDetan],Top[2][TopDeta],Top[3][TopDetan],Top[3][TopDeta],
-						Top[4][TopDetan],Top[4][TopDeta],Top[5][TopDetan],Top[5][TopDeta],Top[6][TopDetan],Top[6][TopDeta],Top[7][TopDetan],Top[7][TopDeta],Top[8][TopDetan],Top[8][TopDeta],Top[9][TopDetan],Top[9][TopDeta]);
-					Dialog_Show(playerid,TopDx,DIALOG_STYLE_TABLIST_HEADERS,"Top 10",str,"OK","OK");
-				}
-				case 5:{
-					new str[340];
-					format(str,sizeof(str),"Nick\tZabójstwa\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i",Top[0][TopOneden],Top[0][TopOnede],Top[1][TopOneden],Top[1][TopOnede],Top[2][TopOneden],Top[2][TopOnede],Top[3][TopOneden],Top[3][TopOnede],
-						Top[4][TopOneden],Top[4][TopOnede],Top[5][TopOneden],Top[5][TopOnede],Top[6][TopOneden],Top[6][TopOnede],Top[7][TopOneden],Top[7][TopOnede],Top[8][TopOneden],Top[8][TopOnede],Top[9][TopOneden],Top[9][TopOnede]);
-					Dialog_Show(playerid,TopDx,DIALOG_STYLE_TABLIST_HEADERS,"Top 10",str,"OK","OK");
-				}
-				case 6:{
-					new str[340];
-					format(str,sizeof(str),"Nick\tZabójstwa\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i",Top[0][TopMinin],Top[0][TopMini],Top[1][TopMinin],Top[1][TopMini],Top[2][TopMinin],Top[2][TopMini],Top[3][TopMinin],Top[3][TopMini],
-						Top[4][TopMinin],Top[4][TopMini],Top[5][TopMinin],Top[5][TopMini],Top[6][TopMinin],Top[6][TopMini],Top[7][TopMinin],Top[7][TopMini],Top[8][TopMinin],Top[8][TopMini],Top[9][TopMinin],Top[9][TopMini]);
-					Dialog_Show(playerid,TopDx,DIALOG_STYLE_TABLIST_HEADERS,"Top 10",str,"OK","OK");
-				}
-				case 7:{
-					new str[340];
-					format(str,sizeof(str),"Nick\tZabójstwa\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i",Top[0][TopPompan],Top[0][TopPompa],Top[1][TopPompan],Top[1][TopPompa],Top[2][TopPompan],Top[2][TopPompa],Top[3][TopPompan],Top[3][TopPompa],
-						Top[4][TopPompan],Top[4][TopPompa],Top[5][TopPompan],Top[5][TopPompa],Top[6][TopPompan],Top[6][TopPompa],Top[7][TopPompan],Top[7][TopPompa],Top[8][TopPompan],Top[8][TopPompa],Top[9][TopPompan],Top[9][TopPompa]);
-					Dialog_Show(playerid,TopDx,DIALOG_STYLE_TABLIST_HEADERS,"Top 10",str,"OK","OK");
-				}
-				case 8:{
-					new str[340];
-					format(str,sizeof(str),"Nick\tZabójstwa\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i",Top[0][TopSnipern],Top[0][TopSniper],Top[1][TopSnipern],Top[1][TopSniper],Top[2][TopSnipern],Top[2][TopSniper],Top[3][TopSnipern],Top[3][TopSniper],
-						Top[4][TopSnipern],Top[4][TopSniper],Top[5][TopSnipern],Top[5][TopSniper],Top[6][TopSnipern],Top[6][TopSniper],Top[7][TopSnipern],Top[7][TopSniper],Top[8][TopSnipern],Top[8][TopSniper],Top[9][TopSnipern],Top[9][TopSniper]);
-					Dialog_Show(playerid,TopDx,DIALOG_STYLE_TABLIST_HEADERS,"Top 10",str,"OK","OK");
-				}
-				case 9:{
-					new str[340];
-					format(str,sizeof(str),"Nick\tGodziny\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i",Top[0][TopOnlinen],Top[0][TopOnline],Top[1][TopOnlinen],Top[1][TopOnline],Top[2][TopOnlinen],Top[2][TopOnline],Top[3][TopOnlinen],Top[3][TopOnline],
-						Top[4][TopOnlinen],Top[4][TopOnline],Top[5][TopOnlinen],Top[5][TopOnline],Top[6][TopOnlinen],Top[6][TopOnline],Top[7][TopOnlinen],Top[7][TopOnline],Top[8][TopOnlinen],Top[8][TopOnline],Top[9][TopOnlinen],Top[9][TopOnline]);
-					Dialog_Show(playerid,TopDx,DIALOG_STYLE_TABLIST_HEADERS,"Top 10",str,"OK","OK");
-				}
-				case 10:{
-					new str[170];
-					format(str,sizeof(str),"Gang\tRespekt\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i\n%s\t%i",Top[0][TopGangT],Top[0][TopGang],Top[1][TopGangT],Top[1][TopGang],Top[2][TopGangT],Top[2][TopGang],Top[3][TopGangT],Top[3][TopGang],Top[4][TopGangT],
-						Top[4][TopGang],Top[5][TopGangT],Top[5][TopGang],Top[6][TopGangT],Top[6][TopGang],Top[7][TopGangT],Top[7][TopGang],Top[8][TopGangT],Top[8][TopGang],Top[9][TopGangT],Top[9][TopGang]);
-					Dialog_Show(playerid,TopDx,DIALOG_STYLE_TABLIST_HEADERS,"Top 10",str,"OK","OK");
-				
-				}
-			}
-		}
-		return 1;
-	}
-	Dialog:spD(playerid,response,listitem,inputtext[]){
-		if(!response){return 1;}
-		switch(listitem){
-			case 0:{
-				GetPlayerPos(playerid,PDV[playerid][PlpX][0],PDV[playerid][PlpY][0],PDV[playerid][PlpZ][0]);
-			}
-			case 1:{
-				new bool:x=false;
-				if(PDV[playerid][APL] >= 1){x = true;}
-				else if(PDV[playerid][VIP] >= 1){x = true;}
-				if(x){
-					GetPlayerPos(playerid,PDV[playerid][PlpX][1],PDV[playerid][PlpY][1],PDV[playerid][PlpZ][1]);
-				}else {
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tych pozycji");
-				}
-			}
-			case 2:{
-				new bool:x=false;
-				if(PDV[playerid][APL] >= 1){x = true;}
-				else if(PDV[playerid][VIP] >= 1){x = true;}
-				if(x){
-					GetPlayerPos(playerid,PDV[playerid][PlpX][2],PDV[playerid][PlpY][2],PDV[playerid][PlpZ][2]);
-				}else {
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tych pozycji");
-				}
-			}
-		}
-		return 1;
-	}
-	Dialog:lpD(playerid,response,listitem,inputtext[]){
-		if(!response){return 1;}
-		switch(listitem){
-			case 0:{
-				SetPlayerPos(playerid,PDV[playerid][PlpX][0],PDV[playerid][PlpY][0],PDV[playerid][PlpZ][0]);
-			}
-			case 1:{
-				new bool:x=false;
-				if(PDV[playerid][APL] >= 1){x = true;}
-				else if(PDV[playerid][VIP] >= 1){x = true;}
-				if(x){
-					SetPlayerPos(playerid,PDV[playerid][PlpX][1],PDV[playerid][PlpY][1],PDV[playerid][PlpZ][1]);
-				}else {
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tych pozycji");
-				}
-			}
-			case 2:{
-				new bool:x=false;
-				if(PDV[playerid][APL] >= 1){x = true;}
-				else if(PDV[playerid][VIP] >= 1){x = true;}
-				if(x){
-					SetPlayerPos(playerid,PDV[playerid][PlpX][2],PDV[playerid][PlpY][2],PDV[playerid][PlpZ][2]);
-				}else {
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz dostêpu do tych pozycji");
-				}
-			}
-		}
-		return 1;
-	}/*
-	Dialog:PrivBD1(playerid,response,listitem,inputtext[])
-	{
-		Dialog_Show(playerid, PrivBD, DIALOG_STYLE_LIST, "Salon - Kup Auto", "{00ff00}Informacje\n{ffffff}Kup\nWeŸ na raty", "Wybierz", "Nie");
-		return 1;
-	}*/
-	Dialog:PrivBD(playerid,response,listitem,inputtext[])
-	{
-		if(!PDV[playerid][PrivR]){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}ERROR:404 Car not found"); return 1;}
-		if(!response){return 1;}
-		/*foreach(new i : Privs){
-			if(PCDV[i][pOid] == PDV[playerid][iDP])
-			{
-				RemovePlayerFromVehicle(playerid);
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}");
-				return 1;
-			}
-		}
-		?*/
-		new c = PDV[playerid][PrivR];
-		PDV[playerid][PrivR] = 0;
-		new b = -1;
-		for(new i=0,x=sizeof(SVehs);i<x;i++){
-			if(c == SVehs[i]){
-				b = c;
-				c = 0;
-				break;
-			}
-		}
-		if(b == -1){
-			RemovePlayerFromVehicle(playerid);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie to auto ziomeczku :)");
-			return 1;
-		}
-		c = GetVehicleModel(b);
-		switch(listitem){
-			case 0:{
-				new str[185];
-				switch(c){
-					case 557:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:1.500.000\t\n\tPieni¹dze:60.000.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 592:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:860.000\t\n\tPieni¹dze:45.000.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 409:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:740.000\t\n\tPieni¹dze:35.000.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 519:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:630.000\t\n\tPieni¹dze:20.000.00$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 503:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:520.000\t\n\tPieni¹dze:8.000.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 502:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:520.000\t\n\tPieni¹dze:8.000.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 411:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:370.000\t\n\tPieni¹dze:7.500.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 513:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:365.000\t\n\tPieni¹dze:6.600.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 511:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:355.000\t\n\tPieni¹dze:6.400.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 495:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:340.000\t\n\tPieni¹dze:5.500.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 541:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:330.000\t\n\tPieni¹dze:4.700.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 593:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:310.000\t\n\tPieni¹dze:4.300.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 521:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:300.000\t\n\tPieni¹dze:3.900.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 562:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:280.000\t\n\tPieni¹dze:3.600.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 461:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:260.000\t\n\tPieni¹dze:3.400.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 429:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:240.000\t\n\tPieni¹dze:2.200.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 451:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:235.000\t\n\tPieni¹dze:2.000.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 559:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:214.000\t\n\tPieni¹dze:1.950.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 468:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:205.000\t\n\tPieni¹dze:1.850.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 500:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:195.000\t\n\tPieni¹dze:1.650.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 581:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:185.000\t\n\tPieni¹dze:1.540.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 560:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:173.000\t\n\tPieni¹dze:1.400.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 477:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:150.000\t\n\tPieni¹dze:1.399.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 506:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:135.000\t\n\tPieni¹dze:1.100.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 415:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:125.000\t\n\tPieni¹dze:990.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 475:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:110.000\t\n\tPieni¹dze:870.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 402:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:100.000\t\n\tPieni¹dze:760.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 603:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:99.900\t\n\tPieni¹dze:650.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 561:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:97.000\t\n\tPieni¹dze:630.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 558:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:96.000\t\n\tPieni¹dze:550.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 471:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:94.000\t\n\tPieni¹dze:540.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 565:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:90.000\t\n\tPieni¹dze:440.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 480:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:84.000\t\n\tPieni¹dze:390.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 579:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:82.000\t\n\tPieni¹dze:340.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 445:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:80.000\t\n\tPieni¹dze:320.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 496:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:78.000\t\n\tPieni¹dze:300.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 542:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:76.000\t\n\tPieni¹dze:260.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					case 404:{format(str,sizeof(str),"\t{ffffff}******{aaffaa}Witamy w salonie Aut{ffffff}******\t\n\tAuto:%s\t\n\tCena\t\n\tExp:74.000\t\n\tPieni¹dze:230.000$\t\n\tCzy chcesz kupiæ?\t",VehNam[c]);}
-					default:{SCM(playerid,-1,""); return 1;}
-				}
-				Dialog_Show(playerid, PrivBD1, DIALOG_STYLE_MSGBOX, "Salon - Cena Auta", str, "Ok","Ok");
-			}
-			case 1:{
-				new d = Iter_Free(Privs);
-				if(d == ITER_NONE){
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Przepraszamy wyszliœmy z rejestrów dla aut :C");
-					return 1;
-				}
-				new CMon,CXp;
-				switch(c){
-					case 557:{CMon = 60000000; CXp= 1500000;}
-					case 592:{CMon = 45000000; CXp= 860000;}
-					case 409:{CMon = 35000000; CXp= 740000;}
-					case 519:{CMon = 20000000; CXp= 630000;}
-					case 503:{CMon =  8000000; CXp= 520000;}//This
-					case 502:{CMon =  8000000; CXp= 520000;}//Equals This
-					case 411:{CMon =  7500000; CXp= 370000;}
-					case 513:{CMon =  6600000; CXp= 365000;}
-					case 511:{CMon =  6400000; CXp= 355000;}
-					case 495:{CMon =  5500000; CXp= 340000;}
-					case 541:{CMon =  4700000; CXp= 330000;}
-					case 593:{CMon =  4300000; CXp= 310000;}
-					case 521:{CMon =  3900000; CXp= 300000;}
-					case 562:{CMon =  3600000; CXp= 280000;}
-					case 461:{CMon =  3400000; CXp= 260000;}
-					case 429:{CMon =  2200000; CXp= 240000;}
-					case 451:{CMon =  2000000; CXp= 235000;}
-					case 559:{CMon =  1950000; CXp= 214000;}
-					case 468:{CMon =  1850000; CXp= 205000;}
-					case 500:{CMon =  1650000; CXp= 195000;}
-					case 581:{CMon =  1540000; CXp= 185000;}
-					case 560:{CMon =  1400000; CXp= 173000;}
-					case 477:{CMon =  1399000; CXp= 150000;}
-					case 506:{CMon =  1100000; CXp= 135000;}
-					case 415:{CMon =   990000; CXp= 125000;}
-					case 475:{CMon =   870000; CXp= 110000;}
-					case 402:{CMon =   760000; CXp= 100000;}
-					case 603:{CMon =   650000; CXp= 99900;}
-					case 561:{CMon =   630000; CXp= 97000;}
-					case 558:{CMon =   550000; CXp= 96000;}
-					case 471:{CMon =   540000; CXp= 94000;}
-					case 565:{CMon =   440000; CXp= 90000;}
-					case 480:{CMon =   390000; CXp= 84000;}
-					case 579:{CMon =   340000; CXp= 82000;}
-					case 445:{CMon =   320000; CXp= 80000;}
-					case 496:{CMon =   300000; CXp= 78000;}
-					case 542:{CMon =   260000; CXp= 76000;}
-					case 404:{CMon =   230000; CXp= 74000;}
-					default:{return 1;}
-				}
-				CMon = TkPlMo(playerid,CMon);
-				if(CMon == 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki pieniê¿ne"); RemovePlayerFromVehicle(playerid); return 1;}
-				CXp = TkPlRe(playerid,CXp);
-				if(CXp == 0){
-					GiPlMo(playerid,CMon);
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹cy Exp");
-					return 1;
-				}
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaaaff}Brawo kupi³eœ auto jeœli chcesz je przywo³aæ u¿yj /przywolaj");
-				Iter_Add(Privs, d);
-				AddPriCar(-3000,-3000,-3000,300,c,0,0,random(256),random(256),PDV[playerid][iDP]);
-			}
-			case 2:{
-				new d = Iter_Free(Privs);
-				if(d == ITER_NONE){
-					RemovePlayerFromVehicle(playerid);
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Przepraszamy wyszliœmy z rejestrów dla aut :C");
-					return 1;
-				}
-				new CMon,CXp;
-				switch(c){
-					case 557:{CMon = 60000000; CXp= 1500000;}
-					case 592:{CMon = 45000000; CXp= 860000;}
-					case 409:{CMon = 35000000; CXp= 740000;}
-					case 519:{CMon = 20000000; CXp= 630000;}
-					case 503:{CMon =  8000000; CXp= 520000;}//This
-					case 502:{CMon =  8000000; CXp= 520000;}//Equals This
-					case 411:{CMon =  7500000; CXp= 370000;}
-					case 513:{CMon =  6600000; CXp= 365000;}
-					case 511:{CMon =  6400000; CXp= 355000;}
-					case 495:{CMon =  5500000; CXp= 340000;}
-					case 541:{CMon =  4700000; CXp= 330000;}
-					case 593:{CMon =  4300000; CXp= 310000;}
-					case 521:{CMon =  3900000; CXp= 300000;}
-					case 562:{CMon =  3600000; CXp= 280000;}
-					case 461:{CMon =  3400000; CXp= 260000;}
-					case 429:{CMon =  2200000; CXp= 240000;}
-					case 451:{CMon =  2000000; CXp= 235000;}
-					case 559:{CMon =  1950000; CXp= 214000;}
-					case 468:{CMon =  1850000; CXp= 205000;}
-					case 500:{CMon =  1650000; CXp= 195000;}
-					case 581:{CMon =  1540000; CXp= 185000;}
-					case 560:{CMon =  1400000; CXp= 173000;}
-					case 477:{CMon =  1399000; CXp= 150000;}
-					case 506:{CMon =  1100000; CXp= 135000;}
-					case 415:{CMon =   990000; CXp= 125000;}
-					case 475:{CMon =   870000; CXp= 110000;}
-					case 402:{CMon =   760000; CXp= 100000;}
-					case 603:{CMon =   650000; CXp= 99900;}
-					case 561:{CMon =   630000; CXp= 97000;}
-					case 558:{CMon =   550000; CXp= 96000;}
-					case 471:{CMon =   540000; CXp= 94000;}
-					case 565:{CMon =   440000; CXp= 90000;}
-					case 480:{CMon =   390000; CXp= 84000;}
-					case 579:{CMon =   340000; CXp= 82000;}
-					case 445:{CMon =   320000; CXp= 80000;}
-					case 496:{CMon =   300000; CXp= 78000;}
-					case 542:{CMon =   260000; CXp= 76000;}
-					case 404:{CMon =   230000; CXp= 74000;}
-					default:{return 1;}
-				}
-				new m = TkPlMo(playerid,CMon/10);
-				if(m == 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki pieniê¿ne na raty"); RemovePlayerFromVehicle(playerid); return 1;}
-				m = TkPlRe(playerid,CXp/10);
-				if(m == 0){
-					GiPlMo(playerid,CMon/10);
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹cy Exp na raty :/");
-					RemovePlayerFromVehicle(playerid);
-					return 1;
-				}
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {aaaaff}Brawo kupi³eœ auto na raty jeœli chcesz je przywo³aæ u¿yj /przywolaj");
-				Iter_Add(Privs, d);
-				AddPriCar(-3000,-3000,-3000,300,c,((CMon*134) / 100) - (CMon/10),((CXp*134) / 100) - (CXp/10),random(256),random(256),PDV[playerid][iDP]);
-			}
-		}
-		return 1;
-	}
-	Dialog:AdminDIAL(playerid,response,listitem,inputtext[])
-	{
-		if(PDV[playerid][APL] < 1){KP(playerid,"{FF0000}Spoof",INVALID_PLAYER_ID); return 1;}
-		if(response){
-			switch(listitem)
-			{
-				case 0: Dialog_Show(playerid, AdminDIAL0, DIALOG_STYLE_PASSWORD, "Nowe Has³o", "Wpisz nowe has³o na admina", "Ok", "Nje");
-				case 1: Dialog_Show(playerid, AdminDIAL1, DIALOG_STYLE_INPUT, "Skasuj konto", "Wpisz id konta które chcesz skasowaæ", "Ok", "Nje");
-				case 2: Dialog_Show(playerid, AdminDIAL2, DIALOG_STYLE_INPUT, "Zmieñ Has³o", "Wpisz idp gracza", "Ok", "Nje");
-			}
-		}
-		return 1;
-	}
-	Dialog:AdminDIAL0(playerid,response,listitem,inputtext[])
-	{
-		if(PDV[playerid][APL] < 1){KP(playerid,"{FF0000}Spoof",INVALID_PLAYER_ID); return 1;}
-		if(response){
-			if(4 > strlen(inputtext) > 45){
-				Dialog_Show(playerid, AdminDIAL0, DIALOG_STYLE_PASSWORD, "Nowe Has³o", "Wpisz nowe has³o na admina Nie mniej ni¿ 4 znaki i nie wiêcej ni¿ 45", "Ok", "Nje");
-			}
-			else{
-				format(PDV[playerid][AdP],45,inputtext);
-				mysql_escape_string(inputtext,inputtext,45);
-				new quer[128];
-				mysql_format(DBM,quer,sizeof(quer),"UPDATE `plys` SET `AdP`='%s' WHERE `id`='%i'",inputtext,PDV[playerid][iDP]);
-				mq(quer);
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Twoje nowe has³o ");
-			}
-		}
-		return 1;
-	}
-	Dialog:AdminDIAL1(playerid,response,listitem,inputtext[])
-	{
-		if(PDV[playerid][APL] < 6){return 1;}
-		if(response){
-			if(!IsNumeric(inputtext)){Dialog_Show(playerid, AdminDIAL1, DIALOG_STYLE_INPUT, "Skasuj konto", "Wpisz id konta które chcesz skasowaæ\nRaczej w iDP konta nie ma liter", "Ok", "Nje");return 1;}
-			new idp = strval(inputtext);
-			if(idp == 1){Dialog_Show(playerid, AdminDIAL1, DIALOG_STYLE_INPUT, "Skasuj konto", "Wpisz id konta które chcesz skasowaæ\nRaczej nie pierwszego w tabeli hm?", "Ok", "Nje");return 1;}
-			if(idp == PDV[playerid][iDP]){Dialog_Show(playerid, AdminDIAL1, DIALOG_STYLE_INPUT, "Skasuj konto", "Wpisz id konta które chcesz skasowaæ\nSwojego konta nie mo¿esz kasowaæ", "Ok", "Nje");return 1;}
-			new query[128];
-			mysql_format(DBM, query, sizeof(query), "DELETE FROM `plys` WHERE `id`='%i'", idp);
-			mq(query);
-		}
-		return 1;
-	}
-	Dialog:AdminDIAL2(playerid,response,listitem,inputtext[])
-	{
-		if(PDV[playerid][APL] < 6){return 1;}
-		if(response){
-			if(!IsNumeric(inputtext)) Dialog_Show(playerid, AdminDIAL2, DIALOG_STYLE_INPUT, "Zmieñ Has³o", "Wpisz idp gracza\n{ff0000}idp chyba nie jest liter¹?", "Ok", "Nje");
-			new idp = strval(inputtext);
-			if(idp == 1){Kick(playerid);}
-			if(idp == PDV[playerid][iDP]){}
-		}
-		return 1;
-	}
-	Dialog:SecD(playerid,response,listitem,inputtext[])
-	{
-		if(PDV[playerid][OwOf] == -1){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie masz domu"); return 1;}
-		if(!response){}
-		else {
-			switch(listitem){
-				case 0:{
-					new reee = TkPlRe(playerid,50);
-					if(reee == 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki Expa"); return 1;}
-					reee = TkPlMo(playerid,20000);
-					if(reee == 0){
-						GiRe(playerid,50);
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki Kasy");
-						return 1;
-					}
-					HDV[PDV[playerid][OwOf]][Security] = 1;
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Kupi³eœ ulepszenie domu");
-				}
-				case 1:{
-					new reee = TkPlRe(playerid,100);
-					if(reee == 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki Expa"); return 1;}
-					reee = TkPlMo(playerid,40000);
-					if(reee == 0){
-						GiRe(playerid,100);
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki Kasy");
-						return 1;
-					}
-					HDV[PDV[playerid][OwOf]][Security] = 2;
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Kupi³eœ ulepszenie domu");
-				}
-				case 2:{
-					new reee = TkPlRe(playerid,2000);
-					if(reee == 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki Expa"); return 1;}
-					reee = TkPlMo(playerid,200000);
-					if(reee == 0){
-						GiRe(playerid,2000);
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki Kasy");
-						return 1;
-					}
-					HDV[PDV[playerid][OwOf]][Security] = 3;
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Kupi³eœ ulepszenie domu");
-				}
-				case 3:{
-					new reee = TkPlRe(playerid,10000);
-					if(reee == 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki Expa"); return 1;}
-					reee = TkPlMo(playerid,2000000);
-					if(reee == 0){
-						GiRe(playerid,10000);
-						SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Nie wystarczaj¹ce œrodki Kasy");
-						return 1;
-					}
-					HDV[PDV[playerid][OwOf]][Security] = 4;
-					UpdHous(PDV[playerid][OwOf]);
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Kupi³eœ ulepszenie domu");
-				}
-			}
-		}
-		return 1;
-	}
-	Dialog:DomMDO(playerid,response,listitem,inputtext[])
-	{
-		if(!response){}
-		else {
-			switch(listitem){
-				case 0:callcmd::wejdz(playerid,"");
-				case 1:callcmd::rob(playerid,"");
-				case 2:callcmd::pukpuk(playerid,"");
-			}
-		}
-		return 1;
-	}
-	Dialog:DomMD(playerid,response,listitem,inputtext[])
-	{
-		if(!response){}
-		else {
-			switch(listitem){
-				case 0:callcmd::wejdz(playerid,"");
-				case 1:callcmd::buy(playerid,"");
-			}
-		}
-		return 1;
-	}
-	Dialog:telesD(playerid,response,listitem,inputtext[])
-	{
-		if(!response){return 1;}
-		switch(listitem){
-			case 0:callcmd::lv(playerid,"");
-			case 1:callcmd::sf(playerid,"");
-			case 2:callcmd::ls(playerid,"");
-			case 3:callcmd::lvlot(playerid,"");
-			case 4:callcmd::sflot(playerid,"");
-			case 5:callcmd::lslot(playerid,"");
-			case 6:callcmd::kopalnia(playerid,"");
-			case 7:callcmd::statek(playerid,"");
-			case 8:callcmd::fabryka(playerid,"");
-			case 9:callcmd::minigolf(playerid,"");
-			case 10:callcmd::wojsko(playerid,"");
-			case 11:callcmd::klify(playerid,"");
-			case 12:callcmd::brickleberry(playerid,"");
-			case 13:callcmd::yellowstone(playerid,"");
-			case 14:callcmd::autostrada(playerid,"");
-			case 15:callcmd::magazyny(playerid,"");
-			case 16:callcmd::wiezienie(playerid,"");
-			case 17:callcmd::vm(playerid,"");
-			case 18:callcmd::farma(playerid,"");
-			case 19:callcmd::calligula(playerid,"");
-			case 20:callcmd::miasteczko(playerid,"");
-			case 21:callcmd::rybak(playerid,"");
-			case 22:callcmd::pgr(playerid,"");
-			case 23:callcmd::rcshop(playerid,"");
-			case 24:callcmd::tama(playerid,"");
-			case 25:callcmd::bagno(playerid,"");
-			case 26:callcmd::zadupie(playerid,"");
-			case 27:callcmd::wzgorze(playerid,"");
-			case 28:callcmd::las(playerid,"");
-			case 29:callcmd::port(playerid,"");
-			case 30:callcmd::boisko(playerid,"");
-			case 31:callcmd::molo(playerid,"");
-			case 32:callcmd::praca(playerid,"");
-			case 33:callcmd::cmentarz(playerid,"");
-			case 34:callcmd::cpn(playerid,"");
-			case 35:callcmd::kfc(playerid,"");
-			case 36:callcmd::vinewood(playerid,"");
-			case 37:callcmd::ruina(playerid,"");
-			case 38:callcmd::tenis(playerid,"");
-			case 39:callcmd::plaza(playerid,"");
-			case 40:callcmd::marina(playerid,"");
-			case 41:callcmd::parafia(playerid,"");
-			case 42:callcmd::tunelv(playerid,"");
-			case 43:callcmd::tunels(playerid,"");
-			case 44:callcmd::tunesf(playerid,"");
-			case 45:callcmd::4smoki(playerid,"");
-			case 46:callcmd::faraon(playerid,"");
-			case 47:callcmd::kosciol(playerid,"");
-			case 48:callcmd::plazasf(playerid,"");
-			case 49:callcmd::dompapieza(playerid,"");
-			case 50:callcmd::golf(playerid,"");
-			case 51:callcmd::mcdonald(playerid,"");
-			case 52:callcmd::zlomowisko(playerid,"");
-			case 53:callcmd::szkolajazdy(playerid,"");
-			case 54:callcmd::straz(playerid,"");
-			case 55:callcmd::dworzec(playerid,"");
-			case 56:callcmd::dombiskupa(playerid,"");
-			case 57:callcmd::pier(playerid,"");
-			case 58:callcmd::salon(playerid,"");
-			case 59:callcmd::sfpd(playerid,"");
-			case 60:callcmd::lvpd(playerid,"");
-			case 61:callcmd::lspd(playerid,"");
-			case 62:callcmd::klub(playerid,"");
-			case 63:callcmd::park(playerid,"");
-			case 64:callcmd::burger(playerid,"");
-			case 65:callcmd::sfszpital(playerid,"");
-			case 66:callcmd::stacjaradiowa(playerid,"");
-			case 67:callcmd::korwinolandia(playerid,"");
-			case 68:callcmd::zlomowisko(playerid,"");
-			case 69:callcmd::drwal(playerid,"");
-			case 70:callcmd::doki(playerid,"");
-			case 71:callcmd::most(playerid,"");
-			case 72:callcmd::peronls(playerid,"");
-			case 73:callcmd::peronsf(playerid,"");
-			case 74:callcmd::peronlv(playerid,"");
-			case 75:callcmd::stadionlv(playerid,"");
-			case 76:callcmd::stadionls(playerid,"");
-			case 77:callcmd::stadionsf(playerid,"");
-			case 78:callcmd::bay(playerid,"");
-			case 79:callcmd::osiedle(playerid,"");
-		}
-		return 1;
-	}
-	Dialog:SolD(playerid,response,listitem,inputtext[])
-	{
-		if(!response){
-			SCM(PDV[playerid][SoP],-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Gracz odmówi³ solówki");
-			PDV[playerid][SoP] = PDV[PDV[playerid][SoP]][SoP] = -1;
-			PDV[playerid][SoBr] = 0;
-			PDV[playerid][SoA] = 0;
-		}
-		else{
-			SCM(PDV[playerid][SoP],-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz zaakceptowa³ solówkê");
-			ResetPlayerWeapons(playerid);
-			ResetPlayerWeapons(PDV[playerid][SoP]);
-			SetUpSol(playerid,PDV[playerid][SoP]);
-		}
-		return 1;
-	}
-	Dialog:Tp(playerid,response,listitem,inputtext[])
-	{
-		if(!response){PDV[PDV[playerid][Ptp]][TpSp] = true;}
-		else {
-			SCM(PDV[playerid][Ptp],-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {00ff00}Gracz zaakceptowa³ teleportacje");
-			new Float:x,Float:y,Float:z;
-			GetPlayerPos(playerid,x,y,z);
-			SetPlayerPos(PDV[playerid][Ptp],x+2,y,z);
-			PDV[playerid][Ptp] = -1;
-		}
-		return 1;
-	}
-	Dialog:Kon(playerid,response,listitem,inputtext[]){
-		if(!PDV[playerid][LogIn]){
-			TextDrawShowForPlayer(playerid, LogOnS[2]);
-			TextDrawShowForPlayer(playerid, LogOnS[3]);
-			TextDrawShowForPlayer(playerid, LogOnS[4]);
-			TextDrawShowForPlayer(playerid, LogOnS[5]);
-			TextDrawShowForPlayer(playerid, LogOnS[6]);
-			TextDrawShowForPlayer(playerid, LogOnS[7]);
-			TextDrawShowForPlayer(playerid, LogOnS[8]);
-			TextDrawShowForPlayer(playerid, LogOnS[9]);
-			TextDrawShowForPlayer(playerid, LogOnS[10]);
-			TextDrawShowForPlayer(playerid, LogOnS[11]);
-			TextDrawShowForPlayer(playerid, LogOnS[12]);
-			TextDrawShowForPlayer(playerid, LogOnS[13]);
-			SelectTextDraw(playerid,0x565656aa);
-		}
-		return 1;
-	}
-	Dialog:ShowRD(playerid,response,listitem,inputtext[]){
-		if(!PDV[playerid][LogIn]){
-			TextDrawShowForPlayer(playerid, LogOnS[2]);
-			TextDrawShowForPlayer(playerid, LogOnS[3]);
-			TextDrawShowForPlayer(playerid, LogOnS[4]);
-			TextDrawShowForPlayer(playerid, LogOnS[5]);
-			TextDrawShowForPlayer(playerid, LogOnS[6]);
-			TextDrawShowForPlayer(playerid, LogOnS[7]);
-			TextDrawShowForPlayer(playerid, LogOnS[8]);
-			TextDrawShowForPlayer(playerid, LogOnS[9]);
-			TextDrawShowForPlayer(playerid, LogOnS[10]);
-			TextDrawShowForPlayer(playerid, LogOnS[11]);
-			TextDrawShowForPlayer(playerid, LogOnS[12]);
-			TextDrawShowForPlayer(playerid, LogOnS[13]);
-			SelectTextDraw(playerid,0x565656aa);
-		}
-		return 1;
-	}
-	Dialog:Autor(playerid,response,listitem,inputtext[])
-	{
-		if(!PDV[playerid][LogIn]){
-			TextDrawShowForPlayer(playerid, LogOnS[2]);
-			TextDrawShowForPlayer(playerid, LogOnS[3]);
-			TextDrawShowForPlayer(playerid, LogOnS[4]);
-			TextDrawShowForPlayer(playerid, LogOnS[5]);
-			TextDrawShowForPlayer(playerid, LogOnS[6]);
-			TextDrawShowForPlayer(playerid, LogOnS[7]);
-			TextDrawShowForPlayer(playerid, LogOnS[8]);
-			TextDrawShowForPlayer(playerid, LogOnS[9]);
-			TextDrawShowForPlayer(playerid, LogOnS[10]);
-			TextDrawShowForPlayer(playerid, LogOnS[11]);
-			SelectTextDraw(playerid,0x565656aa);
-		}
-		return 1;
-	}
-	Dialog:ACM_1(playerid,response,listitem,inputtext[])
-	{
-		if(response) return 1;
-		else {
-			new strfor[256];
-			Dialog_Show(playerid,ACM_2,DIALOG_STYLE_MSGBOX,"{00af2b}CMD JAdmina",strfor,"OK","Next");
-		}
-		return 1;
-	}
-	//Logowania
-		Dialog:Register(playerid, response, listitem, inputtext[])
-		{
-			if(!response) return Kick(playerid);
-			else {
-				if(32 < strlen(inputtext) || strlen(inputtext) < 6){return Dialog_Show(playerid, Register, DIALOG_STYLE_PASSWORD, "Rejestracja", " {ff0000}*Haslo musi posiadac wiecej niz 6 znakow ale nie wiecej niz 32*\n{6c6c6c}Zarejestruj siê by miec pelne mozliwosci korzystania z\nnaszego serwera", "Okay","Nah");}
-				else {
-					new itex[65];
-					strcat(itex,inputtext, sizeof(itex));
-					RPlayer(playerid,itex);
-				}
-			}
-			return 1;
-		}
-		Dialog:AdPassR(playerid,response,listitem,inputtext[])
-		{
-			if(PDV[playerid][nAPL] < 1){KP(playerid,"{FF0000}Spoof",INVALID_PLAYER_ID); return 1;}
-			if(!response){}
-			else {
-				if(4 > strval(inputtext) >= 45){
-					new str[256];
-					format(str,sizeof(str),"Twoj level Admina:{565656}%i\n\n{ffffff}Nick:{0000aa}%s\n\n{32cd32}Haslo jest za dlugie! Musi ono miec mniej niz 45 znakow i wiecej niz 4 znaki",PDV[playerid][nAPL],PDV[playerid][Nck]);
-					Dialog_Show(playerid,AdPassR,DIALOG_STYLE_PASSWORD,"Panel Logowania Admina",str,"OK","Nope");
-				}
-				format(PDV[playerid][AdP],45,inputtext);
-				mysql_escape_string(inputtext,inputtext,45);
-				new quer[128];
-				mysql_format(DBM,quer,sizeof(quer),"UPDATE `plys` SET `AdP`='%s' WHERE `id`='%i'",inputtext,PDV[playerid][iDP]);
-				new queres = mq(quer);
-				if(queres == 0){SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}MySQL Error");}
-				else {
-					new str[128];
-					format(str,sizeof(str),"{3399cc}Twoj level Admina:{565656}%i\n\n{00cc99}Nick:{0000aa}%s\n\n{32cd32}Zaloguj siê by otrzymaæ uprawnienia admina podaj¹c has³o",PDV[playerid][nAPL],PDV[playerid][Nck]);
-					Dialog_Show(playerid,AdPassL,DIALOG_STYLE_PASSWORD,"Panel Logowania Admina",str,"OK","Nope");
-				}
-			}
-			return 1;
-		}
-		Dialog:LogIn(playerid,response,listitem, inputtext[])
-		{
-			if(!response) return Kick(playerid);
-			if(32 < strlen(inputtext) < 6) return Dialog_Show(playerid,LogIn, DIALOG_STYLE_PASSWORD,"Logowanie","{ff0000}*Haslo musi posiadac wiecej niz 6 znakow ale nie wiecej niz 32* {ffffff}Zaloguj siê by potwierdzic swoja tozsamosc","Dobra","Nara");
-			new CheRes = PPCheck(playerid,inputtext);
-			if(CheRes == 1) {
-				TogglePlayerSpectating(playerid, 0);
-				PDV[playerid][LogIn] = true;
-				SendDeathMessage(INVALID_PLAYER_ID,playerid,200);
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {7fffd4}Gratulacje zalogowa³eœ siê");
-				SRe(playerid,PDV[playerid][Rsp]);
-			}
-			else if(CheRes == 2) { return 1;}
-			else {
-				if(PDV[playerid][PFai] >= 3){
-					KP(playerid,"{FF0000}Niepoprawne Haslo 3/3 szanse wykorzystane",INVALID_PLAYER_ID);
-				}
-				else{
-					PDV[playerid][PFai]++;
-					new str[200];
-					format(str,sizeof(str),"{ff0000}Haslo niepoprawne %i/3 niepoprawnych prob\n{ffffff}Zaloguj siê by potwierdzic swoja tozsamosc",PDV[playerid][PFai]);
-					Dialog_Show(playerid,LogIn, DIALOG_STYLE_PASSWORD,"Logowanie",str,"Dobra","Nara");
-				}
-			}
-
-			return 1;
-		}
-		Dialog:AdPassL(playerid,response,listitem,inputtext[])
-		{
-			if(PDV[playerid][nAPL] < 1){KP(playerid,"{FF0000}Spoof",INVALID_PLAYER_ID); return 1;}
-			if(!response){}
-			else {
-				if(strval(inputtext) >= 45){
-					new str[156];
-					format(str,sizeof(str),"Twoj level Admina:{565656}%i\n\n{ffffff}Nick:{0000aa}%s\n\n{32cd32}Has³o jest za d³ugie!\nMusi ono mieæ mniej niz 45 znakow",PDV[playerid][nAPL],PDV[playerid][Nck]);
-					Dialog_Show(playerid,AdPassL,DIALOG_STYLE_PASSWORD,"Panel Logowania Admina",str,"OK","Nope");
-				}
-				if(!strcmp(PDV[playerid][AdP],inputtext,false))
-				{
-					PDV[playerid][APL] = PDV[playerid][nAPL];
-					SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {7fffd4}Brawo zalogowa³eœ siê na range Administracyjna");
-					GM[Admins]++;
-					switch(PDV[playerid][APL])
-					{
-						case 1:{
-							PDV[playerid][Rank] = CreateDynamic3DTextLabel("|{006400}Support{ffffff}|", -1, 0.0,0.0,0.5, 15.0,playerid);
-						}
-						case 2:{
-							PDV[playerid][Rank] = CreateDynamic3DTextLabel("|{32CD32}Modelator{ffffff}|", -1, 0.0,0.0,0.5, 15.0,playerid);
-						}
-						case 3:{
-							PDV[playerid][Rank] = CreateDynamic3DTextLabel("|{0000CD}Admin{ffffff}|", -1, 0.0,0.0,0.5, 15.0,playerid);
-						}
-						case 4:{
-							PDV[playerid][Rank] = CreateDynamic3DTextLabel("|{191970}SuperAdmin{ffffff}|", -1, 0.0,0.0,0.5, 15.0,playerid);
-						}
-						case 5:{
-							PDV[playerid][Rank] = CreateDynamic3DTextLabel("|{00ff00}Rcon{ffffff}|", -1, 0.0,0.0,0.5, 15.0,playerid);
-						}
-						case 6:{
-							PDV[playerid][Rank] = CreateDynamic3DTextLabel("|{ff0000}Zarz¹d{ffffff}|", -1, 0.0,0.0,0.5, 15.0,playerid);
-						}
-					}
-				}
-
-			}
-			return 1;
-		}
-		Dialog:AdPassUL(playerid,response,listitem,inputtext[])
-		{
-			if(PDV[playerid][nAPL] < 1){KP(playerid,"{FF0000}Spoof",INVALID_PLAYER_ID); return 1;}
-			if(!response){}
-			else{
-				DestroyDynamic3DTextLabel(PDV[playerid][Rank]);
-				PDV[playerid][APL] = 0;
-				SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Wylogowa³eœ siê z rangi Administracyjnej!");
-			}
-			return 1;
-		}
-		Dialog:PassD(playerid,response,listitem,inputtext[])
-		{
-			if(!response){}
-			else {
-				if(strlen(inputtext) < 4 || strlen(inputtext) >= 24){Dialog_Show(playerid, PassD, DIALOG_STYLE_PASSWORD, "Has³o Na Dom", "Za³ó¿ has³o na dom dziêki temu 1 prostemu triku\nHas³o by³o za d³ugie lub za krótkie\nHas³o musi zawieraæ od 4 do 24 znaków", "OK", "Nie"); return 1;}
-				new escaped[24];
-				SqlEscStr(inputtext,escaped);
-				new quer[70];
-				mysql_format(DBM, quer, sizeof(quer), "UPDATE `HoS` SET `pass`='%s' WHERE `id`='%i'",inputtext,PDV[playerid][OwOf]);
-				mq(quer);
-			}
-			return 1;
-		}
-	//System Domów
-		Dialog:DomD(playerid,response,listitem,inputtext[]){
-			if(!response){}
-			else {
-				switch(listitem){
-					case 0:{callcmd::estatename(playerid,"");}
-					case 1:{callcmd::spass(playerid,"");}
-					case 2:{callcmd::hlock(playerid,"");}
-					case 3:{callcmd::sejf(playerid,"");}
-					case 4:{callcmd::wmon(playerid,"");}
-					case 5:{callcmd::wymon(playerid,"");}
-					case 6:{callcmd::wexp(playerid,"");}
-					case 7:{callcmd::wyexp(playerid,"");}
-					case 8:{callcmd::meble(playerid,"");}
-					case 9:{callcmd::klucze(playerid,"");}
-					case 10:{callcmd::zabezpiecz(playerid,"");}
-					case 11:{callcmd::sell(playerid,"");}
-				}
-			}
-			return 1;
-		}
-		Dialog:wmonD(playerid,response,listitem,inputtext[]){
-			if(!response){}
-			if(!IsNumeric(inputtext)){Dialog_Show(playerid, wmonD, DIALOG_STYLE_INPUT, "Wp³aæ Kase", "Iloœæ Kasy Któr¹ chcesz wp³aciæ\n{FF0000}ILOŒÆ KASY TO S¥ LICZBY!", "OK", "Anuluj"); return 1;}
-			new c = strval(inputtext);
-			new d = TkPlMo(playerid,c);
-			if(!d){Dialog_Show(playerid, wmonD, DIALOG_STYLE_INPUT, "Wp³aæ Kase", "Iloœæ Kasy Któr¹ chcesz wp³aciæ\n{FF0000}Nie posiadasz takiej iloœci kasy", "OK", "Anuluj"); return 1;}
-			HDV[PDV[playerid][OwOf]][moni] += c;
-			UpdHous(PDV[playerid][OwOf]);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {22ee22}Wp³aci³eœ do domu Hajs Stan Konta Domu:%i",HDV[PDV[playerid][OwOf]][moni]);
-			return 1;
-		}
-		Dialog:wexpD(playerid,response,listitem,inputtext[]){
-			if(!response){}
-			if(!IsNumeric(inputtext)){Dialog_Show(playerid, wexpD, DIALOG_STYLE_INPUT, "Wp³aæ Exp", "Iloœæ Expa Któr¹ chcesz wp³aciæ\n{FF0000}ILOŒÆ EXPA TO S¥ LICZBY!", "OK", "Anuluj"); return 1;}
-			new c = strval(inputtext);
-			new d = TkPlRe(playerid,c);
-			if(!d){Dialog_Show(playerid, wexpD, DIALOG_STYLE_INPUT, "Wp³aæ Exp", "Iloœæ Expa Któr¹ chcesz wp³aciæ\n{FF0000}Nie posiadasz takiej iloœci Expa", "OK", "Anuluj"); return 1;}
-			HDV[PDV[playerid][OwOf]][expi] += c;
-			UpdHous(PDV[playerid][OwOf]);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {22ee22}Wp³aci³eœ do domu Exp Stan Konta Domu:%i",HDV[PDV[playerid][OwOf]][expi]);
-			return 1;
-		}
-		Dialog:wyexpD(playerid,response,listitem,inputtext[]){
-			if(!response){}
-			if(!IsNumeric(inputtext)){Dialog_Show(playerid, wyexpD, DIALOG_STYLE_INPUT, "Wyp³aæ Exp", "Iloœæ Expa Któr¹ chcesz wyp³aciæ\n{FF0000}ILOŒÆ EXPA TO S¥ LICZBY!", "OK", "Anuluj"); return 1;}
-			new c = strval(inputtext);
-			if(c > HDV[PDV[playerid][OwOf]][expi]){Dialog_Show(playerid, wyexpD, DIALOG_STYLE_INPUT, "Wyp³aæ Exp", "Iloœæ Expa Któr¹ chcesz wyp³aciæ\n{FF0000}W domu nie ma tyle Expa", "OK", "Anuluj"); return 1;}
-			HDV[PDV[playerid][OwOf]][expi] -= c;
-			GiRe(playerid,c);
-			UpdHous(PDV[playerid][OwOf]);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {22ee22}Wyp³aci³eœ z Domu Exp Stan Konta Domu:%i",HDV[PDV[playerid][OwOf]][expi]);
-			return 1;
-		}
-		Dialog:wymonD(playerid,response,listitem,inputtext[]){
-			if(!response){}
-			if(!IsNumeric(inputtext)){Dialog_Show(playerid, wymonD, DIALOG_STYLE_INPUT, "Wyp³aæ Kase", "Iloœæ Kasy Któr¹ chcesz wyp³aciæ\n{FF0000}ILOŒÆ KASY TO S¥ LICZBY!", "OK", "Anuluj"); return 1;}
-			new c = strval(inputtext);
-			new d = TkPlMo(playerid,c);
-			if(!d){Dialog_Show(playerid, wymonD, DIALOG_STYLE_INPUT, "Wp³aæ Kase", "Iloœæ Kasy Któr¹ chcesz wp³aciæ\n{FF0000}Nie posiadasz takiej iloœci kasy", "OK", "Anuluj"); return 1;}
-			HDV[PDV[playerid][OwOf]][moni] -= c;
-			GiPlMo(playerid,c);
-			UpdHous(PDV[playerid][OwOf]);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {22ee22}Wyp³aci³eœ z domu Hajs Stan Konta Domu:%i",HDV[PDV[playerid][OwOf]][moni]);
-			return 1;
-		}
-		Dialog:estnmD(playerid,response,listitem,inputtext[]){
-			if(!response){}
-			if(24 >= strlen(inputtext) < 3){Dialog_Show(playerid,estnmD,DIALOG_STYLE_INPUT,"Zmien nazwê swojej posiad³oœci","Wpisz tu now¹ nazwe swojej posiad³oœci\nWielkosc nazwy musi zawierac od 4 znaków do 24","OK","Wstecz"); return 1;}
-			strcat(HDV[PDV[playerid][OwOf]][estanam],inputtext,24);
-			new str[256];
-			format(str,sizeof(str),"{ff0000}Zajete\n{56ff56}Posiad³oœæ:{ffffff}%s\n{56ff56}Wlasciciel:{ffffff}%s\n{56ff56}Interior:{ffffff}%i\nID:%i",HDV[PDV[playerid][OwOf]][estanam],HDV[PDV[playerid][OwOf]][ONck],HDV[PDV[playerid][OwOf]][Iid],HDV[PDV[playerid][OwOf]][hID]);
-			UpdateDynamic3DTextLabelText(HDV[PDV[playerid][OwOf]][hid3D], 0xFFFFFFFF, str);
-			new query[256];
-			new estatename[24];
-			SqlEscStr(HDV[PDV[playerid][OwOf]][estanam],estatename);
-			mysql_format(DBM, query, sizeof(query), "UPDATE `HoS` SET `Estate`='%s' WHERE `id`='%i'",estatename,PDV[playerid][OwOf]);
-			SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {22ee22}Brawo zmieni³eœ nazwe domu");
-			return 1;
-		}
-	Dialog:RepO(playerid,response,listitem,inputtext[])
-	{
-		if(!response){}
-		else {
-			Dialog_Show(playerid,RepP,DIALOG_STYLE_MSGBOX,"Report Gracza",Repor[listitem],"OK","OK");
-			Iter_Remove(ReporI, listitem);
-			Repor[listitem] = "-";
-		}
-		return 1;
-	}
-	Dialog:WeaW(playerid,response,listitem,inputtext[])
-	{
-		if(!response){}
-		switch(listitem){
-			case 0:
-			{
-				new res = TkPlMo(playerid,2000);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,22,2000);
-			}
-			case 1:
-			{
-				new res = TkPlMo(playerid,3000);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,23,2000);
-			}
-			case 2:
-			{
-				new res = TkPlMo(playerid,7000);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,24,2000);
-			}
-			case 3:
-			{
-				new res = TkPlMo(playerid,10000);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,25,2000);
-			}
-			case 4:
-			{
-				new res = TkPlMo(playerid,25000);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,26,2000);
-			}
-			case 5:
-			{
-				new res = TkPlMo(playerid,15000);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,27,2000);
-			}
-			case 6:
-			{
-				new res = TkPlMo(playerid,5000);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,28,2000);
-			}
-			case 7:
-			{
-				new res = TkPlMo(playerid,3000);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,29,2000);
-			}
-			case 8:
-			{
-				new res = TkPlMo(playerid,11000);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,30,2000);
-			}
-			case 9:
-			{
-				new res = TkPlMo(playerid,14500);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,31,2000);
-			}
-			case 10:
-			{
-				new res = TkPlMo(playerid,6500);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,32,2000);
-			}
-			case 11:
-			{
-				new res = TkPlMo(playerid,4000);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,33,2000);
-			}
-			case 12:
-			{
-				new res = TkPlMo(playerid,20000);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,34,2000);
-			}
-			case 13:
-			{
-				new res = TkPlMo(playerid,399);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,41,2000);
-			}
-			case 14:
-			{
-				new res = TkPlMo(playerid,399);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,42,2000);
-			}
-			case 15:
-			{
-				new res = TkPlMo(playerid,400);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,16,10);
-			}
-			case 16:
-			{
-				new res = TkPlMo(playerid,700);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,18,10);
-			}
-			case 17:
-			{
-				new res = TkPlMo(playerid,9);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,17,30);
-			}	
-			case 18:
-			{
-				new res = TkPlMo(playerid,300);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,1,1);
-			}
-			case 19:
-			{
-				new res = TkPlMo(playerid,20);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,2,1);
-			}
-			case 20:
-			{
-				new res = TkPlMo(playerid,5);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,3,1);
-			}
-			case 21:
-			{
-				new res = TkPlMo(playerid,399);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,4,1);
-			}
-			case 22:
-			{
-				new res = TkPlMo(playerid,5);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,5,1);
-			}
-			case 23:
-			{
-				new res = TkPlMo(playerid,10);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,6,1);
-			}
-			case 24:
-			{
-				new res = TkPlMo(playerid,1);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,7,1);
-			}
-			case 25:
-			{
-				new res = TkPlMo(playerid,20);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,8,1);
-			}
-			case 26:
-			{
-				new res = TkPlMo(playerid,600);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,9,1);
-			}
-			case 27:
-			{
-				new res = TkPlMo(playerid,10);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,10,1);
-			}
-			case 28:
-			{
-				new res = TkPlMo(playerid,5);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,11,1);
-			}
-			case 29:
-			{
-				new res = TkPlMo(playerid,15);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,12,1);
-			}
-			case 30:
-			{
-				new res = TkPlMo(playerid,16);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,13,1);
-			}
-			case 31:
-			{
-				new res = TkPlMo(playerid,1);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,14,1);
-			}
-			case 32:
-			{
-				new res = TkPlMo(playerid,1);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,15,1);
-			}
-			case 33:
-			{
-				new res = TkPlMo(playerid,39);
-				if(!res) {SCM(playerid,-1,"{9b9da0}| {ff0033}Ja{ffff33}mai{33cc00}ca {9b9da0}| {ff0000}Niewystaraczaj¹ce œrodki"); return 1;}
-				GivePlayerWeapon(playerid,43,20);
-			}
-		}
-
-		return 1;
-	}
+				case
